@@ -1,18 +1,49 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav>
+      <NavbarComponent />
+    </nav>
+    <main>
+      <CarroucelComponent />
+      <MDBContainer>
+        <GridCards />
+      </MDBContainer>
+    </main>
+    <footer>
+      <FooterComponent />
+    </footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { MDBContainer } from 'mdb-vue-ui-kit'
+
+import NavbarComponent from '@/components/NavbarComponent.vue'
+import CarroucelComponent from '@/components/CarouselComponent.vue'
+import GridCards from '@/components/GridCards.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    NavbarComponent,
+    CarroucelComponent,
+    GridCards,
+    FooterComponent,
+    MDBContainer
   }
 }
 </script>
+<style scoped>
+main {
+  background-image: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+}
+</style>
