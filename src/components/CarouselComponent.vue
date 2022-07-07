@@ -1,0 +1,22 @@
+<template>
+  <div class="carousel-container">
+    <MDBCarousel :items="project.images" :controls="false" />
+  </div>
+</template>
+
+<script>
+import { MDBCarousel } from 'mdb-vue-ui-kit'
+import { projeto3 } from '@/api/projects.js'
+
+export default {
+  name: 'CarouselComponent',
+  components: {
+    MDBCarousel
+  },
+  data() {
+    return {
+      project: projeto3
+    }
+  }
+}
+</script>
