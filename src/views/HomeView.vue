@@ -10,6 +10,7 @@
       </MDBContainer>
     </main>
     <footer>
+      <ScrollTop />
       <FooterComponent />
     </footer>
   </div>
