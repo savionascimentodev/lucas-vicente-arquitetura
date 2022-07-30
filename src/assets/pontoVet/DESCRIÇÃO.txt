@@ -1,4 +1,15 @@
 Tipo de Projeto: Reforma
-Titulo: Internação Veterinária
+TITULO: Internação Veterinária
+TIPO: Reforma
+ANO: 2022
+LOCAL: Nova Mutum -MT
+ÁREA: 23,00m²
+STATUS: Em andamento
 
-Projeto de reforma de instalação hospitalar Veterinária
+DESCRIÇÃO: Um projeto de reforma de instalação hospitalar Veterinária, com intuito de melhorar o atendimento e a ambientação do paciente que venha a ser internado bem como a relação da empresa com o cliente. No projeto fora proposto a divisão do espaço original para segregar a farmacia á um ambinete em que o cliente não tenha acesso direto, bem como a melhoria climatica e estética do ambiente.
+
+DESCRIÇÃO IMAGENS:
+
+Imagem 01: A proposta de cores e troca dos revestimentos visa garantir conforto e ergonomia ao espaço, visto que os animais necesitam de pisos apropriados ao caminhar.
+Imagem 05: A parede verde da imagem foi adicionada para criar um espaço reservado a guarda e preparo das medicações, bem como armazenamento alimento dos paciente internados.
+Imagem 06: O móvel proposto tem o intuito de ser prático e simples, facilitanto o dia-a-dia do veterinario que esteja trabalhando no ambiente.
