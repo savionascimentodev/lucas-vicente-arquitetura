@@ -1,6 +1,15 @@
-Tipo de projeto: Arquitetura residencial
-Título: Casa V.M.
+TITULO: Casa V.M.
+TIPO: Arquitetura residencial
+ANO: 2022
+LOCAL: Nova Mutum - MT
+STATUS: Projeto piloto
 
-Uma casa contemporânea de alto padrão que aplica conceitos básicos de sustentabilidade;
+Descrição: Uma casa contemporânea de alto padrão que aplica conceitos básicos de sustentabilidade, com uma fachada unica que se aproveita do angulo do telhado em conjunto com os revestimentos para dar personalidade a casa;
+
+DESCRIÇÃO IMAGENS:
+
+Imagem 01: Uma fachada imponente que concilica cores e formas para dar personalidade ao projeto
+Imagem 06: Proposta de muro frontal que complementa o design da casa pensando na valorização do imóvel e na melhoria do entorno por meio do impacto que a arquitetura gera ao urbano.
+Imagem 08: A fachada do projeto é finalizada pelo pensar da iluminação que valoriza os angulos e retas da forma e os acabamentos empregados.
 
 P.s.: ESTE PROJETO PODE SER O QUE FICA ROLANDO NO CARROSSEL DO INICIO DO SITE
