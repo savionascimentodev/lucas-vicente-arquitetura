@@ -1,4 +1,14 @@
-Tipo de projeto: Arquitetura de interiores
-Título: Casa L.M.W.
+TITULO: Casa L.M.W.
+TIPO: Arquitetura de interiores
+ANO: 2022
+LOCAL: Nova Mutum - MT
+STATUS: Em andamento
 
-Projeto de interiores completo de gourmet intimista e elegante;
+Descrição: Projeto de ineteriores completo de gourmet intimista e elegante, com área de TV, Jantar e sinica, que se utiliza da dualidade entre as cores para gerar impacto e ambientar o espaço.
+
+DESCIÇÃO IMAGENS:
+
+Imagem 01: Uma cozinha que avança dentro do espaço e se coloca imponente, te convidando a sentar em ua das banquetas da bancada.
+Imagem 04: O espaço se organiza de modo que as atividades, mesmo que distintas se mostrem bem divididas dentro de um unico ambiente.
+Imagem 06: O estar deste gourmet, permite um espaço intimista e convidativo as crianças, enquanto os adultos conversam entorno da mesa ou da churrasqueira.
+Imagem 08: Os acabamentos escolhidos tme o intuito de dar personalidade ao espaço, em conjunto com a iluminação escolhida que valoriza o espaço.
