@@ -15,6 +15,7 @@ import 'primeicons/primeicons.css' //icons
 
 import PrimeVue from 'primevue/config';
 import Dialog from 'primevue/dialog';
+import ScrollTop from 'primevue/scrolltop';
 import Button from 'primevue/button';
 import Carousel from 'primevue/carousel';
 import Card from 'primevue/card';
@@ -26,6 +27,7 @@ app.use(VueViewer)
 app.use(MasonryWall)
 app.use(PrimeVue)
 app.component('DialogComponent', Dialog);
+app.component('ScrollTop', ScrollTop);
 app.component('ButtonComponent', Button);
 app.component('CarouselComponent', Carousel);
 app.component('CardComponent', Card);
