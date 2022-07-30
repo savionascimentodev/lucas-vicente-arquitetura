@@ -2,20 +2,44 @@
   <DialogComponent
     v-model:visible="isActiveModal"
     modal
-    :style="{ width: '80vw' }"
+    :style="{ width: '95vw' }"
   >
     <template #header>
       <h3>{{ teste.title }}</h3>
     </template>
-
     <MDBRow>
       <MDBCol>
         <MDBCarousel :items="teste.images" :controls="false" />
       </MDBCol>
       <MDBCol style="display: grid">
+        <div class="d-flex justify-content-center">
+          <h3>Ficha Técnica</h3>
+        </div>
         <div>
-          {{ teste.description }}
-          {{ teste.type }}
+          <div>
+            <b>Descrição:</b>
+            {{ teste.description }}
+          </div>
+          <div>
+            <b>Tipo:</b>
+            {{ teste.type }}
+          </div>
+          <div>
+            <b>Local:</b>
+            {{ teste.local }}
+          </div>
+          <div>
+            <b>Ano:</b>
+            {{ teste.year }}
+          </div>
+          <div>
+            <b>Área:</b>
+            {{ teste.area }}
+          </div>
+          <div>
+            <b>Status:</b>
+            {{ teste.status }}
+          </div>
         </div>
         <div class="d-flex align-items-end justify-content-end">
           <MDBBtn
@@ -24,6 +48,9 @@
             @click="$router.push(`/about/${teste.id}`)"
           >
             <MDBIcon icon="fas fa-plus-circle" />
+            Saiba Mais
+          </MDBBtn>
+          <MDBBtn outline="dark" @click="clickActiveSeeMore" rounded>
             Saiba Mais
           </MDBBtn>
         </div>
