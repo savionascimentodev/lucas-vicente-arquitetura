@@ -9,26 +9,28 @@
       </MDBBadge>
     </MDBContainer>
 
-    <MDBContainer>
-      <MDBTabs
-        v-model="activeTabId4"
-        vertical
-        style="background: #c0c0c0; color: white; border-radius: 8px"
-      >
-        <MDBTabNav tabsClasses="mb-3 text-center">
-          <MDBTabItem :wrap="true" tabId="ex4-1" href="ex4-1">
-            Português
-          </MDBTabItem>
-          <MDBTabItem :wrap="false" tabId="ex4-2" href="ex4-2">
-            Inglês
-          </MDBTabItem>
-        </MDBTabNav>
+    <MDBContainer class="px-0">
+      <div class="tabs-container">
+        <ul class="tafirst-list">
+          <li
+            v-for="(tab, index) in tabs"
+            :key="index"
+            :class="{ active: currentIndex == index }"
+            @click="currentIndex = index"
+          >
+            {{ tab }}
+          </li>
+        </ul>
 
-        <MDBTabContent>
-          <MDBTabPane tabId="ex4-1">{{ teste.description }}</MDBTabPane>
-          <MDBTabPane tabId="ex4-2">{{ teste.englishDescription }}</MDBTabPane>
-        </MDBTabContent>
-      </MDBTabs>
+        <div class="tab-content">
+          <div v-show="currentIndex == 0">
+            {{ teste.description }}
+          </div>
+          <div v-show="currentIndex == 1">
+            {{ teste.englishDescription }}
+          </div>
+        </div>
+      </div>
     </MDBContainer>
 
     <MDBContainer class="pb-5 pt-4 px-0">
@@ -36,10 +38,10 @@
         <MDBCol v-for="card in teste.images" :key="card.id">
           <MDBCard>
             <MDBCardImg :src="card.src" top alt="..." />
-            <MDBCardBody>
+            <MDBCardBody style="height: 13rem">
               <MDBCardTitle>{{ teste.title }}</MDBCardTitle>
               <MDBCardText>
-                {{ teste.description }}
+                {{ card.description }}
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
@@ -48,26 +50,20 @@
     </MDBContainer>
   </main>
   <footer>
+    <ScrollTop />
     <FooterComponent />
   </footer>
 </template>
 <script>
-// import teste from '@/api/projects.js'
-
 import { projects } from '@/api/projects.js'
 import NavbarComponent from '@/components/NavbarComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+
 import {
   MDBContainer,
   MDBCol,
   MDBRow,
   MDBBadge,
-  // MDBCardGroup,
-  MDBTabs,
-  MDBTabNav,
-  MDBTabItem,
-  MDBTabContent,
-  MDBTabPane,
   MDBCard,
   MDBCardBody,
   MDBCardTitle,
@@ -80,16 +76,10 @@ export default {
   components: {
     NavbarComponent,
     FooterComponent,
-    MDBTabs,
-    MDBTabNav,
-    MDBTabItem,
-    MDBTabContent,
-    MDBTabPane,
     MDBContainer,
     MDBBadge,
     MDBCol,
     MDBRow,
-    // MDBCardGroup,
     MDBCard,
     MDBCardBody,
     MDBCardTitle,
@@ -104,16 +94,14 @@ export default {
   },
   data() {
     return {
-      activeTabId4: true,
+      currentIndex: 0,
+      tabs: ['PORTUGUÊS', 'ENGLISH'],
       teste: {}
-      // oo:teste
     }
   },
   mounted() {
     this.teste = projects.find(({ id }) => id === Number(this.id))
 
-    console.log(this.teste)
-    console.log(projects)
     this.scrollToPosition()
     // this.$router.go()
     // this.$forceUpdate()
@@ -126,9 +114,52 @@ export default {
       // smoothScrollTo(0, to);
     }
   }
-  // beforeUpdate() {}
 }
 </script>
+<style lang="scss">
+.tabs-container {
+  font-family: sans-serif;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #d6d6d6;
+  border-radius: 8px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.4rem;
+    justify-content: left;
+
+    li {
+      width: 15%;
+      background: #212121;
+      color: #fff;
+      margin-right: 25px;
+      padding: 0.7rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.1s ease-in;
+
+      &:hover {
+        background: #212121;
+        color: #fff;
+        border-bottom: #d6d6d6 solid;
+      }
+    }
+    .active {
+      background-color: #292929;
+      color: #fff;
+      border-bottom: #d6d6d6 solid;
+      border-radius: 8px;
+    }
+  }
+  .tab-content {
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+}
+</style>
 <style scoped>
 main {
   background-image: linear-gradient(
