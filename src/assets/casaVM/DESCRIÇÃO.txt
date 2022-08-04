@@ -1,0 +1,14 @@
+TITULO: CASA V.M
+TIPO: ARQUITETURA RESIDENCIAL
+ANO: 2022
+LOCAL: NOVA MUTUM - MT
+ÁREA: 127,00m²
+STATUS: EM ANDAMENTO
+
+Descrição: Uma casa ampla e confortavel pra confraternizar em familia e receber os amigos em grande estilo. Com dois quartos simples, banheiro, uma suíte master com acesso ao jardim, sala de tv ampla, e sala de jantar e cozinha integrados ao gourmet, a casa prioriza os acessos inteligentes, criando fluxos dversos e interação no uso dos ambientes. Ademais o projeto pensa no furuto, deixando toda infraestrutura e preparações para implantação so sistema de energia solar.
+
+DESCRIÇÃO IMAGENS:
+
+Imagem 01: Uma fachada simples e elegante, com cores neutras e uma iluminação que valorizam os acabamentos escolhidos.
+Imagem 02: Proposta de muros que valoriza a fachada da casa e gera seguranaça para a casa e ao pedestre que transita pela calçada.
+Imagem 03: Finalizando a arquitetura desta casa temos na fachada posterior um deck que se torna extensão da área interna onde fica a churrasqueira.
