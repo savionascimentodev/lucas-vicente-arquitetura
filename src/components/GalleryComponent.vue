@@ -1,29 +1,17 @@
 <template>
-  <!-- Gallery -->
-  <!-- <div class="">
+  <div style="position: relative; overflow: hidden">
+    <div class="projects-title" :class="{ hovering: isHovering }">
+      {{ projectTitle }}
+      <hr />
+      {{ projectType }}
+    </div>
     <img
       :src="thumbnail.src"
-      class="w-100 shadow-1-strong rounded mb-4"
       alt="Thumbs gallery"
+      @mouseout="isHovering = false"
+      @mouseover="isHovering = true"
       @click="show"
     />
-  </div> -->
-  <div class="container">
-    <masonry-wall
-      :items="items"
-      :ssr-columns="3"
-      :column-width="150"
-      :gap="18"
-      rtl
-    >
-      <template #default="{ item, index }">
-        <div :style="{ height: `${index * 100}px` }">
-          <h1>{{ item.title }}</h1>
-          <span>{{ item.description }}</span>
-          <img :src="item.src" width="450" />
-        </div>
-      </template>
-    </masonry-wall>
   </div>
 </template>
 <script>
@@ -37,35 +25,19 @@ export default {
     thumbnail: {
       type: Object,
       required: true
+    },
+    projectTitle: {
+      type: String,
+      required: true
+    },
+    projectType: {
+      type: String,
+      required: true
     }
   },
   data() {
     return {
-      items: [
-        {
-          title: '0',
-          description: 'The first item.',
-          src: require('@/assets/casa.L.M.V/areaGourmet08.png')
-        },
-        {
-          title: '2',
-          description: 'The first item.',
-          src: require('@/assets/casa.L.M.V/areaGourmet07.png')
-        },
-        {
-          title: '3',
-          description: 'The first item.',
-          src: require('@/assets/casa.L.M.V/areaGourmet06.png')
-        },
-        {
-          title: '1',
-          description: 'The second item.'
-        }
-      ]
-      // : [
-      // require('@/assets/casa.L.M.V/areaGourmet08.png'),
-      // require('@/assets/casa.L.M.V/areaGourmet07.png')
-      // ]
+      isHovering: false
     }
   },
 
@@ -78,3 +50,50 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.hovering {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.projects-title {
+  font-family: Cambria, serif;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+
+  &:hover {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  // &::after {
+  //   content: '';
+  //   background: currentColor;
+  //   width: 50%;
+  //   height: 4px;
+  //   display: block;
+  //   margin: 0 auto;
+  // }
+  // &::before {
+  //   content: '';
+  //   background: currentColor;
+  //   width: 50%;
+  //   height: 4px;
+  //   display: block;
+  //   margin: 0.2rem auto;
+  // }
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  border: 1px solid #000;
+
+  &:hover {
+    filter: opacity(0.2);
+  }
+}
+</style>
