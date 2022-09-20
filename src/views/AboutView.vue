@@ -36,7 +36,7 @@
     </MDBContainer>
   </main>
   <footer>
-    <ScrollTop />
+    <ScrollTop style="background: #f85e0eff; color: #fff" />
     <FooterComponent />
   </footer>
 </template>
