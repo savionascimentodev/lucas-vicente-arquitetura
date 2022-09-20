@@ -1,9 +1,9 @@
 <template>
   <nav>
-    <NavbarComponent />
+    <NavBarComponentStyle2 />
   </nav>
   <main>
-    <MDBContainer class="pt-3 pb-0">
+    <MDBContainer class="pt-5 mt-5 pb-0">
       <MDBBadge class="about-projects-title p-2" badge="dark">
         <h3 class="m-0">
           {{ project.title }}
@@ -42,7 +42,7 @@
 </template>
 <script>
 import { projects } from '@/api/projects.js'
-import NavbarComponent from '@/components/NavbarComponent.vue'
+import NavBarComponentStyle2 from '@/components/NavBarComponentStyle2.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
 import {
@@ -60,7 +60,7 @@ import {
 export default {
   name: 'AboutView',
   components: {
-    NavbarComponent,
+    NavBarComponentStyle2,
     FooterComponent,
     MDBContainer,
     MDBBadge,
@@ -101,8 +101,8 @@ export default {
 .card-details-title {
   display: flex;
   justify-content: center;
-  background: rgb(65, 65, 65);
-  color: rgb(235, 231, 231);
+  background: #414141;
+  color: #fff;
   padding: 0.2rem;
 }
 
@@ -124,7 +124,7 @@ main {
   .about-projects-title {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto !important;
   }
 
@@ -140,6 +140,7 @@ main {
     font-size: 0.9rem !important;
   }
 }
+
 @media screen and (min-width: 480px) {
   .card-details-description {
     font-size: 1rem !important;
@@ -149,6 +150,7 @@ main {
     font-size: 1rem !important;
   }
 }
+
 @media screen and (min-width: 769px) {
   .about-projects-title {
     width: 40%;
@@ -167,6 +169,7 @@ main {
     font-size: 0.9rem !important;
   }
 }
+
 @media screen and (min-width: 1025px) {
   .about-projects-description {
     font-size: 1rem !important;
@@ -175,6 +178,7 @@ main {
     font-size: 1rem !important;
   }
 }
+
 @media screen and (min-width: 1201px) {
   .about-projects-description {
     font-size: 1.1rem !important;
