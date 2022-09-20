@@ -40,19 +40,19 @@ export const projects = [
       {
         id: 1,
         src: require("@/assets/pontoVet/pontoVet01.png"),
-        title: "",
+        title: "titulo 1",
         description: "A proposta de cores e troca dos revestimentos visa garantir conforto e ergonomia ao espaço, visto que os animais necesitam de pisos apropriados ao caminhar.",
       },
       {
         id: 4,
         src: require("@/assets/pontoVet/pontoVet04.png"),
-        title: "",
+        title: "titulo 2",
         description: "A parede verde da imagem foi adicionada para criar um espaço reservado a guarda e preparo das medicações, bem como armazenamento alimento dos paciente internados.",
       },
       {
         id: 5,
         src: require("@/assets/pontoVet/pontoVet05.png"),
-        title: "",
+        title: "titulo 3",
         description: "O móvel proposto tem o intuito de ser prático e simples, facilitanto o dia-a-dia do veterinario que esteja trabalhando no ambiente.",
       }
     ]
