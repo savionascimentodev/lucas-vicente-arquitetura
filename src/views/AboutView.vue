@@ -3,44 +3,30 @@
     <NavbarComponent />
   </nav>
   <main>
-    <MDBContainer class="py-3 px-0">
-      <MDBBadge class="p-2" badge="dark">
-        <h3 class="m-0">{{ teste.title }}</h3>
+    <MDBContainer class="pt-3 pb-0">
+      <MDBBadge class="about-projects-title p-2" badge="dark">
+        <h3 class="m-0">
+          {{ project.title }}
+        </h3>
       </MDBBadge>
-    </MDBContainer>
 
-    <MDBContainer class="px-0">
-      <div class="tabs-container">
-        <ul class="tafirst-list">
-          <li
-            v-for="(tab, index) in tabs"
-            :key="index"
-            :class="{ active: currentIndex == index }"
-            @click="currentIndex = index"
-          >
-            {{ tab }}
-          </li>
-        </ul>
-
-        <div class="tab-content">
-          <div v-show="currentIndex == 0">
-            {{ teste.description }}
-          </div>
-          <div v-show="currentIndex == 1">
-            {{ teste.englishDescription }}
-          </div>
-        </div>
+      <div class="about-projects-description-container">
+        <p class="about-projects-description mb-0">
+          {{ project.description }}
+        </p>
       </div>
     </MDBContainer>
 
-    <MDBContainer class="pb-5 pt-4 px-0">
-      <MDBRow :cols="['1', 'md-3']" class="g-4">
-        <MDBCol v-for="card in teste.images" :key="card.id">
+    <MDBContainer class="pb-5 px-0">
+      <MDBRow :cols="['1', 'md-3']" class="projects-cards-container g-4">
+        <MDBCol v-for="card in project.images" :key="card.id">
           <MDBCard>
-            <MDBCardImg :src="card.src" top alt="..." />
-            <MDBCardBody style="height: 13rem">
-              <MDBCardTitle>{{ teste.title }}</MDBCardTitle>
-              <MDBCardText>
+            <MDBCardImg :src="card.src" top />
+            <MDBCardBody class="card-details-body p-0">
+              <MDBCardTitle class="card-details-title mb-0">
+                {{ card.title }}
+              </MDBCardTitle>
+              <MDBCardText class="card-details-description p-3">
                 {{ card.description }}
               </MDBCardText>
             </MDBCardBody>
@@ -94,73 +80,32 @@ export default {
   },
   data() {
     return {
-      currentIndex: 0,
-      tabs: ['PORTUGUÊS', 'ENGLISH'],
-      teste: {}
+      project: {}
     }
   },
   mounted() {
-    this.teste = projects.find(({ id }) => id === Number(this.id))
-
-    this.scrollToPosition()
-    // this.$router.go()
-    // this.$forceUpdate()
-  },
-  methods: {
-    scrollToPosition() {
-      // Caso queira o nativo apenas
-      window.scrollTo(0, 1000)
-
-      // smoothScrollTo(0, to);
-    }
+    this.project = projects.find(({ id }) => id === Number(this.id))
   }
 }
 </script>
-<style lang="scss">
-.tabs-container {
+<style lang="scss" scoped>
+.about-projects-description-container {
   font-family: sans-serif;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: url('@/assets/mosaico2.png');
   color: #d6d6d6;
-  border-radius: 8px;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    padding-top: 1.4rem;
-    justify-content: left;
-
-    li {
-      width: 15%;
-      background: #212121;
-      color: #fff;
-      margin-right: 25px;
-      padding: 0.7rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.1s ease-in;
-
-      &:hover {
-        background: #212121;
-        color: #fff;
-        border-bottom: #d6d6d6 solid;
-      }
-    }
-    .active {
-      background-color: #292929;
-      color: #fff;
-      border-bottom: #d6d6d6 solid;
-      border-radius: 8px;
-    }
-  }
-  .tab-content {
-    color: #fff;
-    padding: 1rem 2rem;
-  }
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
 }
-</style>
-<style scoped>
+
+.card-details-title {
+  display: flex;
+  justify-content: center;
+  background: rgb(65, 65, 65);
+  color: rgb(235, 231, 231);
+  padding: 0.2rem;
+}
+
 main {
   background-image: linear-gradient(
     to top,
@@ -171,5 +116,71 @@ main {
     #d9d9d9 75%,
     #bcbcbc 100%
   );
+}
+
+// Medias ---
+
+@media screen and (min-width: 320px) {
+  .about-projects-title {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto !important;
+  }
+
+  .about-projects-description {
+    font-size: 0.9rem !important;
+  }
+
+  .projects-cards-container {
+    margin: 0 auto;
+  }
+
+  .card-details-description {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .card-details-description {
+    font-size: 1rem !important;
+  }
+
+  .about-projects-description {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .about-projects-title {
+    width: 40%;
+    margin: 0 !important;
+  }
+
+  .about-projects-description {
+    font-size: 0.9rem !important;
+  }
+
+  .card-details-body {
+    height: 15rem;
+  }
+
+  .card-details-description {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .about-projects-description {
+    font-size: 1rem !important;
+  }
+  .card-details-description {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .about-projects-description {
+    font-size: 1.1rem !important;
+  }
+  .card-details-description {
+    font-size: 1.1rem !important;
+  }
 }
 </style>
