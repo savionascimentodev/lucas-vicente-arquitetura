@@ -4052,10 +4052,10 @@ make-dir@^3.0.2, make-dir@^3.1.0:
   dependencies:
     semver "^6.0.0"
 
-mdb-vue-ui-kit@^1.14.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/mdb-vue-ui-kit/-/mdb-vue-ui-kit-1.14.0.tgz#4e240a99de8f1559b803bf178870bd8dd3835638"
-  integrity sha512-XO4gB2KA1/3ezkuG12SrTbhqrwGepe4gnap/XtVy0YI0MDlEfLCpZW9FVDx2Yoxf0cY15cKeWhXBAfXn7oimug==
+mdb-vue-ui-kit@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/mdb-vue-ui-kit/-/mdb-vue-ui-kit-3.0.0.tgz#78433308bb7e60cd61e961f07a6b1b3dc0124075"
+  integrity sha512-sSsDe5PQnJjr2BXWOk24SMnrFun+TidTnx8VtRX9Y1q2GJ/PFgrC4fQ829MeVRzQ+v1tL3FtWBRn53OYnnWrGA==
 
 mdn-data@2.0.14:
   version "2.0.14"
