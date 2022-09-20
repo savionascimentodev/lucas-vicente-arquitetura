@@ -1,7 +1,7 @@
 <template>
   <MDBContainer class="py-5 px-0">
-    <MDBRow>
-      <MDBCol>
+    <div class="teste-te">
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering1 }">
             {{ isHovering1 ? project1.title + ' - ' + project1.type : '' }}
@@ -16,7 +16,7 @@
           />
         </div>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering2 }">
             {{ isHovering2 ? project2.title + ' - ' + project2.type : '' }}
@@ -31,7 +31,7 @@
           />
         </div>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering3 }">
             {{ isHovering3 ? project3.title + ' - ' + project3.type : '' }}
@@ -46,9 +46,10 @@
           />
         </div>
       </MDBCol>
-    </MDBRow>
-    <MDBRow class="pt-4">
-      <MDBCol>
+    </div>
+
+    <div class="teste-te">
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering4 }">
             {{ isHovering4 ? project4.title + ' - ' + project4.type : '' }}
@@ -63,7 +64,7 @@
           />
         </div>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering5 }">
             {{ isHovering5 ? project5.title + ' - ' + project5.type : '' }}
@@ -78,7 +79,7 @@
           />
         </div>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering6 }">
             {{ isHovering6 ? project6.title + ' - ' + project6.type : '' }}
@@ -93,9 +94,9 @@
           />
         </div>
       </MDBCol>
-    </MDBRow>
-    <MDBRow class="pt-4">
-      <MDBCol>
+    </div>
+    <div class="teste-te">
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering7 }">
             {{ isHovering7 ? project7.title + ' - ' + project7.type : '' }}
@@ -111,7 +112,7 @@
           />
         </div>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering8 }">
             {{ isHovering8 ? project8.title + ' - ' + project8.type : '' }}
@@ -127,7 +128,7 @@
           />
         </div>
       </MDBCol>
-      <MDBCol>
+      <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering9 }">
             {{ isHovering9 ? project9.title + ' - ' + project9.type : '' }}
@@ -143,10 +144,14 @@
           />
         </div>
       </MDBCol>
-    </MDBRow>
+    </div>
 
     <div v-if="!activeSeeMore" class="d-flex justify-content-center pt-4">
-      <MDBBtn outline="dark" @click="clickActiveSeeMore" rounded>
+      <MDBBtn
+        style="background: #f85e0eff; color: #fff"
+        rounded
+        @click="clickActiveSeeMore"
+      >
         Veja mais
       </MDBBtn>
     </div>
@@ -208,19 +213,19 @@
         />
       </MDBCol>
     </MDBRow>
-
-    <!-- Modais -->
-    <ProjectsModal v-model:visible="exampleModal" :teste="project1" />
-    <ProjectsModal v-model:visible="exampleModal2" :teste="project2" />
-    <ProjectsModal v-model:visible="exampleModal3" :teste="project3" />
-    <ProjectsModal v-model:visible="exampleModal4" :teste="project4" />
-    <ProjectsModal v-model:visible="exampleModal5" :teste="project5" />
-    <ProjectsModal v-model:visible="exampleModal6" :teste="project6" />
-    <ProjectsModal v-model:visible="exampleModal7" :teste="project7" />
-    <ProjectsModal v-model:visible="exampleModal8" :teste="project8" />
-    <ProjectsModal v-model:visible="exampleModal9" :teste="project9" />
   </MDBContainer>
+  <!-- Modais -->
+  <ProjectsModal v-model:visible="exampleModal" :teste="project1" />
+  <ProjectsModal v-model:visible="exampleModal2" :teste="project2" />
+  <ProjectsModal v-model:visible="exampleModal3" :teste="project3" />
+  <ProjectsModal v-model:visible="exampleModal4" :teste="project4" />
+  <ProjectsModal v-model:visible="exampleModal5" :teste="project5" />
+  <ProjectsModal v-model:visible="exampleModal6" :teste="project6" />
+  <ProjectsModal v-model:visible="exampleModal7" :teste="project7" />
+  <ProjectsModal v-model:visible="exampleModal8" :teste="project8" />
+  <ProjectsModal v-model:visible="exampleModal9" :teste="project9" />
 </template>
+
 <script>
 import { projeto1 } from '@/api/projects.js'
 import { projeto2 } from '@/api/projects.js'
@@ -341,6 +346,42 @@ export default {
   transition: all 0.5s ease-in;
   &:hover {
     filter: opacity(0.1);
+  }
+}
+
+// Medias ---
+
+@media screen and (min-width: 320px) {
+  .teste-te {
+    display: block;
+    background: red;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .teste-te {
+    display: block;
+    background: blue;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .teste-te {
+    display: flex;
+    background: green;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .teste-te {
+    display: flex;
+    background: yellow;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .teste-te {
+    background: rebeccapurple;
+    display: flex;
   }
 }
 </style>
