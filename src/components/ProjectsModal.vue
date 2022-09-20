@@ -83,8 +83,7 @@ export default {
   },
   data() {
     return {
-      isActiveModal: false,
-      array: []
+      isActiveModal: false
     }
   },
   methods: {
