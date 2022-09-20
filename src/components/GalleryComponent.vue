@@ -1,9 +1,7 @@
 <template>
   <div style="position: relative; overflow: hidden">
-    <div class="projects-title" :class="{ hovering: isHovering }">
-      {{ projectTitle }}
-      <hr />
-      {{ projectType }}
+    <div :class="{ hovering: isHovering }">
+      {{ isHovering ? projectTitle + '-' + projectType : '' }}
     </div>
     <img
       :src="thumbnail.src"
@@ -52,38 +50,29 @@ export default {
 </script>
 <style lang="scss" scoped>
 .hovering {
+  position: absolute;
+  z-index: 233;
   pointer-events: none;
   cursor: not-allowed;
-}
-.projects-title {
   font-family: Cambria, serif;
-  position: absolute;
   bottom: 50%;
   text-align: center;
   width: 100%;
-  z-index: 1;
-
-  &:hover {
-    pointer-events: none;
-    cursor: not-allowed;
+  font-weight: 900;
+  color: #000;
+  bottom: 38%;
+  text-align: center;
+  width: 100%;
+  &::after {
+    content: '';
+    background: currentColor;
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin: 10px auto;
   }
-  // &::after {
-  //   content: '';
-  //   background: currentColor;
-  //   width: 50%;
-  //   height: 4px;
-  //   display: block;
-  //   margin: 0 auto;
-  // }
-  // &::before {
-  //   content: '';
-  //   background: currentColor;
-  //   width: 50%;
-  //   height: 4px;
-  //   display: block;
-  //   margin: 0.2rem auto;
-  // }
 }
+
 img {
   width: 100%;
   height: 100%;
