@@ -354,33 +354,33 @@ export default {
 @media screen and (min-width: 320px) {
   .teste-te {
     display: block;
-    background: red;
+    // background: red;
   }
 }
 
 @media screen and (min-width: 480px) {
   .teste-te {
     display: block;
-    background: blue;
+    // background: blue;
   }
 }
 
 @media screen and (min-width: 769px) {
   .teste-te {
     display: flex;
-    background: green;
+    // background: green;
   }
 }
 @media screen and (min-width: 1025px) {
   .teste-te {
     display: flex;
-    background: yellow;
+    // background: yellow;
   }
 }
 
 @media screen and (min-width: 1201px) {
   .teste-te {
-    background: rebeccapurple;
+    // background: rebeccapurple;
     display: flex;
   }
 }
