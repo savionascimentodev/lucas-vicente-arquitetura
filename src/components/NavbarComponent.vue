@@ -1,7 +1,9 @@
 <template>
+  {{ $t('hello') }}
+
   <MDBNavbar class="navigation" expand="lg" position="top" container>
-    <MDBNavbarBrand class="m-0" href="#">
-      <a class="navbar-brand" href="#!">
+    <MDBNavbarBrand class="m-0">
+      <a class="navbar-brand" href="/">
         <span style="color: #f85e0eff">LucasVicente</span>
         <span style="color: #f1f2f3">Arquitetura</span>
       </a>
@@ -14,15 +16,36 @@
       <MDBNavbarNav class="mb-lg-0" style="align-items: center">
         <MDBNavbarItem to="/" active> Home </MDBNavbarItem>
         <MDBNavbarItem to="/gallery"> Galeria </MDBNavbarItem>
-        <MDBNavbarItem
-          :href="whatsAppUrl"
-          style="display: flex"
-          target="_blank"
-        >
+        <MDBNavbarItem :href="whatsAppUrl" target="_blank">
           Contato
         </MDBNavbarItem>
       </MDBNavbarNav>
     </MDBCollapse>
+
+    <span @click="setLocale('pt_BR')">PT</span>
+    <span @click="setLocale('en')">EN</span>
+    <CascadeSelect
+      v-model="selectedCity"
+      :options="countries"
+      optionLabel="cname"
+      optionGroupLabel="name"
+      :optionGroupChildren="['states', 'cities']"
+      style="minwidth: 14rem"
+    >
+      <template #option="slotProps">
+        <div class="country-item">
+          <img
+            src="@/assets/flags/brazil.png"
+            width="24"
+            :class="'flag flag-' + slotProps.option.code.toLowerCase()"
+            v-if="slotProps.option.states"
+          />
+          <i class="pi pi-compass mr-2" v-if="slotProps.option.cities"></i>
+          <i class="pi pi-map-marker mr-2" v-if="slotProps.option.cname"></i>
+          <span>{{ slotProps.option.cname || slotProps.option.name }}</span>
+        </div>
+      </template>
+    </CascadeSelect>
   </MDBNavbar>
 </template>
 
@@ -48,6 +71,81 @@ export default {
   },
   data() {
     return {
+      selectedCity: null,
+      countries: [
+        {
+          name: 'Australia',
+          code: 'AU',
+          states: [
+            {
+              name: 'New South Wales',
+              cities: [
+                { cname: 'Sydney', code: 'A-SY' },
+                { cname: 'Newcastle', code: 'A-NE' },
+                { cname: 'Wollongong', code: 'A-WO' }
+              ]
+            },
+            {
+              name: 'Queensland',
+              cities: [
+                { cname: 'Brisbane', code: 'A-BR' },
+                { cname: 'Townsville', code: 'A-TO' }
+              ]
+            }
+          ]
+        },
+        {
+          name: 'Canada',
+          code: 'CA',
+          states: [
+            {
+              name: 'Quebec',
+              cities: [
+                { cname: 'Montreal', code: 'C-MO' },
+                { cname: 'Quebec City', code: 'C-QU' }
+              ]
+            },
+            {
+              name: 'Ontario',
+              cities: [
+                { cname: 'Ottawa', code: 'C-OT' },
+                { cname: 'Toronto', code: 'C-TO' }
+              ]
+            }
+          ]
+        },
+        {
+          name: 'United States',
+          code: 'US',
+          states: [
+            {
+              name: 'California',
+              cities: [
+                { cname: 'Los Angeles', code: 'US-LA' },
+                { cname: 'San Diego', code: 'US-SD' },
+                { cname: 'San Francisco', code: 'US-SF' }
+              ]
+            },
+            {
+              name: 'Florida',
+              cities: [
+                { cname: 'Jacksonville', code: 'US-JA' },
+                { cname: 'Miami', code: 'US-MI' },
+                { cname: 'Tampa', code: 'US-TA' },
+                { cname: 'Orlando', code: 'US-OR' }
+              ]
+            },
+            {
+              name: 'Texas',
+              cities: [
+                { cname: 'Austin', code: 'US-AU' },
+                { cname: 'Dallas', code: 'US-DA' },
+                { cname: 'Houston', code: 'US-HO' }
+              ]
+            }
+          ]
+        }
+      ],
       showMobileMenu: false,
       whatsAppUrl:
         'https://api.whatsapp.com/send?phone=+556599331027&text=Olá%20eu%20vi%20o%20seu%20site%20e%20fiquei%20interessado'
@@ -56,16 +154,22 @@ export default {
   methods: {
     showMenu() {
       this.showMobileMenu = !this.showMobileMenu
+    },
+    setLocale(locale) {
+      console.log(this.$i18n.locale)
+      this.$i18n.locale = locale
+      console.log('oi')
     }
   }
 }
 </script>
 <style lang="scss">
 i.fas.fa-bars.fa-1x {
-  color: coral !important;
+  color: coral;
 }
+
 .navigation {
-  background: rgba(0, 0, 0, 0.59);
+  background: #333;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);
@@ -99,8 +203,10 @@ i.fas.fa-bars.fa-1x {
 
 @media screen and (min-width: 320px) {
   ul.navbar-nav.me-auto.mb-lg-0 {
-    :nth-child(3) {
-      margin: 2px;
+    border-top: 1px solid #fff;
+
+    li {
+      border-bottom: 1px solid #fff;
     }
   }
   .navbar-brand {
