@@ -3,15 +3,14 @@
     <NavbarComponent />
   </nav>
   <main>
-    <!-- <MDBContainer class="py-5"> -->
     <div class="container-galeria">
       <div class="item-galeria w-2">
         <GalleryComponent
           class="teste"
-          :images="project3.images"
-          :thumbnail="project3.images[0]"
-          :project-title="project3.title"
-          :project-type="project3.type"
+          :images="project4.images"
+          :thumbnail="project4.images[0]"
+          :project-title="project4.title"
+          :project-type="project4.type"
         />
       </div>
       <div class="item-galeria h-1 w-2">
@@ -32,62 +31,61 @@
           :project-type="project1.type"
         />
       </div>
-      <div class="item-galeria h-2 w-2">
+      <div class="item-galeria h-1 w-2">
         <GalleryComponent
-          :images="project4.images"
+          :images="project3.images"
           class="teste"
-          :thumbnail="project4.images[0]"
-          :project-title="project4.title"
-          :project-type="project4.type"
+          :thumbnail="project3.images[21]"
+          :project-title="project3.title"
+          :project-type="project3.type"
         />
       </div>
       <div class="item-galeria h-1 w-2">
         <GalleryComponent
-          :images="project4.images"
+          :images="project6.images"
           class="teste"
-          :thumbnail="project4.images[0]"
-          :project-title="project4.title"
-          :project-type="project4.type"
+          :thumbnail="project6.images[0]"
+          :project-title="project6.title"
+          :project-type="project6.type"
         />
       </div>
       <div class="item-galeria w-2">
         <GalleryComponent
-          :images="project4.images"
+          :images="project5.images"
           class="teste"
-          :thumbnail="project4.images[0]"
-          :project-title="project4.title"
-          :project-type="project4.type"
+          :thumbnail="project5.images[3]"
+          :project-title="project5.title"
+          :project-type="project5.type"
         />
       </div>
+      <div class="item-galeria h-1 w-2">
+        <GalleryComponent
+          class="teste"
+          :images="project7.images"
+          :thumbnail="project7.images[0]"
+          :project-title="project7.title"
+          :project-type="project7.type"
+        />
+      </div>
+      <div class="item-galeria h-2 w-2">
+        <GalleryComponent
+          :images="project8.images"
+          class="teste"
+          :thumbnail="project8.images[0]"
+          :project-title="project8.title"
+          :project-type="project8.type"
+        />
+      </div>
+      <!-- <div class="item-galeria h-2 w-2">
+        <GalleryComponent
+          :images="project9.images"
+          class="teste"
+          :thumbnail="project9.images[21]"
+          :project-title="project9.title"
+          :project-type="project9.type"
+        />
+      </div> -->
     </div>
-    <!-- <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-        <GalleryComponent
-          :images="project1.images"
-          :thumbnail="project1.images[0]"
-        />
-
-        <GalleryComponent
-          :images="project1.images"
-          :thumbnail="project1.images[0]"
-        />
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <GalleryComponent
-          :images="project1.images"
-          :thumbnail="project1.images[0]"
-        />
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <GalleryComponent
-          :images="project1.images"
-          :thumbnail="project1.images[0]"
-        />
-      </div>
-    </div> -->
-    <!-- </MDBContainer> -->
   </main>
 
   <footer>
@@ -96,12 +94,15 @@
   </footer>
 </template>
 <script>
-// import { MDBContainer } from 'mdb-vue-ui-kit'
-
 import { project1 } from '@/api/gallery'
 import { project2 } from '@/api/gallery'
-import { projeto3 } from '@/api/projects.js'
-import { projeto4 } from '@/api/projects.js'
+import { project3 } from '@/api/gallery'
+import { project4 } from '@/api/gallery'
+import { project5 } from '@/api/gallery'
+import { project6 } from '@/api/gallery'
+import { project7 } from '@/api/gallery'
+import { project8 } from '@/api/gallery'
+// import { project9 } from '@/api/gallery'
 
 import GalleryComponent from '@/components/GalleryComponent.vue'
 import NavbarComponent from '@/components/NavbarComponent.vue'
@@ -118,8 +119,13 @@ export default {
     return {
       project1: project1,
       project2: project2,
-      project3: projeto3,
-      project4: projeto4
+      project3: project3,
+      project4: project4,
+      project5: project5,
+      project6: project6,
+      project7: project7,
+      project8: project8
+      // project9: project9
     }
   }
 }
@@ -139,16 +145,35 @@ export default {
   object-fit: cover;
 }
 
-.h-1 {
-  grid-row: span 2;
+/* Medias */
+
+@media screen and (min-width: 320px) {
+  .h-1 {
+    grid-row: span 1;
+  }
+  .h-2 {
+    grid-row: span 1;
+  }
+  .w-1 {
+    grid-column: span 1;
+  }
+  .w-2 {
+    grid-column: span 3;
+  }
 }
-.h-2 {
-  grid-row: span 3;
-}
-.w-1 {
-  grid-column: span 2;
-}
-.w-2 {
-  grid-column: span 3;
+
+@media screen and (min-width: 700px) {
+  .h-1 {
+    grid-row: span 2;
+  }
+  .h-2 {
+    grid-row: span 3;
+  }
+  .w-1 {
+    grid-column: span 2;
+  }
+  .w-2 {
+    grid-column: span 3;
+  }
 }
 </style>
