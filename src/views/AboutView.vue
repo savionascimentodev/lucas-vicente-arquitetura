@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <NavBarComponentStyle2 />
+    <NavBarComponent />
   </nav>
   <main>
     <MDBContainer class="pt-5 mt-5 pb-0">
@@ -42,7 +42,7 @@
 </template>
 <script>
 import { projects } from '@/api/projects.js'
-import NavBarComponentStyle2 from '@/components/NavBarComponentStyle2.vue'
+import NavBarComponent from '@/components/NavbarComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
 import {
@@ -60,7 +60,7 @@ import {
 export default {
   name: 'AboutView',
   components: {
-    NavBarComponentStyle2,
+    NavBarComponent,
     FooterComponent,
     MDBContainer,
     MDBBadge,
