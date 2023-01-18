@@ -88,7 +88,6 @@ export const projects = [
     title: "Escritório L.M.V",
     type: "Interiores Comercial",
     description: "Um projeto de interiores pensado para otimizar o espaço, em um ambiente onde anteriormente haviam apenas recepção e uma sala de atendimento com banheiro, o pensar correto do espaço, permitiu a criação de duas salas de atendimento, uma sala de reunião, copa, banheiro e recepção. Ambientes que atemdem a necessidade do cliente, pensando no futuro dos seus negócios, no conforto e praticidade do dia-a-dia do trabalho.",
-    englishDescription: "An interior project designed to optimize space, in an environment where previously there were only reception and a service room with bathroom, the correct thinking of the space, allowed the creation of two service rooms, a meeting room, pantry, bathroom and Front desk. Environments that meet the customer's needs, thinking about the future of their business, the comfort and practicality of day-to-day work.",
     images: [
       {
         id: 1,
@@ -198,7 +197,6 @@ export const projeto3 = {
   area: '--',
   status: 'Projeto piloto',
   description: "Uma casa contemporânea de alto padrão que aplica conceitos básicos de sustentabilidade, com uma fachada unica que se aproveita do angulo do telhado em conjunto com os revestimentos para dar personalidade a casa.",
-  englishDescription: "--",
   images: [
     {
       'id': 1,
@@ -263,7 +261,6 @@ export const projeto5 = {
   area: '129,00m²',
   status: 'Em Andamento',
   description: "Aqui temos uma obra em andamento, o cliente decidiu por alterar e ampliar o projeto inicial , com o incremento da área gourmet e da piscina na parte posterior do terreno criou-se um ambiente de vivência perfeito para a família que adora receber os amigos e confraternizar com aqueles que amam. Na fachada se optou por cores mais frias, mas que ainda causem impacto ao pedreste que passa pela calçada, deste modo foram empregados tons de azul escuro proximos aos tons de cinza, combinados com tons de bege, próximos aos marrons, alem de uma paisagismo marcante que ajuda a controlar a temperatura interna e melhorar o microclima da residência.",
-  englishDescription: "",
   images: [
     {
       id: 1,
@@ -300,7 +297,6 @@ export const projeto6 = {
   area: '108,00m²',
   status: 'Em Andamento',
   description: "Uma casa pequena e aconchegante, que ocupando apenas metade de um terreno de aproximadamente 310,00m², conta com dois quartos simples, um banheiro social, um escritório, sala de tv, jantar e cozinha integrados.",
-  englishDescription: "",
   images: [
     {
       id: 1,
@@ -329,7 +325,6 @@ export const projeto7 = {
   area: '37,00m²',
   status: 'Finalizado',
   description: "Projeto de arquitetura de interiores com foco em economia. Aqui o intuito da cliente era economizar na execução dos móveis, que tende a ser um etapa custosa da reforma, para tanto se utilizou do minimalismo, empregando poucos detalhes, pedras mais baratas, marcenaria com cores puras, e puxadores tipo cava, que economiza metais. O projeto se faz ainda prático, facilitando a limpeza e o uso do espaço no dia-a-dia. O projeto de iluminação, entra como complemento a beleza do espaço, criando ambientes aconchegantes e convidativos.",
-  englishDescription: "",
   images: [
     {
       id: 2,
@@ -358,7 +353,6 @@ export const projeto8 = {
   area: '327,60m²',
   status: 'Projeto Piloto',
   description: "Este é um projeto de estudo (não executado), encomendado por um cliente para que este pudesse entender a viabilidade de compra de um terreno para investimento futuro, trata-se de uma área total de 250,50m² de terreno, sobre os quais chegou-se a um numero máximo de 5 unidades, empregando o uso misto, sendo uma sala comercial de pequqeno porte e quatro apartamentos de 2 quartos com aproximadamente 55,00m² cada. Outras opçoes de projetos foram apresentadas ao cliente, de modo a demonstrar que mesmo a capacidade de ocupação do terreno ser alta, fator importante a se considerar na compra de um terreno e posterior investimento na construção civíl são os valores disponiveis para tal investimento, visto que edificações de grande porte exigem sistemas complementares (estruturas, elétrica, hidráulica etc.) mais eficientes, bem como licenças especiais junto aos orgãos responsáveis (prefeitura e corpo de bombeiros).",
-  englishDescription: "",
   images: [
     {
       id: 1,
@@ -391,7 +385,6 @@ export const projeto9 = {
   area: '127,00m²',
   status: 'Em Andamento',
   description: "Uma casa ampla e confortavel pra confraternizar em familia e receber os amigos em grande estilo. Com dois quartos simples, banheiro, uma suíte master com acesso ao jardim, sala de tv ampla, e sala de jantar e cozinha integrados ao gourmet, a casa prioriza os acessos inteligentes, criando fluxos dversos e interação no uso dos ambientes. Ademais o projeto pensa no furuto, deixando toda infraestrutura e preparações para implantação so sistema de energia solar.",
-  englishDescription: "",
   images: [
     {
       id: 1,
