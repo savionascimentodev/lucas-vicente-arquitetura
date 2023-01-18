@@ -160,7 +160,7 @@
     <MDBRow v-if="activeSeeMore" class="pt-4">
       <MDBCol>
         <img
-          src="@/assets/lucas_vicente-logo_white-150x386.png"
+          src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded"
           alt="projeto L.M.V"
           width="450"
@@ -169,7 +169,7 @@
       </MDBCol>
       <MDBCol>
         <img
-          src="@/assets/lucas_vicente-logo_white-150x386.png"
+          src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
           alt=""
           width="450"
@@ -178,7 +178,7 @@
       </MDBCol>
       <MDBCol>
         <img
-          src="@/assets/lucas_vicente-logo_white-150x386.png"
+          src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
           alt=""
           width="450"
@@ -188,7 +188,7 @@
     <MDBRow v-if="activeSeeMore" class="pt-4">
       <MDBCol>
         <img
-          src="@/assets/lucas_vicente-logo_white-150x386.png"
+          src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded"
           alt="projeto L.M.V"
           width="450"
@@ -197,7 +197,7 @@
       </MDBCol>
       <MDBCol>
         <img
-          src="@/assets/lucas_vicente-logo_white-150x386.png"
+          src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
           alt=""
           width="450"
@@ -206,7 +206,7 @@
       </MDBCol>
       <MDBCol>
         <img
-          src="@/assets/lucas_vicente-logo_white-150x386.png"
+          src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
           alt=""
           width="450"
