@@ -68,116 +68,128 @@ export const project2 = {
     }
   ]
 }
-export const project4 = {
-  id: 4,
+export const project3 = {
+  id: 3,
   title: "Escritório L.M.V",
   type: "Interiores Comercial",
   images: [
     {
-      'id': 1,
+      id: 1,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V01.png')
     },
     {
-      'id': 2,
+      id: 2,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V02.png')
-
     },
     {
-      'id': 3,
+      id: 3,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V03.png')
-
     },
     {
-      'id': 4,
+      id: 4,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V04.png')
-
     },
     {
-      'id': 5,
+      id: 5,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V05.png')
-
     },
     {
-      'id': 6,
+      id: 6,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V06.png')
     },
     {
-      'id': 7,
+      id: 7,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V07.png')
     },
     {
-      'id': 8,
+      id: 8,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V08.png')
     },
     {
-      'id': 9,
+      id: 9,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V09.png')
     },
     {
-      'id': 10,
+      id: 10,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V10.png')
     },
     {
-      'id': 11,
+      id: 11,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V11.png')
     },
     {
-      'id': 12,
+      id: 12,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V12.png')
     },
     {
-      'id': 13,
+      id: 13,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V13.png')
     },
     {
-      'id': 14,
+      id: 14,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V14.png')
     },
     {
-      'id': 15,
+      id: 15,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V15.png')
     },
     {
-      'id': 16,
+      id: 16,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V16.png')
     },
     {
-      'id': 17,
+      id: 17,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V17.png')
     },
     {
-      'id': 18,
+      id: 18,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V18.png')
     },
     {
-      'id': 19,
+      id: 19,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V19.png')
     },
     {
-      'id': 20,
+      id: 20,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V20.png')
     },
     {
-      'id': 21,
+      id: 21,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V21.png')
     },
     {
-      'id': 22,
+      id: 22,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V22.png')
     },
     {
-      'id': 23,
+      id: 23,
       src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V23.png')
     },
   ]
 }
-
-
-// Dados Errados
+export const project4 = {
+  id: 4,
+  title: "Casa V.M",
+  type: "Arquitetura residencial",
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/casaConceito/casaConceito01.png'),
+    },
+    {
+      id: 2,
+      src: require('@/assets/casaConceito/casaConceito02.png'),
+    },
+    {
+      id: 3,
+      src: require('@/assets/casaConceito/casaConceito04.png'),
+    }
+  ]
+}
 export const project5 = {
   id: 5,
-  title: "Escritório L.M.V",
-  type: "Interiores Comercial",
+  title: "Casa M.C",
+  type: "Arquiteura Residencial / Reforma",
   images: [
     {
       id: 1,
@@ -190,31 +202,48 @@ export const project5 = {
     {
       id: 3,
       src: require('@/assets/casaMC/casaMC03.png')
-
     },
     {
       id: 4,
       src: require('@/assets/casaMC/casaMC04.png')
-
     },
     {
       id: 5,
       src: require('@/assets/casaMC/casaMC05.png')
-
     },
     {
       id: 6,
       src: require('@/assets/casaMC/casaMC06.png')
-
     },
     {
       id: 7,
       src: require('@/assets/casaMC/casaMC07.png')
-
     }
   ]
 }
-
+export const project6 = {
+  id: 6,
+  title: "Casa R.J",
+  type: "Arquiteura Residencial",
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/casaRJ/casaRJ01.png')
+    },
+    {
+      id: 2,
+      src: require('@/assets/casaRJ/casaRJ02.png')
+    },
+    {
+      id: 3,
+      src: require('@/assets/casaRJ/casaRJ03.png')
+    },
+    {
+      id: 4,
+      src: require('@/assets/casaRJ/casaRJ04.png')
+    }
+  ]
+}
 export const project7 = {
   id: 7,
   title: "Casa L.V.S",
@@ -255,9 +284,10 @@ export const project7 = {
     {
       id: 9,
       src: require('@/assets/casaLVS/casaLVS09.png')
-    },
+    }
   ]
 }
+
 export const project8 = {
   id: 8,
   title: "Investindo na constução",
@@ -277,11 +307,40 @@ export const project8 = {
     },
     {
       id: 4,
-      src: require('@/assets/investindoConstrução/investindoConstrução05.png')
+      src: require('@/assets/investindoConstrução/investindoConstrução04.png')
     },
     {
       id: 5,
+      src: require('@/assets/investindoConstrução/investindoConstrução05.png')
+    },
+    {
+      id: 6,
       src: require('@/assets/investindoConstrução/investindoConstrução06.png')
     },
   ]
 }
+// export const projeto9 = {
+//   id: 9,
+//   title: "casa V.M",
+//   type: "Arquiteura Residencial",
+//   year: 2022,
+//   local: 'Nova Mutum - MT',
+//   area: '127,00m²',
+//   status: 'Em Andamento',
+//   images: [
+//     {
+//       id: 1,
+//       src: require('@/assets/casaVM/casaVM01.png')
+//     },
+//     {
+//       id: 2,
+//       src: require('@/assets/casaVM/casaVM02.png')
+//     },
+//     {
+//       id: 3,
+//       src: require('@/assets/casaVM/casaVM03.png')
+//     },
+
+//   ]
+// }
+
