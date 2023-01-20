@@ -1,11 +1,9 @@
 <template>
-  {{ $t('hello') }}
-
   <MDBNavbar class="navigation" expand="lg" position="top" container>
     <MDBNavbarBrand class="m-0">
       <a class="navbar-brand" href="/">
         <span style="color: #f85e0eff">LucasVicente</span>
-        <span style="color: #f1f2f3">Arquitetura</span>
+        <span style="color: #f1f2f3">{{ $t('nav.architecture') }}</span>
       </a>
     </MDBNavbarBrand>
     <MDBNavbarToggler
@@ -13,18 +11,32 @@
       target="#navbarSupportedContent"
     ></MDBNavbarToggler>
     <MDBCollapse v-model="showMobileMenu" id="navbarSupportedContent">
-      <MDBNavbarNav class="mb-lg-0" style="align-items: center">
-        <MDBNavbarItem to="/" active> Home </MDBNavbarItem>
-        <MDBNavbarItem to="/gallery"> Galeria </MDBNavbarItem>
+      <MDBNavbarNav class="mb-lg-0">
+        <MDBNavbarItem to="/"> Home </MDBNavbarItem>
+        <MDBNavbarItem to="/gallery"> {{ $t('nav.gallery') }} </MDBNavbarItem>
         <MDBNavbarItem :href="whatsAppUrl" target="_blank">
-          Contato
+          {{ $t('nav.contact') }}
         </MDBNavbarItem>
+
+        <!-- <MDBNavbarItem>
+        </MDBNavbarItem>
+        <MDBNavbarItem>
+        </MDBNavbarItem> -->
       </MDBNavbarNav>
+      <div class="languages">
+        <img src="@/assets/flags/brazil.png" width="18" height="18" alt="" />
+        <p @click="setLocale('pt_BR')" style="margin-right: 10px">PT</p>
+        <img
+          src="@/assets/flags/united-states.png"
+          width="18"
+          height="18"
+          alt=""
+        />
+        <p @click="setLocale('en')">EN</p>
+      </div>
     </MDBCollapse>
 
-    <span @click="setLocale('pt_BR')">PT</span>
-    <span @click="setLocale('en')">EN</span>
-    <CascadeSelect
+    <!-- <CascadeSelect
       v-model="selectedCity"
       :options="countries"
       optionLabel="cname"
@@ -45,7 +57,7 @@
           <span>{{ slotProps.option.cname || slotProps.option.name }}</span>
         </div>
       </template>
-    </CascadeSelect>
+    </CascadeSelect> -->
   </MDBNavbar>
 </template>
 
@@ -207,6 +219,25 @@ i.fas.fa-bars.fa-1x {
 
     li {
       border-bottom: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+
+    img {
+      margin-right: 5px;
+      margin-top: 3px;
+    }
+
+    p {
+      margin: 0;
+      color: #fff;
+      cursor: pointer;
     }
   }
   .navbar-brand {
@@ -217,6 +248,24 @@ i.fas.fa-bars.fa-1x {
 @media screen and (min-width: 480px) {
   .navbar-brand {
     font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .languages {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+
+    img {
+      // margin-right: 5px;
+      margin-top: 3px;
+    }
+
+    p {
+      margin-right: 0;
+      color: #fff;
+      cursor: pointer;
+    }
   }
 }
 </style>

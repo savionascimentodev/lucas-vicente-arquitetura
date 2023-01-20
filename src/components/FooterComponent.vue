@@ -1,6 +1,6 @@
 <template>
   <MDBFooter>
-    <div class="footer-container">
+    <div class="footer-container" style="background-color: #333">
       <MDBContainer class="text-center text-md-start pt-4">
         <MDBRow>
           <MDBCol md="4" class="footer-description mx-auto mb-md-0 mb-4 pb-3">
@@ -15,7 +15,9 @@
             md="4"
             class="footer-description mx-auto mb-md-0 mb-4 text-white"
           >
-            <h6 class="footer-title text-uppercase fw-bold mb-2">Contato</h6>
+            <h6 class="footer-title text-uppercase fw-bold mb-2">
+              {{ $t('footer.contact') }}
+            </h6>
             <p>
               <MDBIcon icon="envelope" class="me-3" />lucasvicentenn@gmail.com
             </p>
@@ -34,10 +36,10 @@
 
           <MDBCol md="3" class="footer-description mx-auto text-white">
             <h6 class="footer-title text-uppercase fw-bold mb-0">
-              Conselho de arquitetura
+              {{ $t('footer.architecturalCouncil') }}
             </h6>
             <h6 class="footer-title text-uppercase fw-bold mb-4">
-              e urbanismo
+              {{ $t('footer.urbanism') }}
             </h6>
             <p><MDBIcon icon="building" class="me-3" />A271919-3</p>
           </MDBCol>
@@ -71,14 +73,8 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-.footer-container {
-  background: #333333ff;
-}
-</style>
 <style lang="scss" scoped>
-// Medias ---
-
+/* Medias */
 @media screen and (min-width: 320px) {
   .logo {
     width: 60%;
@@ -87,8 +83,12 @@ export default {
     font-size: 1rem;
   }
 
+  p {
+    font-size: 1rem;
+  }
+
   .footer-description {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #f85e0eff;
   }
 }
 
@@ -99,11 +99,9 @@ export default {
   .footer-title {
     font-size: 1.3rem;
   }
-}
 
-@media screen and (min-width: 769px) {
-  .logo {
-    width: 90%;
+  p {
+    font-size: 1.2rem;
   }
 }
 
