@@ -41,7 +41,7 @@
   </footer>
 </template>
 <script>
-import { projects } from '@/api/projects.js'
+import { projects } from '@/api/about'
 import NavBarComponent from '@/components/NavbarComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
