@@ -11,7 +11,7 @@
       <MDBCol>
         <MDBCarousel
           :items="teste.images"
-          :controls="false"
+          :controls="true"
           fade
           class="carrocel-container shadow-4-strong"
         />

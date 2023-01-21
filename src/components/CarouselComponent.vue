@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-container">
-    <MDBCarousel :items="project.images" :controls="false" fade />
+    <MDBCarousel :items="project.images" :controls="true" fade />
   </div>
 </template>
 
