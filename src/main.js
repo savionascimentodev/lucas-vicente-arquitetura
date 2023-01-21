@@ -6,10 +6,12 @@ import router from './router';
 import { createI18n } from 'vue-i18n'
 import { pt_BR } from '@/locales/pt_BR'
 import { en } from '@/locales/en'
+import { es } from '@/locales/es'
 
 const languages = {
   pt_BR,
-  en
+  en,
+  es
 }
 
 const i18n = createI18n({
@@ -17,7 +19,6 @@ const i18n = createI18n({
   fallbackLocale: 'pt_BR',
   messages: languages
 })
-
 
 // V-viewer e MdbVue
 import 'mdb-vue-ui-kit/css/mdb.min.css';
@@ -32,11 +33,6 @@ import 'primeicons/primeicons.css' //icons
 import PrimeVue from 'primevue/config';
 import Dialog from 'primevue/dialog';
 import ScrollTop from 'primevue/scrolltop';
-import Button from 'primevue/button';
-import Carousel from 'primevue/carousel';
-import Card from 'primevue/card';
-import Divider from 'primevue/divider';
-import CascadeSelect from 'primevue/cascadeselect';
 
 const app = createApp(App);
 app.use(router);
@@ -44,12 +40,7 @@ app.use(VueViewer)
 app.use(PrimeVue)
 app.use(i18n)
 app.component('DialogComponent', Dialog);
-app.component('CascadeSelect ', CascadeSelect)
 app.component('ScrollTop', ScrollTop);
-app.component('ButtonComponent', Button);
-app.component('CarouselComponent', Carousel);
-app.component('CardComponent', Card);
-app.component('DividerComponent', Divider);
 
 app.mount('#app');
 
