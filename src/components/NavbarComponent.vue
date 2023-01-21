@@ -6,10 +6,12 @@
         <span style="color: #f1f2f3">{{ $t('nav.architecture') }}</span>
       </a>
     </MDBNavbarBrand>
+
     <MDBNavbarToggler
       @click="showMobileMenu = !showMobileMenu"
       target="#navbarSupportedContent"
     ></MDBNavbarToggler>
+
     <MDBCollapse v-model="showMobileMenu" id="navbarSupportedContent">
       <MDBNavbarNav class="mb-lg-0">
         <MDBNavbarItem to="/"> Home </MDBNavbarItem>
@@ -17,47 +19,46 @@
         <MDBNavbarItem :href="whatsAppUrl" target="_blank">
           {{ $t('nav.contact') }}
         </MDBNavbarItem>
-
-        <!-- <MDBNavbarItem>
-        </MDBNavbarItem>
-        <MDBNavbarItem>
-        </MDBNavbarItem> -->
       </MDBNavbarNav>
-      <div class="languages">
-        <img src="@/assets/flags/brazil.png" width="18" height="18" alt="" />
-        <p @click="setLocale('pt_BR')" style="margin-right: 10px">PT</p>
-        <img
-          src="@/assets/flags/united-states.png"
-          width="18"
-          height="18"
-          alt=""
-        />
-        <p @click="setLocale('en')">EN</p>
-      </div>
-    </MDBCollapse>
 
-    <!-- <CascadeSelect
-      v-model="selectedCity"
-      :options="countries"
-      optionLabel="cname"
-      optionGroupLabel="name"
-      :optionGroupChildren="['states', 'cities']"
-      style="minwidth: 14rem"
-    >
-      <template #option="slotProps">
-        <div class="country-item">
-          <img
-            src="@/assets/flags/brazil.png"
-            width="24"
-            :class="'flag flag-' + slotProps.option.code.toLowerCase()"
-            v-if="slotProps.option.states"
-          />
-          <i class="pi pi-compass mr-2" v-if="slotProps.option.cities"></i>
-          <i class="pi pi-map-marker mr-2" v-if="slotProps.option.cname"></i>
-          <span>{{ slotProps.option.cname || slotProps.option.name }}</span>
-        </div>
-      </template>
-    </CascadeSelect> -->
+      <MDBDropdown v-model="isDropdown" class="d-flex justify-content-center">
+        <MDBDropdownToggle @click="isDropdown = !isDropdown" color="dark">
+          {{ $t('nav.language') }}
+        </MDBDropdownToggle>
+        <MDBDropdownMenu dark>
+          <MDBDropdownItem tag="button" @click="setLocale('pt_BR')">
+            <img
+              src="@/assets/flags/brazil.png"
+              class="me-2"
+              width="24"
+              height="24"
+              alt="Brazil flag"
+            />
+            {{ $t('nav.portuguese') }}
+          </MDBDropdownItem>
+          <MDBDropdownItem tag="button" @click="setLocale('en')">
+            <img
+              src="@/assets/flags/united-states.png"
+              class="me-2"
+              width="24"
+              height="24"
+              alt="United States flag"
+            />
+            {{ $t('nav.english') }}
+          </MDBDropdownItem>
+          <MDBDropdownItem tag="button" @click="setLocale('es')">
+            <img
+              src="@/assets/flags/spain.png"
+              class="me-2"
+              width="24"
+              height="24"
+              alt="Spain flag"
+            />
+            {{ $t('nav.spanish') }}
+          </MDBDropdownItem>
+        </MDBDropdownMenu>
+      </MDBDropdown>
+    </MDBCollapse>
   </MDBNavbar>
 </template>
 
@@ -68,7 +69,11 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavbarItem,
-  MDBCollapse
+  MDBCollapse,
+  MDBDropdown,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
+  MDBDropdownItem
 } from 'mdb-vue-ui-kit'
 
 export default {
@@ -79,85 +84,15 @@ export default {
     MDBNavbarBrand,
     MDBNavbarNav,
     MDBNavbarItem,
-    MDBCollapse
+    MDBCollapse,
+    MDBDropdown,
+    MDBDropdownMenu,
+    MDBDropdownToggle,
+    MDBDropdownItem
   },
   data() {
     return {
-      selectedCity: null,
-      countries: [
-        {
-          name: 'Australia',
-          code: 'AU',
-          states: [
-            {
-              name: 'New South Wales',
-              cities: [
-                { cname: 'Sydney', code: 'A-SY' },
-                { cname: 'Newcastle', code: 'A-NE' },
-                { cname: 'Wollongong', code: 'A-WO' }
-              ]
-            },
-            {
-              name: 'Queensland',
-              cities: [
-                { cname: 'Brisbane', code: 'A-BR' },
-                { cname: 'Townsville', code: 'A-TO' }
-              ]
-            }
-          ]
-        },
-        {
-          name: 'Canada',
-          code: 'CA',
-          states: [
-            {
-              name: 'Quebec',
-              cities: [
-                { cname: 'Montreal', code: 'C-MO' },
-                { cname: 'Quebec City', code: 'C-QU' }
-              ]
-            },
-            {
-              name: 'Ontario',
-              cities: [
-                { cname: 'Ottawa', code: 'C-OT' },
-                { cname: 'Toronto', code: 'C-TO' }
-              ]
-            }
-          ]
-        },
-        {
-          name: 'United States',
-          code: 'US',
-          states: [
-            {
-              name: 'California',
-              cities: [
-                { cname: 'Los Angeles', code: 'US-LA' },
-                { cname: 'San Diego', code: 'US-SD' },
-                { cname: 'San Francisco', code: 'US-SF' }
-              ]
-            },
-            {
-              name: 'Florida',
-              cities: [
-                { cname: 'Jacksonville', code: 'US-JA' },
-                { cname: 'Miami', code: 'US-MI' },
-                { cname: 'Tampa', code: 'US-TA' },
-                { cname: 'Orlando', code: 'US-OR' }
-              ]
-            },
-            {
-              name: 'Texas',
-              cities: [
-                { cname: 'Austin', code: 'US-AU' },
-                { cname: 'Dallas', code: 'US-DA' },
-                { cname: 'Houston', code: 'US-HO' }
-              ]
-            }
-          ]
-        }
-      ],
+      isDropdown: true,
       showMobileMenu: false,
       whatsAppUrl:
         'https://api.whatsapp.com/send?phone=+556599331027&text=Olá%20eu%20vi%20o%20seu%20site%20e%20fiquei%20interessado'
@@ -168,9 +103,7 @@ export default {
       this.showMobileMenu = !this.showMobileMenu
     },
     setLocale(locale) {
-      console.log(this.$i18n.locale)
       this.$i18n.locale = locale
-      console.log('oi')
     }
   }
 }
@@ -179,43 +112,55 @@ export default {
 i.fas.fa-bars.fa-1x {
   color: coral;
 }
-
 .navigation {
   background: #333;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);
 }
-
 .nav-link {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.2rem;
-  color: white !important;
+  font-size: 1rem;
+  color: #fff !important;
   transition: 2s;
+
+  a {
+    padding-left: 0;
+  }
 
   &:hover {
     color: #f85e0eff !important;
     text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
   }
 }
-
 .navbar-collapse {
   flex-grow: 0 !important;
 }
 </style>
-
 <style lang="scss" scoped>
 .navbar-brand {
   font-size: 1.75rem;
   letter-spacing: 3px;
-  font-family: 'Josefin Sans', sans-serif;
+}
+.btn {
+  margin: 0;
 }
 
-// Medias ---
+/* Medias */
 
 @media screen and (min-width: 320px) {
+  button.btn.btn-dark.dropdown-toggle {
+    background: none !important;
+    border-radius: 0;
+    margin-top: 8px;
+    padding: 0;
+    color: #f85e0eff;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+
   ul.navbar-nav.me-auto.mb-lg-0 {
     border-top: 1px solid #fff;
+    font-size: 10px;
 
     li {
       border-bottom: 1px solid #fff;
@@ -224,22 +169,6 @@ i.fas.fa-bars.fa-1x {
     }
   }
 
-  .languages {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-
-    img {
-      margin-right: 5px;
-      margin-top: 3px;
-    }
-
-    p {
-      margin: 0;
-      color: #fff;
-      cursor: pointer;
-    }
-  }
   .navbar-brand {
     font-size: 1.1rem;
   }
@@ -249,23 +178,17 @@ i.fas.fa-bars.fa-1x {
   .navbar-brand {
     font-size: 1.7rem;
   }
+
+  button.btn.btn-dark.dropdown-toggle {
+    margin-top: 0;
+    padding: 8px 4px 9px 4px;
+  }
 }
-@media screen and (min-width: 769px) {
-  .languages {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
 
-    img {
-      // margin-right: 5px;
-      margin-top: 3px;
-    }
-
-    p {
-      margin-right: 0;
-      color: #fff;
-      cursor: pointer;
-    }
+@media screen and (min-width: 1025px) {
+  button.btn.btn-dark.dropdown-toggle {
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
   }
 }
 </style>
