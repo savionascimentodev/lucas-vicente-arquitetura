@@ -3,7 +3,11 @@ export const pt_BR = {
     home: 'Home',
     gallery: 'Galeria',
     contact: 'Contato',
-    architecture: 'Arquitetura'
+    architecture: 'Arquitetura',
+    language: 'Idioma',
+    portuguese: 'Português',
+    english: 'Inglês',
+    spanish: 'Espanhol'
   },
   footer: {
     contact: 'contato',

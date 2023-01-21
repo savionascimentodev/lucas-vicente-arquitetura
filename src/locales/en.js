@@ -3,7 +3,11 @@ export const en = {
     home: 'Home',
     gallery: 'Gallery',
     contact: 'Contact',
-    architecture: 'Architecture'
+    architecture: 'Architecture',
+    language: 'Language',
+    portuguese: 'Portuguese',
+    english: 'English',
+    spanish: 'Spanish'
   },
   footer: {
     contact: 'contact',
