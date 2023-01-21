@@ -35,6 +35,12 @@ export default {
   }
 }
 </script>
+
+<style>
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+</style>
 <style scoped>
 main {
   background-image: linear-gradient(
