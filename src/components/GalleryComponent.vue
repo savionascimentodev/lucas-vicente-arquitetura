@@ -1,7 +1,7 @@
 <template>
   <div style="position: relative; overflow: hidden">
     <div :class="{ hovering: isHovering }">
-      {{ isHovering ? projectTitle + '-' + projectType : '' }}
+      {{ isHovering ? projectTitle + ' - ' + projectType : '' }}
     </div>
     <img
       :src="thumbnail.src"
@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 .hovering {
   position: absolute;
-  z-index: 233;
+  z-index: 999;
   pointer-events: none;
   cursor: not-allowed;
   font-family: Cambria, serif;
