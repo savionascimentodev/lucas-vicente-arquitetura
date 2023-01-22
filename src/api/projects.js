@@ -12,19 +12,19 @@ export const projeto1 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/casa.L.M.V/areaGourmet01.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet01.png')
     },
     {
       id: 4,
-      src: require('@/assets/casa.L.M.V/areaGourmet04.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet04.png')
     },
     {
       id: 6,
-      src: require('@/assets/casa.L.M.V/areaGourmet06.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet06.png')
     },
     {
       id: 8,
-      src: require('@/assets/casa.L.M.V/areaGourmet08.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet08.png')
     },
   ]
 }
