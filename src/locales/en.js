@@ -9,6 +9,19 @@ export const en = {
     english: 'English',
     spanish: 'Spanish'
   },
+  main: {
+    seeMore: 'see more'
+  },
+  modal: {
+    datasheet: 'Datasheet',
+    description: 'Description',
+    type: 'Type',
+    local: 'Local',
+    year: 'Year',
+    area: 'Area',
+    status: 'Status',
+    knowMore: 'know more'
+  },
   footer: {
     contact: 'contact',
     architecturalCouncil: 'architectural council',
