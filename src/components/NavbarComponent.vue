@@ -185,7 +185,7 @@ i.fas.fa-bars.fa-1x {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 990px) {
   button.btn.btn-dark.dropdown-toggle {
     border-top: solid 1px #fff;
     border-bottom: solid 1px #fff;
