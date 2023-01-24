@@ -163,16 +163,6 @@ main {
   .projects-cards-container {
     margin: 0 auto;
   }
-
-  .card-details-description {
-    font-size: 0.9rem !important;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .card-details-description {
-    font-size: 1rem !important;
-  }
 }
 
 @media screen and (min-width: 769px) {
@@ -183,16 +173,6 @@ main {
 
   .card-details-body {
     height: 15rem;
-  }
-
-  .card-details-description {
-    font-size: 0.9rem !important;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .card-details-description {
-    font-size: 1rem !important;
   }
 }
 
