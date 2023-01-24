@@ -6,85 +6,134 @@
     <div class="container-galeria">
       <div class="item-galeria w-2">
         <GalleryComponent
-          class="teste"
-          :images="project4.images"
-          :thumbnail="project4.images[0]"
-          :project-title="project4.title"
-          :project-type="project4.type"
+          class="gallery-component"
+          :images="project3.images"
+          :thumbnail="project3.images[0]"
+          :project-title="project3.title"
+          :project-title-english="project3.titleEnglish"
+          :project-title-spanish="project3.titleSpanish"
+          :project-type="project3.type"
+          :project-type-english="project3.typeEnglish"
+          :project-type-spanish="project3.typeSpanish"
         />
       </div>
       <div class="item-galeria h-1 w-2">
         <GalleryComponent
-          class="teste"
+          class="gallery-component"
           :images="project2.images"
           :thumbnail="project2.images[0]"
           :project-title="project2.title"
+          :project-title-english="project2.titleEnglish"
+          :project-title-spanish="project2.titleSpanish"
           :project-type="project2.type"
+          :project-type-english="project2.typeEnglish"
+          :project-type-spanish="project2.typeSpanish"
         />
       </div>
       <div class="item-galeria h-2 w-2">
         <GalleryComponent
+          class="gallery-component"
           :images="project1.images"
-          class="teste"
           :thumbnail="project1.images[0]"
           :project-title="project1.title"
+          :project-title-english="project1.titleEnglish"
+          :project-title-spanish="project1.titleSpanish"
           :project-type="project1.type"
+          :project-type-english="project1.typeEnglish"
+          :project-type-spanish="project1.typeSpanish"
         />
       </div>
       <div class="item-galeria h-1 w-2">
         <GalleryComponent
-          :images="project3.images"
-          class="teste"
-          :thumbnail="project3.images[21]"
-          :project-title="project3.title"
-          :project-type="project3.type"
+          class="gallery-component"
+          :images="project4.images"
+          :thumbnail="project4.images[21]"
+          :project-title="project4.title"
+          :project-title-english="project4.titleEnglish"
+          :project-title-spanish="project4.titleSpanish"
+          :project-type="project4.type"
+          :project-type-english="project4.typeEnglish"
+          :project-type-spanish="project4.typeSpanish"
         />
       </div>
       <div class="item-galeria h-1 w-2">
         <GalleryComponent
+          class="gallery-component"
           :images="project6.images"
-          class="teste"
           :thumbnail="project6.images[0]"
           :project-title="project6.title"
+          :project-title-english="project6.titleEnglish"
+          :project-title-spanish="project6.titleSpanish"
           :project-type="project6.type"
+          :project-type-english="project6.typeEnglish"
+          :project-type-spanish="project6.typeSpanish"
         />
       </div>
       <div class="item-galeria w-2">
         <GalleryComponent
+          class="gallery-component"
           :images="project5.images"
-          class="teste"
           :thumbnail="project5.images[3]"
           :project-title="project5.title"
+          :project-title-english="project5.titleEnglish"
+          :project-title-spanish="project5.titleSpanish"
           :project-type="project5.type"
+          :project-type-english="project5.typeEnglish"
+          :project-type-spanish="project5.typeSpanish"
         />
       </div>
       <div class="item-galeria h-1 w-2">
         <GalleryComponent
-          class="teste"
+          class="gallery-component"
           :images="project7.images"
           :thumbnail="project7.images[0]"
           :project-title="project7.title"
+          :project-title-english="project7.titleEnglish"
+          :project-title-spanish="project7.titleSpanish"
           :project-type="project7.type"
+          :project-type-english="project7.typeEnglish"
+          :project-type-spanish="project7.typeSpanish"
         />
       </div>
       <div class="item-galeria h-2 w-2">
         <GalleryComponent
+          class="gallery-component"
           :images="project8.images"
-          class="teste"
           :thumbnail="project8.images[0]"
           :project-title="project8.title"
+          :project-title-english="project8.titleEnglish"
+          :project-title-spanish="project8.titleSpanish"
           :project-type="project8.type"
+          :project-type-english="project8.typeEnglish"
+          :project-type-spanish="project8.typeSpanish"
         />
       </div>
-      <!-- <div class="item-galeria h-2 w-2">
+      <div class="item-galeria h-2 w-2">
         <GalleryComponent
-          :images="project9.images"
-          class="teste"
-          :thumbnail="project9.images[21]"
-          :project-title="project9.title"
-          :project-type="project9.type"
+          class="gallery-component"
+          :images="project11.images"
+          :thumbnail="project11.images[21]"
+          :project-title="project11.title"
+          :project-title-english="project11.titleEnglish"
+          :project-title-spanish="project11.titleSpanish"
+          :project-type="project11.type"
+          :project-type-english="project11.typeEnglish"
+          :project-type-spanish="project11.typeSpanish"
         />
-      </div> -->
+      </div>
+      <div class="item-galeria w-2">
+        <GalleryComponent
+          class="gallery-component"
+          :images="project10.images"
+          :thumbnail="project10.images[1]"
+          :project-title="project10.title"
+          :project-title-english="project10.titleEnglish"
+          :project-title-spanish="project10.titleSpanish"
+          :project-type="project10.type"
+          :project-type-english="project10.typeEnglish"
+          :project-type-spanish="project10.typeSpanish"
+        />
+      </div>
     </div>
   </main>
 
@@ -103,6 +152,8 @@ import { project6 } from '@/api/gallery'
 import { project7 } from '@/api/gallery'
 import { project8 } from '@/api/gallery'
 // import { project9 } from '@/api/gallery'
+import { project10 } from '@/api/gallery'
+import { project11 } from '@/api/gallery'
 
 import GalleryComponent from '@/components/GalleryComponent.vue'
 import NavbarComponent from '@/components/NavbarComponent.vue'
@@ -113,7 +164,6 @@ export default {
     NavbarComponent,
     FooterComponent,
     GalleryComponent
-    // MDBContainer
   },
   data() {
     return {
@@ -124,8 +174,10 @@ export default {
       project5: project5,
       project6: project6,
       project7: project7,
-      project8: project8
+      project8: project8,
       // project9: project9
+      project10: project10,
+      project11: project11
     }
   }
 }
@@ -139,7 +191,7 @@ export default {
 .item-galeria {
   position: relative;
 }
-.teste {
+.gallery-component {
   width: 100%;
   height: 100%;
   object-fit: cover;
