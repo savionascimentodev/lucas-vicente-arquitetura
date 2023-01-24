@@ -1,7 +1,15 @@
 <template>
   <div style="position: relative; overflow: hidden">
     <div :class="{ hovering: isHovering }">
-      {{ isHovering ? projectTitle + ' - ' + projectType : '' }}
+      <p v-if="$i18n.locale === 'pt_BR'">
+        {{ isHovering ? projectTitle + ' - ' + projectType : '' }}
+      </p>
+      <p v-if="$i18n.locale === 'en'">
+        {{ isHovering ? projectTitleEnglish + ' - ' + projectTypeEnglish : '' }}
+      </p>
+      <p v-if="$i18n.locale === 'es'">
+        {{ isHovering ? projectTitleSpanish + ' - ' + projectTypeSpanish : '' }}
+      </p>
     </div>
     <img
       :src="thumbnail.src"
@@ -28,7 +36,23 @@ export default {
       type: String,
       required: true
     },
+    projectTitleEnglish: {
+      type: String,
+      required: true
+    },
+    projectTitleSpanish: {
+      type: String,
+      required: true
+    },
     projectType: {
+      type: String,
+      required: true
+    },
+    projectTypeEnglish: {
+      type: String,
+      required: true
+    },
+    projectTypeSpanish: {
       type: String,
       required: true
     }
