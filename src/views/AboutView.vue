@@ -150,7 +150,7 @@ main {
   );
 }
 
-// Medias ---
+/* Medias */
 
 @media screen and (min-width: 320px) {
   .about-projects-title {
