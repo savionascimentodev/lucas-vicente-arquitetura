@@ -6,3 +6,5 @@ LOCAL: NOVA MUTUM - MT
 STATUS: FINALIZADO
 
 Descrição: Um projeto de interiores pensado para otimozar o espaço, em um ambiente onde anteriormente haviam apenas recepção e uma sala de atendimento com banheiro, o pensar correto do espaço, permitiu a criação de duas salas de atendimento, uma sala de reunião, copa, banheiro e recepção. Ambientes que atemdem a necessidade do cliente, pensando no futuro dos seus negócios, no conforto e praticidade do dia-a-dia do trabalho.
+
+// ----- Falta as fotos, e os titulos - About --------
