@@ -3,16 +3,28 @@
     <NavBarComponent />
   </nav>
   <main>
-    <MDBContainer class="pt-5 mt-5 pb-0">
+    <MDBContainer class="pt-5 mt-5">
       <MDBBadge class="about-projects-title p-2" badge="dark">
-        <h3 class="m-0">
+        <h3 v-if="$i18n.locale === 'pt_BR'" class="mb-0">
           {{ project.title }}
+        </h3>
+        <h3 v-if="$i18n.locale === 'en'" class="mb-0">
+          {{ project.titleEnglish }}
+        </h3>
+        <h3 v-if="$i18n.locale === 'es'" class="mb-0">
+          {{ project.titleSpanish }}
         </h3>
       </MDBBadge>
 
       <div class="about-projects-description-container">
-        <p class="about-projects-description mb-0">
+        <p v-if="$i18n.locale === 'pt_BR'">
           {{ project.description }}
+        </p>
+        <p v-if="$i18n.locale === 'en'">
+          {{ project.descriptionEnglish }}
+        </p>
+        <p v-if="$i18n.locale === 'es'">
+          {{ project.descriptionSpanish }}
         </p>
       </div>
     </MDBContainer>
@@ -23,11 +35,27 @@
           <MDBCard>
             <MDBCardImg :src="card.src" top />
             <MDBCardBody class="card-details-body p-0">
-              <MDBCardTitle class="card-details-title mb-0">
-                {{ card.title }}
+              <MDBCardTitle v-if="card.title" class="card-details-title">
+                <p v-if="$i18n.locale === 'pt_BR'" class="mb-0">
+                  {{ card.title }}
+                </p>
+                <p v-if="$i18n.locale === 'en'" class="mb-0">
+                  {{ card.titleEnglish }}
+                </p>
+                <p v-if="$i18n.locale === 'es'" class="mb-0">
+                  {{ card.titleSpanish }}
+                </p>
               </MDBCardTitle>
               <MDBCardText class="card-details-description p-3">
-                {{ card.description }}
+                <p v-if="$i18n.locale === 'pt_BR'">
+                  {{ card.description }}
+                </p>
+                <p v-if="$i18n.locale === 'en'">
+                  {{ card.descriptionEnglish }}
+                </p>
+                <p v-if="$i18n.locale === 'es'">
+                  {{ card.descriptionSpanish }}
+                </p>
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>
@@ -96,7 +124,6 @@ export default {
       rgba(255, 255, 255, 0.4) 0%,
       rgba(0, 0, 0, 0.25) 200%
     );
-  background-blend-mode: multiply;
   color: #d6d6d6;
   margin-top: 1.5rem;
   padding: 1rem 2rem;
@@ -133,10 +160,6 @@ main {
     margin: 0 auto !important;
   }
 
-  .about-projects-description {
-    font-size: 0.9rem !important;
-  }
-
   .projects-cards-container {
     margin: 0 auto;
   }
@@ -150,20 +173,12 @@ main {
   .card-details-description {
     font-size: 1rem !important;
   }
-
-  .about-projects-description {
-    font-size: 1rem !important;
-  }
 }
 
 @media screen and (min-width: 769px) {
   .about-projects-title {
     width: 40%;
     margin: 0 !important;
-  }
-
-  .about-projects-description {
-    font-size: 0.9rem !important;
   }
 
   .card-details-body {
@@ -176,18 +191,12 @@ main {
 }
 
 @media screen and (min-width: 1025px) {
-  .about-projects-description {
-    font-size: 1rem !important;
-  }
   .card-details-description {
     font-size: 1rem !important;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .about-projects-description {
-    font-size: 1.1rem !important;
-  }
   .card-details-description {
     font-size: 1.1rem !important;
   }
