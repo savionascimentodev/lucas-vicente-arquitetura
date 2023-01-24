@@ -373,7 +373,6 @@ export const project10 = {
       id: 4,
       src: require('@/assets/InterioresQuartoEscritorio/04.png')
     },
-
   ]
 }
 export const project11 = {
