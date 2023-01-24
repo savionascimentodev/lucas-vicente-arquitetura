@@ -1,15 +1,31 @@
 <template>
   <MDBContainer class="py-5 px-0">
-    <div class="teste-te">
+    <div class="gallery-row">
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering1 }">
-            {{ isHovering1 ? project1.title + ' - ' + project1.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering1 ? project1.title + ' - ' + project1.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering1
+                  ? project1.titleEnglish + ' - ' + project1.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering1
+                  ? project1.titleSpanish + ' - ' + project1.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             class="rounded card-image"
-            src="@/assets/casa.L.M.V/areaGourmet01.png"
-            alt="casa L.M.V"
+            src="@/assets/casa.L.M.W/areaGourmet01.png"
+            alt="casa L.M.W"
             @mouseout="isHovering1 = false"
             @mouseover="isHovering1 = true"
             @click="showDescriptionModal1"
@@ -19,7 +35,23 @@
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering2 }">
-            {{ isHovering2 ? project2.title + ' - ' + project2.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering2 ? project2.title + ' - ' + project2.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering2
+                  ? project2.titleEnglish + ' - ' + project2.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering2
+                  ? project2.titleSpanish + ' - ' + project2.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/pontoVet/pontoVet01.png"
@@ -34,12 +66,28 @@
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering3 }">
-            {{ isHovering3 ? project3.title + ' - ' + project3.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering3 ? project3.title + ' - ' + project3.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering3
+                  ? project3.titleEnglish + ' - ' + project3.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering3
+                  ? project3.titleSpanish + ' - ' + project3.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/casaConceito/casaConceito01.png"
             class="rounded card-image"
-            alt="projeto Casa Conceito"
+            alt="Casa Conceito"
             @mouseout="isHovering3 = false"
             @mouseover="isHovering3 = true"
             @click="showDescriptionModal3"
@@ -48,16 +96,32 @@
       </MDBCol>
     </div>
 
-    <div class="teste-te">
+    <div class="gallery-row">
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering4 }">
-            {{ isHovering4 ? project4.title + ' - ' + project4.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering4 ? project4.title + ' - ' + project4.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering4
+                  ? project4.titleEnglish + ' - ' + project4.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering4
+                  ? project4.titleSpanish + ' - ' + project4.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/escritorio.L.M.V/escritorio.L.M.V01.png"
             class="rounded card-image"
-            alt="escritorio L.M.V"
+            alt="escritorio L.M.W"
             @mouseout="isHovering4 = false"
             @mouseover="isHovering4 = true"
             @click="showDescriptionModal4"
@@ -67,7 +131,23 @@
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering5 }">
-            {{ isHovering5 ? project5.title + ' - ' + project5.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering5 ? project5.title + ' - ' + project5.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering5
+                  ? project5.titleEnglish + ' - ' + project5.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering5
+                  ? project5.titleSpanish + ' - ' + project5.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/casaMC/casaMC04.png"
@@ -82,7 +162,23 @@
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering6 }">
-            {{ isHovering6 ? project6.title + ' - ' + project6.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering6 ? project6.title + ' - ' + project6.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering6
+                  ? project6.titleEnglish + ' - ' + project6.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering6
+                  ? project6.titleSpanish + ' - ' + project6.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/casaRJ/casaRJ03.png"
@@ -95,11 +191,28 @@
         </div>
       </MDBCol>
     </div>
-    <div class="teste-te">
+
+    <div class="gallery-row">
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering7 }">
-            {{ isHovering7 ? project7.title + ' - ' + project7.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering7 ? project7.title + ' - ' + project7.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering7
+                  ? project7.titleEnglish + ' - ' + project7.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering7
+                  ? project7.titleSpanish + ' - ' + project7.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/casaLVS/casaLVS01.png"
@@ -115,7 +228,23 @@
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering8 }">
-            {{ isHovering8 ? project8.title + ' - ' + project8.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering8 ? project8.title + ' - ' + project8.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering8
+                  ? project8.titleEnglish + ' - ' + project8.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering8
+                  ? project8.titleSpanish + ' - ' + project8.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/investindoConstrução/investindoConstrução01.png"
@@ -131,16 +260,32 @@
       <MDBCol class="mb-3 px-2">
         <div style="position: relative; overflow: hidden">
           <div :class="{ hovering: isHovering9 }">
-            {{ isHovering9 ? project9.title + ' - ' + project9.type : '' }}
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering9 ? project9.title + ' - ' + project9.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering9
+                  ? project9.titleEnglish + ' - ' + project9.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering9
+                  ? project9.titleSpanish + ' - ' + project9.typeSpanish
+                  : ''
+              }}
+            </span>
           </div>
           <img
             src="@/assets/casaVM/casaVM03.png"
             class="rounded card-image"
             width="450"
-            alt="Investindo na Construção"
+            alt="Casa V.M"
             @mouseout="isHovering9 = false"
             @mouseover="isHovering9 = true"
-            @click="showDescriptionModal8"
+            @click="showDescriptionModal9"
           />
         </div>
       </MDBCol>
@@ -152,90 +297,144 @@
         rounded
         @click="clickActiveSeeMore"
       >
-        Veja mais
+        {{ $t('main.seeMore') }}
       </MDBBtn>
     </div>
 
     <!-- Colunas com imagens 'fase de construção' com o v-if do botão -->
+    <div v-if="activeSeeMore" class="gallery-row">
+      <MDBCol class="mb-3 px-2">
+        <div style="position: relative; overflow: hidden">
+          <div :class="{ hovering: isHovering10 }">
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering10 ? project10.title + ' - ' + project10.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering10
+                  ? project10.titleEnglish + ' - ' + project10.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering10
+                  ? project10.titleSpanish + ' - ' + project10.typeSpanish
+                  : ''
+              }}
+            </span>
+          </div>
+          <img
+            src="@/assets/InterioresQuartoEscritorio/01.png"
+            class="rounded card-image"
+            width="450"
+            alt="Interiores - Quarto/Escritório"
+            @mouseout="isHovering10 = false"
+            @mouseover="isHovering10 = true"
+            @click="showDescriptionModal10"
+          />
+        </div>
+      </MDBCol>
+      <MDBCol class="mb-3 px-2">
+        <div style="position: relative; overflow: hidden">
+          <div :class="{ hovering: isHovering11 }">
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering11 ? project11.title + ' - ' + project11.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering11
+                  ? project11.titleEnglish + ' - ' + project11.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering11
+                  ? project11.titleSpanish + ' - ' + project11.typeSpanish
+                  : ''
+              }}
+            </span>
+          </div>
+          <img
+            src="@/assets/InterioresCasaMC/01.png"
+            class="rounded card-image"
+            width="450"
+            alt="Investindo na Construção"
+            @mouseout="isHovering11 = false"
+            @mouseover="isHovering11 = true"
+            @click="showDescriptionModal11"
+          />
+        </div>
+      </MDBCol>
+      <MDBCol class="mb-3 px-2">
+        <img
+          src="@/assets/logoEscuro.png"
+          class="hover-shadow img-fluid rounded"
+          alt="Em Breve"
+          width="450"
+        />
+      </MDBCol>
+    </div>
     <MDBRow v-if="activeSeeMore" class="pt-4">
       <MDBCol>
         <img
           src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded"
-          alt="projeto L.M.V"
+          alt="Em Breve"
           width="450"
-          @click="showDescriptionModal1"
         />
       </MDBCol>
       <MDBCol>
         <img
           src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
-          alt=""
+          alt="Em Breve"
           width="450"
-          @click="showDescriptionModal2"
         />
       </MDBCol>
       <MDBCol>
         <img
           src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
-          alt=""
-          width="450"
-        />
-      </MDBCol>
-    </MDBRow>
-    <MDBRow v-if="activeSeeMore" class="pt-4">
-      <MDBCol>
-        <img
-          src="@/assets/logoEscuro.png"
-          class="hover-shadow img-fluid rounded"
-          alt="projeto L.M.V"
-          width="450"
-          @click="showDescriptionModal1"
-        />
-      </MDBCol>
-      <MDBCol>
-        <img
-          src="@/assets/logoEscuro.png"
-          class="hover-shadow img-fluid rounded mr-5"
-          alt=""
-          width="450"
-          @click="showDescriptionModal2"
-        />
-      </MDBCol>
-      <MDBCol>
-        <img
-          src="@/assets/logoEscuro.png"
-          class="hover-shadow img-fluid rounded mr-5"
-          alt=""
+          alt="Em Breve"
           width="450"
         />
       </MDBCol>
     </MDBRow>
   </MDBContainer>
   <!-- Modais -->
-  <ProjectsModal v-model:visible="exampleModal" :teste="project1" />
-  <ProjectsModal v-model:visible="exampleModal2" :teste="project2" />
-  <ProjectsModal v-model:visible="exampleModal3" :teste="project3" />
-  <ProjectsModal v-model:visible="exampleModal4" :teste="project4" />
-  <ProjectsModal v-model:visible="exampleModal5" :teste="project5" />
-  <ProjectsModal v-model:visible="exampleModal6" :teste="project6" />
-  <ProjectsModal v-model:visible="exampleModal7" :teste="project7" />
-  <ProjectsModal v-model:visible="exampleModal8" :teste="project8" />
-  <ProjectsModal v-model:visible="exampleModal9" :teste="project9" />
+  <ProjectsModal v-model:visible="exampleModal1" :current-project="project1" />
+  <ProjectsModal v-model:visible="exampleModal2" :current-project="project2" />
+  <ProjectsModal v-model:visible="exampleModal3" :current-project="project3" />
+  <ProjectsModal v-model:visible="exampleModal4" :current-project="project4" />
+  <ProjectsModal v-model:visible="exampleModal5" :current-project="project5" />
+  <ProjectsModal v-model:visible="exampleModal6" :current-project="project6" />
+  <ProjectsModal v-model:visible="exampleModal7" :current-project="project7" />
+  <ProjectsModal v-model:visible="exampleModal8" :current-project="project8" />
+  <ProjectsModal v-model:visible="exampleModal9" :current-project="project9" />
+  <ProjectsModal
+    v-model:visible="exampleModal10"
+    :current-project="project10"
+  />
+  <ProjectsModal
+    v-model:visible="exampleModal11"
+    :current-project="project11"
+  />
 </template>
 
 <script>
-import { projeto1 } from '@/api/projects.js'
-import { projeto2 } from '@/api/projects.js'
-import { projeto3 } from '@/api/projects.js'
-import { projeto4 } from '@/api/projects.js'
-import { projeto5 } from '@/api/projects.js'
-import { projeto6 } from '@/api/projects.js'
-import { projeto7 } from '@/api/projects.js'
-import { projeto8 } from '@/api/projects.js'
-import { projeto9 } from '@/api/projects.js'
+import { project1 } from '@/api/projects.js'
+import { project2 } from '@/api/projects.js'
+import { project3 } from '@/api/projects.js'
+import { project4 } from '@/api/projects.js'
+import { project5 } from '@/api/projects.js'
+import { project6 } from '@/api/projects.js'
+import { project7 } from '@/api/projects.js'
+import { project8 } from '@/api/projects.js'
+import { project9 } from '@/api/projects.js'
+import { project10 } from '@/api/projects.js'
+import { project11 } from '@/api/projects.js'
 import ProjectsModal from '@/components/ProjectsModal.vue'
 
 import { MDBCol, MDBRow, MDBContainer, MDBBtn } from 'mdb-vue-ui-kit'
@@ -259,7 +458,9 @@ export default {
       isHovering7: false,
       isHovering8: false,
       isHovering9: false,
-      exampleModal: false,
+      isHovering10: false,
+      isHovering11: false,
+      exampleModal1: false,
       exampleModal2: false,
       exampleModal3: false,
       exampleModal4: false,
@@ -268,15 +469,19 @@ export default {
       exampleModal7: false,
       exampleModal8: false,
       exampleModal9: false,
-      project1: projeto1,
-      project2: projeto2,
-      project3: projeto3,
-      project4: projeto4,
-      project5: projeto5,
-      project6: projeto6,
-      project7: projeto7,
-      project8: projeto8,
-      project9: projeto9
+      exampleModal10: false,
+      exampleModal11: false,
+      project1: project1,
+      project2: project2,
+      project3: project3,
+      project4: project4,
+      project5: project5,
+      project6: project6,
+      project7: project7,
+      project8: project8,
+      project9: project9,
+      project10: project10,
+      project11: project11
     }
   },
   methods: {
@@ -284,7 +489,7 @@ export default {
       this.activeSeeMore = true
     },
     showDescriptionModal1() {
-      this.exampleModal = true
+      this.exampleModal1 = true
     },
     showDescriptionModal2() {
       this.exampleModal2 = true
@@ -306,6 +511,15 @@ export default {
     },
     showDescriptionModal8() {
       this.exampleModal8 = true
+    },
+    showDescriptionModal9() {
+      this.exampleModal9 = true
+    },
+    showDescriptionModal10() {
+      this.exampleModal10 = true
+    },
+    showDescriptionModal11() {
+      this.exampleModal11 = true
     }
   }
 }
@@ -314,7 +528,6 @@ export default {
 .modal-body {
   height: 200px;
 }
-
 .hovering {
   position: absolute;
   z-index: 2;
@@ -337,7 +550,6 @@ export default {
     margin: 10px auto;
   }
 }
-
 .card-image {
   width: 100%;
   height: 100%;
@@ -348,39 +560,14 @@ export default {
     filter: opacity(0.1);
   }
 }
-
-// Medias ---
-
+/* Medias */
 @media screen and (min-width: 320px) {
-  .teste-te {
+  .gallery-row {
     display: block;
-    // background: red;
   }
 }
-
-@media screen and (min-width: 480px) {
-  .teste-te {
-    display: block;
-    // background: blue;
-  }
-}
-
 @media screen and (min-width: 769px) {
-  .teste-te {
-    display: flex;
-    // background: green;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .teste-te {
-    display: flex;
-    // background: yellow;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .teste-te {
-    // background: rebeccapurple;
+  .gallery-row {
     display: flex;
   }
 }
