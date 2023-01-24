@@ -1,15 +1,15 @@
 <template>
   <div style="position: relative; overflow: hidden">
     <div :class="{ hovering: isHovering }">
-      <p v-if="$i18n.locale === 'pt_BR'">
+      <span v-if="$i18n.locale === 'pt_BR'">
         {{ isHovering ? projectTitle + ' - ' + projectType : '' }}
-      </p>
-      <p v-if="$i18n.locale === 'en'">
+      </span>
+      <span v-if="$i18n.locale === 'en'">
         {{ isHovering ? projectTitleEnglish + ' - ' + projectTypeEnglish : '' }}
-      </p>
-      <p v-if="$i18n.locale === 'es'">
+      </span>
+      <span v-if="$i18n.locale === 'es'">
         {{ isHovering ? projectTitleSpanish + ' - ' + projectTypeSpanish : '' }}
-      </p>
+      </span>
     </div>
     <img
       :src="thumbnail.src"
