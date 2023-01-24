@@ -6,7 +6,7 @@
 
 <script>
 import { MDBCarousel } from 'mdb-vue-ui-kit'
-import { projeto3 } from '@/api/projects.js'
+import { project3 } from '@/api/projects.js'
 
 export default {
   name: 'CarouselComponent',
@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      project: projeto3
+      project: project3
     }
   }
 }
