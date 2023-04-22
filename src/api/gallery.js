@@ -326,27 +326,27 @@ export const project8 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/investindoConstrução/investindoConstrução01.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao01.png')
     },
     {
       id: 2,
-      src: require('@/assets/investindoConstrução/investindoConstrução02.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao02.png')
     },
     {
       id: 3,
-      src: require('@/assets/investindoConstrução/investindoConstrução03.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao03.png')
     },
     {
       id: 4,
-      src: require('@/assets/investindoConstrução/investindoConstrução04.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao04.png')
     },
     {
       id: 5,
-      src: require('@/assets/investindoConstrução/investindoConstrução05.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao05.png')
     },
     {
       id: 6,
-      src: require('@/assets/investindoConstrução/investindoConstrução06.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao06.png')
     },
   ]
 }

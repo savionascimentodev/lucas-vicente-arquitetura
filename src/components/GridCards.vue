@@ -247,7 +247,7 @@
             </span>
           </div>
           <img
-            src="@/assets/investindoConstrução/investindoConstrução01.png"
+            src="@/assets/investindoConstrução/investindoConstrucao01.png"
             class="rounded card-image"
             width="450"
             alt="Investindo na Construção"
