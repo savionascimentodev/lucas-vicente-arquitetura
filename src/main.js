@@ -2,6 +2,9 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 
+import { createHead } from '@vueuse/head'
+const head = createHead()
+
 // Translate
 import { createI18n } from 'vue-i18n'
 import { pt_BR } from '@/locales/pt_BR'
@@ -35,7 +38,8 @@ import Dialog from 'primevue/dialog';
 import ScrollTop from 'primevue/scrolltop';
 
 const app = createApp(App);
-app.use(router);
+app.use(router)
+app.use(head)
 app.use(VueViewer)
 app.use(PrimeVue)
 app.use(i18n)

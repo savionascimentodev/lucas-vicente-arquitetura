@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vueuse/head": "^1.1.26",
     "@yeger/vue-masonry-wall": "^3.0.40",
     "core-js": "^3.8.3",
     "mdb-vue-ui-kit": "^3.0.0",
