@@ -6,6 +6,8 @@
           <MDBCol md="4" class="footer-description mx-auto mb-md-0 mb-4 pb-3">
             <img
               src="@/assets/logoClaro.png"
+              width="100"
+              height="100"
               class="logo hover-shadow img-fluid rounded"
               alt="logo Lucas Vicente"
             />
@@ -24,12 +26,12 @@
             <p><MDBIcon icon="phone" class="me-3" />(65) 9933-1027</p>
             <p>
               <a
-                href="https://www.instagram.com/lucasvicentenn"
+                href="https://www.instagram.com/lucasvicente.arq/"
                 target="_blank"
                 class="text-reset"
               >
                 <MDBIcon iconStyle="fab" class="me-3" icon="instagram" />
-                lucasvicentenn
+                lucasvicente.arq
               </a>
             </p>
           </MDBCol>
@@ -47,7 +49,7 @@
       </MDBContainer>
       <div class="text-center p-3 text-white">
         © 2021 Copyright:
-        <a class="text-reset fw-bold"> Lucas Vicente Arquitetura </a>
+        <span class="text-reset fw-bold">Lucas Vicente Arquitetura</span>
       </div>
     </div>
   </MDBFooter>
