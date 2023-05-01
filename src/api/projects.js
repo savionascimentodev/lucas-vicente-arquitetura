@@ -93,19 +93,19 @@ export const project3 = {
   descriptionSpanish: 'Una casa contemporánea de alto estándar que aplica conceptos básicos de sustentabilidad, con una fachada única que aprovecha el ángulo del techo junto con los revestimientos para darle personalidad a la casa.',
   images: [
     {
-      'id': 1,
+      id: 1,
       src: require('@/assets/casaConceito/casaConceito01.png')
     },
     {
-      'id': 2,
-      src: require('@/assets/casaConceito/casaConceito02.png')
+      id: 2,
+      src: require('@/assets/casaConceito/casaConceito02.png'),
     },
     {
-      'id': 3,
+      id: 3,
       src: require('@/assets/casaConceito/casaConceito03.png')
     },
     {
-      'id': 4,
+      id: 4,
       src: require('@/assets/casaConceito/casaConceito04.png')
     }
   ]
