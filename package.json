@@ -10,6 +10,7 @@
   "dependencies": {
     "@vueuse/head": "^1.1.26",
     "@yeger/vue-masonry-wall": "^3.0.40",
+    "compression-webpack-plugin": "^10.0.0",
     "core-js": "^3.8.3",
     "mdb-vue-ui-kit": "^3.0.0",
     "primeicons": "^5.0.0",
