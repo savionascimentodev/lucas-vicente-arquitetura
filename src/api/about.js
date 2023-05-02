@@ -53,7 +53,7 @@ export const projects = [
     images: [
       {
         id: 1,
-        src: require("@/assets/pontoVet/pontoVet01.png"),
+        src: require("@/assets/pontoVet/pontoVet01.webp"),
         title: "titulo 1",
         description: "A proposta de cores e troca dos revestimentos visa garantir conforto e ergonomia ao espaço, visto que os animais necesitam de pisos apropriados ao caminhar.",
         descriptionEnglish: 'The proposal of colors and change of coatings aims to guarantee comfort and ergonomics to the space, since the animals need appropriate floors when walking.',
@@ -61,7 +61,7 @@ export const projects = [
       },
       {
         id: 4,
-        src: require("@/assets/pontoVet/pontoVet04.png"),
+        src: require("@/assets/pontoVet/pontoVet04.webp"),
         title: "titulo 2",
         description: "A parede verde da imagem foi adicionada para criar um espaço reservado a guarda e preparo das medicações, bem como armazenamento alimento dos paciente internados.",
         descriptionEnglish: 'The green wall in the image was added to create a space reserved for the storage and preparation of medications, as well as food storage for hospitalized patients.',
@@ -69,7 +69,7 @@ export const projects = [
       },
       {
         id: 5,
-        src: require("@/assets/pontoVet/pontoVet05.png"),
+        src: require("@/assets/pontoVet/pontoVet05.webp"),
         title: "titulo 3",
         description: "O móvel proposto tem o intuito de ser prático e simples, facilitanto o dia-a-dia do veterinario que esteja trabalhando no ambiente.",
         descriptionEnglish: 'The proposed piece of furniture is intended to be practical and simple, facilitating the day-to-day routine of the veterinarian who is working in the environment.',
@@ -226,7 +226,7 @@ export const projects = [
         title: 'Algo simples',
         titleEnglish: 'Something simple',
         titleSpanish: 'Algo sencillo',
-        src: require('@/assets/investindoConstrução/investindoConstrucao02.png'),
+        src: require('@/assets/investindoConstrução/investindoConstrucao02.webp'),
         description: ' Nesta proposta, mais economica, temos um prédio de uso totalmente residencial, com três unidades habitacionais de 55,00 m².',
         descriptionEnglish: 'In this more economical proposal, we have a building for residential use, with three housing units of 55.00 m².',
         descriptionSpanish: 'En esta propuesta más económica, tenemos un edificio de uso residencial, con tres viviendas de 55,00 m².',
@@ -236,7 +236,7 @@ export const projects = [
         title: 'Extraindo o máximo',
         titleEnglish: 'Extracting the maximum',
         titleSpanish: 'Sacando el maximo',
-        src: require('@/assets/investindoConstrução/investindoConstrucao05.png'),
+        src: require('@/assets/investindoConstrução/investindoConstrucao05.webp'),
         description: 'Esta proposta demonstra o potencial máximo do terreno, onde se implantaria uma edificação de uso misto, comercial e residencial, com quatro apartamentos de 55,00m² e uma sala comercial de 30m² no terreo.',
         descriptionEnglish: 'This proposal demonstrates the maximum potential of the land, where a mixed-use commercial and residential building would be implemented, with four apartments of 55.00m² and a commercial room of 30m² on the ground floor.',
         descriptionSpanish: 'This proposal demonstrates the maximum potential of the land, where a mixed-use commercial and residential building would be implemented, with four apartments of 55.00m² and a commercial room of 30m² on the ground floor.',

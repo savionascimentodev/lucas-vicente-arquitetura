@@ -56,23 +56,23 @@ export const project2 = {
   images: [
     {
       id: 1,
-      src: require("@/assets/pontoVet/pontoVet01.png")
+      src: require("@/assets/pontoVet/pontoVet01.webp")
     },
     {
       id: 2,
-      src: require("@/assets/pontoVet/pontoVet02.png")
+      src: require("@/assets/pontoVet/pontoVet02.webp")
     },
     {
       id: 3,
-      src: require("@/assets/pontoVet/pontoVet03.png")
+      src: require("@/assets/pontoVet/pontoVet03.webp")
     },
     {
       id: 4,
-      src: require("@/assets/pontoVet/pontoVet04.png")
+      src: require("@/assets/pontoVet/pontoVet04.webp")
     },
     {
       id: 5,
-      src: require("@/assets/pontoVet/pontoVet05.png")
+      src: require("@/assets/pontoVet/pontoVet05.webp")
     }
   ]
 }
@@ -326,27 +326,27 @@ export const project8 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/investindoConstrução/investindoConstrucao01.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/investindoConstrução/investindoConstrucao02.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao02.webp')
     },
     {
       id: 3,
-      src: require('@/assets/investindoConstrução/investindoConstrucao03.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao03.webp')
     },
     {
       id: 4,
-      src: require('@/assets/investindoConstrução/investindoConstrucao04.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao04.webp')
     },
     {
       id: 5,
-      src: require('@/assets/investindoConstrução/investindoConstrucao05.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao05.webp')
     },
     {
       id: 6,
-      src: require('@/assets/investindoConstrução/investindoConstrucao06.png')
+      src: require('@/assets/investindoConstrução/investindoConstrucao06.webp')
     },
   ]
 }

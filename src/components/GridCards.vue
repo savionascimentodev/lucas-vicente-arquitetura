@@ -54,7 +54,7 @@
             </span>
           </div>
           <img
-            src="@/assets/pontoVet/pontoVet01.png"
+            src="@/assets/pontoVet/ThumbPontoVet.webp"
             class="rounded card-image"
             alt="projeto Pet"
             @mouseout="isHovering2 = false"
@@ -247,7 +247,7 @@
             </span>
           </div>
           <img
-            src="@/assets/investindoConstrução/investindoConstrucao01.png"
+            src="@/assets/investindoConstrução/ThumbInvestindoconstrucao.webp"
             class="rounded card-image"
             width="450"
             alt="Investindo na Construção"
