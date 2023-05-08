@@ -94,19 +94,19 @@ export const project3 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/casaConceito/casaConceito01.png')
+      src: require('@/assets/casaConceito/casaConceito01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/casaConceito/casaConceito02.png'),
+      src: require('@/assets/casaConceito/casaConceito02.webp'),
     },
     {
       id: 3,
-      src: require('@/assets/casaConceito/casaConceito03.png')
+      src: require('@/assets/casaConceito/casaConceito03.webp')
     },
     {
       id: 4,
-      src: require('@/assets/casaConceito/casaConceito04.png')
+      src: require('@/assets/casaConceito/casaConceito04.webp')
     }
   ]
 }
@@ -331,15 +331,15 @@ export const project9 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/casaVM/casaVM01.png')
+      src: require('@/assets/casaVM/casaVM01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/casaVM/casaVM02.png')
+      src: require('@/assets/casaVM/casaVM02.webp')
     },
     {
       id: 3,
-      src: require('@/assets/casaVM/casaVM03.png')
+      src: require('@/assets/casaVM/casaVM03.webp')
     },
   ]
 }
@@ -363,15 +363,15 @@ export const project10 = {
   images: [
     {
       id: 2,
-      src: require('@/assets/InterioresQuartoEscritorio/02.png')
+      src: require('@/assets/InterioresQuartoEscritorio/02.webp')
     },
     {
       id: 3,
-      src: require('@/assets/InterioresQuartoEscritorio/03.png')
+      src: require('@/assets/InterioresQuartoEscritorio/03.webp')
     },
     {
       id: 4,
-      src: require('@/assets/InterioresQuartoEscritorio/04.png')
+      src: require('@/assets/InterioresQuartoEscritorio/04.webp')
     },
   ]
 }

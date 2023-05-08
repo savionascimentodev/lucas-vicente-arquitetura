@@ -85,7 +85,7 @@
             </span>
           </div>
           <img
-            src="@/assets/casaConceito/casaConceito01.png"
+            src="@/assets/casaConceito/casaConceito01.webp"
             class="rounded card-image"
             alt="Casa Conceito"
             @mouseout="isHovering3 = false"
@@ -279,7 +279,7 @@
             </span>
           </div>
           <img
-            src="@/assets/casaVM/casaVM03.png"
+            src="@/assets/casaVM/casaVM03.webp"
             class="rounded card-image"
             width="450"
             alt="Casa V.M"
@@ -325,7 +325,7 @@
             </span>
           </div>
           <img
-            src="@/assets/InterioresQuartoEscritorio/01.png"
+            src="@/assets/InterioresQuartoEscritorio/01.webp"
             class="rounded card-image"
             width="450"
             alt="Interiores - Quarto/Escritório"

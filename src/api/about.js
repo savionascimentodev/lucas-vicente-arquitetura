@@ -89,7 +89,7 @@ export const projects = [
     images: [
       {
         id: 1,
-        src: require('@/assets/casaConceito/casaConceito01.png'),
+        src: require('@/assets/casaConceito/casaConceito01.webp'),
         title: "",
         description: "Uma fachada imponente que concilia cores e formas para dar personalidade ao projeto.",
         descriptionEnglish: 'An imposing facade that combines colors and shapes to give personality to the project.',
@@ -97,7 +97,7 @@ export const projects = [
       },
       {
         id: 2,
-        src: require('@/assets/casaConceito/casaConceito02.png'),
+        src: require('@/assets/casaConceito/casaConceito02.webp'),
         title: "",
         description: "Proposta de muro frontal que complementa o design da casa pensando na valorização do imóvel e na melhoria do entorno por meio do impacto que a arquitetura gera ao urbano.",
         descriptionEnglish: 'Proposal for a front wall that complements the design of the house, thinking about valuing the property and improving the surroundings through the impact that architecture generates on the urban environment.',
@@ -105,7 +105,7 @@ export const projects = [
       },
       {
         id: 4,
-        src: require('@/assets/casaConceito/casaConceito04.png'),
+        src: require('@/assets/casaConceito/casaConceito04.webp'),
         title: "",
         description: "A fachada do projeto é finalizada pelo pensar da iluminação que valoriza os angulos e retas da forma e os acabamentos empregados.",
         descriptionEnglish: "The project's façade is finalized by thinking about the lighting that values the angles and straight lines of the shape and the finishes used.",
@@ -268,7 +268,7 @@ export const projects = [
         title: 'Pouco espaço, muitos usos',
         titleEnglish: 'Little space, many uses',
         titleSpanish: 'Poco espacio, muchos usos',
-        src: require('@/assets/InterioresQuartoEscritorio/02.png'),
+        src: require('@/assets/InterioresQuartoEscritorio/02.webp'),
         description: 'Quartos com função dupla, precisam ter o espaço bem gerenciado, para não gerar conflito entre os usos.',
         descriptionEnglish: 'Rooms with a double function, need to have the space well managed, so as not to generate conflict between uses.',
         descriptionSpanish: 'Las habitaciones con doble función, necesitan tener bien gestionado el espacio, para no generar conflicto entre usos.',
@@ -278,7 +278,7 @@ export const projects = [
         title: 'Mentalmente segregados',
         titleEnglish: 'Mentally segregated',
         titleSpanish: 'Mentalmente segregado',
-        src: require('@/assets/InterioresQuartoEscritorio/03.png'),
+        src: require('@/assets/InterioresQuartoEscritorio/03.webp'),
         description: 'Enquanto de um lado temos o móveis que atendem um escritório, na outra parede temos os equipamentos de um quarto, permitindo separação entre os usos.',
         descriptionEnglish: 'While on one side we have the furniture that serves an office, on the other wall we have the equipment for a room, allowing separation between uses.',
         descriptionSpanish: 'Mientras que de un lado tenemos el mobiliario que da servicio a una oficina, en la otra pared tenemos el equipamiento de una habitación, permitiendo la separación entre usos.',
@@ -288,7 +288,7 @@ export const projects = [
         title: 'Arte de ser único',
         titleEnglish: 'Art of being unique',
         titleSpanish: 'Arte de ser unico',
-        src: require('@/assets/InterioresQuartoEscritorio/04.png'),
+        src: require('@/assets/InterioresQuartoEscritorio/04.webp'),
         description: 'O arremate do projeto se da pela escolha do forro, substituido por uma tela metalica, que em conjunto com a iluminação, criam uma sombra unica no espaço.',
         descriptionEnglish: 'The finish of the project is given by the choice of ceiling, replaced by a metallic screen, which together with the lighting, create a unique shadow in the space.',
         descriptionSpanish: 'El acabado del proyecto viene dado por la elección del techo, sustituido por una pantalla metálica, que junto con la iluminación, crean una sombra única en el espacio.',
