@@ -24,7 +24,7 @@
           </div>
           <img
             class="rounded card-image"
-            src="@/assets/casa.L.M.W/areaGourmet01.png"
+            src="@/assets/casa.L.M.W/areaGourmet01.webp"
             alt="casa L.M.W"
             @mouseout="isHovering1 = false"
             @mouseover="isHovering1 = true"
@@ -119,7 +119,7 @@
             </span>
           </div>
           <img
-            src="@/assets/escritorio.L.M.V/escritorio.L.M.V01.png"
+            src="@/assets/escritorio.L.M.V/escritorio.L.M.V01.webp"
             class="rounded card-image"
             alt="escritorio L.M.W"
             @mouseout="isHovering4 = false"
@@ -150,7 +150,7 @@
             </span>
           </div>
           <img
-            src="@/assets/casaMC/casaMC04.png"
+            src="@/assets/casaMC/casaMC04.webp"
             class="rounded card-image"
             alt="casa MC"
             @mouseout="isHovering5 = false"
@@ -181,7 +181,7 @@
             </span>
           </div>
           <img
-            src="@/assets/casaRJ/casaRJ03.png"
+            src="@/assets/casaRJ/casaRJ03.webp"
             class="rounded card-image"
             alt="casa RJ"
             @mouseout="isHovering6 = false"
@@ -215,7 +215,7 @@
             </span>
           </div>
           <img
-            src="@/assets/casaLVS/casaLVS01.png"
+            src="@/assets/casaLVS/casaLVS01.webp"
             class="rounded card-image"
             alt="casa LVS"
             width="450"
@@ -357,7 +357,7 @@
             </span>
           </div>
           <img
-            src="@/assets/InterioresCasaMC/01.png"
+            src="@/assets/InterioresCasaMC/01.webp"
             class="rounded card-image"
             width="450"
             alt="Investindo na Construção"
