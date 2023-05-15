@@ -18,7 +18,7 @@ export default {
       keywords: `arquitetura, interiores, projetos, obras, Arquitetura Residencial, galeira, Projeto piloto,Nova Mutum - MT, nova mutum, reforma`,
       ogTitle: `Lucas Vicente Arquitetura e Interiores`,
       ogDescription: `Site de Lucas Vicente Arquitetura e Interiores`,
-      ogImage: `https://lucasvicentearq.com.br/img/casaConceito01.20e2881f.png`,
+      ogImage: `https://lucasvicentearq.com.br/img/casaConceito01.20e2881f.webp`,
       ogUrl: `https://lucasvicentearq.com.br/`
     })
     useHead({

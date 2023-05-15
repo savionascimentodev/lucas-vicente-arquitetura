@@ -18,19 +18,19 @@ export const project1 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/casa.L.M.W/areaGourmet01.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet01.webp')
     },
     {
       id: 4,
-      src: require('@/assets/casa.L.M.W/areaGourmet04.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet04.webp')
     },
     {
       id: 6,
-      src: require('@/assets/casa.L.M.W/areaGourmet06.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet06.webp')
     },
     {
       id: 8,
-      src: require('@/assets/casa.L.M.W/areaGourmet08.png')
+      src: require('@/assets/casa.L.M.W/areaGourmet08.webp')
     },
   ]
 }
@@ -130,26 +130,26 @@ export const project4 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V01.png')
+      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V01.webp')
     },
     {
       id: 3,
-      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V03.png')
+      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V03.webp')
 
     },
     {
       id: 7,
-      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V07.png')
+      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V07.webp')
 
     },
     {
       id: 13,
-      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V13.png')
+      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V13.webp')
 
     },
     {
       id: 18,
-      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V18.png')
+      src: require('@/assets/escritorio.L.M.V/escritorio.L.M.V18.webp')
     },
   ]
 }
@@ -173,27 +173,27 @@ export const project5 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/casaMC/casaMC01.png')
+      src: require('@/assets/casaMC/casaMC01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/casaMC/casaMC02.png')
+      src: require('@/assets/casaMC/casaMC02.webp')
     },
     {
       id: 4,
-      src: require('@/assets/casaMC/casaMC04.png')
+      src: require('@/assets/casaMC/casaMC04.webp')
     },
     {
       id: 5,
-      src: require('@/assets/casaMC/casaMC05.png')
+      src: require('@/assets/casaMC/casaMC05.webp')
     },
     {
       id: 6,
-      src: require('@/assets/casaMC/casaMC06.png')
+      src: require('@/assets/casaMC/casaMC06.webp')
     },
     {
       id: 7,
-      src: require('@/assets/casaMC/casaMC07.png')
+      src: require('@/assets/casaMC/casaMC07.webp')
     }
   ]
 }
@@ -217,19 +217,19 @@ export const project6 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/casaRJ/casaRJ01.png')
+      src: require('@/assets/casaRJ/casaRJ01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/casaRJ/casaRJ02.png')
+      src: require('@/assets/casaRJ/casaRJ02.webp')
     },
     {
       id: 3,
-      src: require('@/assets/casaRJ/casaRJ03.png')
+      src: require('@/assets/casaRJ/casaRJ03.webp')
     },
     {
       id: 4,
-      src: require('@/assets/casaRJ/casaRJ04.png')
+      src: require('@/assets/casaRJ/casaRJ04.webp')
     }
   ]
 }
@@ -253,19 +253,19 @@ export const project7 = {
   images: [
     {
       id: 2,
-      src: require('@/assets/casaLVS/casaLVS02.png')
+      src: require('@/assets/casaLVS/casaLVS02.webp')
     },
     {
       id: 5,
-      src: require('@/assets/casaLVS/casaLVS05.png')
+      src: require('@/assets/casaLVS/casaLVS05.webp')
     },
     {
       id: 8,
-      src: require('@/assets/casaLVS/casaLVS08.png')
+      src: require('@/assets/casaLVS/casaLVS08.webp')
     },
     {
       id: 9,
-      src: require('@/assets/casaLVS/casaLVS09.png')
+      src: require('@/assets/casaLVS/casaLVS09.webp')
     }
   ]
 }
@@ -395,27 +395,27 @@ export const project11 = {
   images: [
     {
       id: 1,
-      src: require('@/assets/InterioresCasaMC/01.png')
+      src: require('@/assets/InterioresCasaMC/01.webp')
     },
     {
       id: 7,
-      src: require('@/assets/InterioresCasaMC/07.png')
+      src: require('@/assets/InterioresCasaMC/07.webp')
     },
     {
       id: 19,
-      src: require('@/assets/InterioresCasaMC/19.png')
+      src: require('@/assets/InterioresCasaMC/19.webp')
     },
     {
       id: 26,
-      src: require('@/assets/InterioresCasaMC/26.png')
+      src: require('@/assets/InterioresCasaMC/26.webp')
     },
     {
       id: 29,
-      src: require('@/assets/InterioresCasaMC/29.png')
+      src: require('@/assets/InterioresCasaMC/29.webp')
     },
     {
       id: 36,
-      src: require('@/assets/InterioresCasaMC/36.png')
+      src: require('@/assets/InterioresCasaMC/36.webp')
     },
 
   ]

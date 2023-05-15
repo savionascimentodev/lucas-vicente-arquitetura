@@ -11,7 +11,7 @@ export const projects = [
       {
         id: 1,
         title: '--',
-        src: require('@/assets/casa.L.M.W/areaGourmet01.png'),
+        src: require('@/assets/casa.L.M.W/areaGourmet01.webp'),
         description: 'Uma cozinha que avança dentro do espaço e se coloca imponente, te convidando a sentar em ua das banquetas da bancada.',
         descriptionEnglish: 'A kitchen that advances within the space and is imposing, inviting you to sit on one of the counter stools.',
         descriptionSpanish: 'Una cocina que avanza en el espacio y se impone, invitando a sentarse en uno de los taburetes de la encimera.'
@@ -19,7 +19,7 @@ export const projects = [
       {
         id: 4,
         title: '--',
-        src: require('@/assets/casa.L.M.W/areaGourmet04.png'),
+        src: require('@/assets/casa.L.M.W/areaGourmet04.webp'),
         description: 'O espaço se organiza de modo que as atividades, mesmo que distintas se mostrem bem divididas dentro de um unico ambiente.',
         descriptionEnglish: 'The space is organized in such a way that activities, even if distinct, are well divided within a single environment.',
         descriptionSpanish: 'El espacio está organizado de tal manera que las actividades, aunque distintas, estén bien divididas dentro de un solo ambiente.'
@@ -27,7 +27,7 @@ export const projects = [
       {
         id: 6,
         title: '--',
-        src: require('@/assets/casa.L.M.W/areaGourmet06.png'),
+        src: require('@/assets/casa.L.M.W/areaGourmet06.webp'),
         description: 'O estar deste gourmet, permite um espaço intimista e convidativo as crianças, enquanto os adultos conversam entorno da mesa ou da churrasqueira.',
         descriptionEnglish: "This gourmet's seating area provides an intimate and inviting space for children, while adults chat around the table or barbecue.",
         descriptionSpanish: 'El área de descanso de este gourmet brinda un espacio íntimo y acogedor para los niños, mientras que los adultos conversan alrededor de la mesa o hacen una barbacoa.'
@@ -35,7 +35,7 @@ export const projects = [
       {
         id: 8,
         title: '--',
-        src: require('@/assets/casa.L.M.W/areaGourmet08.png'),
+        src: require('@/assets/casa.L.M.W/areaGourmet08.webp'),
         description: 'Os acabamentos escolhidos tem o intuito de dar personalidade ao espaço, em conjunto com a iluminação escolhida que valoriza o espaço.',
         descriptionEnglish: 'The chosen finishes are intended to give personality to the space, together with the chosen lighting that enhances the space.',
         descriptionSpanish: 'Los acabados elegidos pretenden dar personalidad al espacio, junto con la iluminación elegida que realza el espacio.'
@@ -147,14 +147,14 @@ export const projects = [
     images: [
       {
         id: 2,
-        src: require('@/assets/casaRJ/casaRJ02.png'),
+        src: require('@/assets/casaRJ/casaRJ02.webp'),
         description: 'Uma casa com formas orgânicas, acabamentos simples e elegantes, cores marcantes e paisagismo que complementam os detalhes.',
         descriptionEnglish: 'A house with organic shapes, simple and elegant finishes, striking colors and landscaping that complement the details.',
         descriptionSpanish: 'Una casa con formas orgánicas, acabados simples y elegantes, colores llamativos y paisajismo que complementan los detalles.'
       },
       {
         id: 3,
-        src: require('@/assets/casaRJ/casaRJ03.png'),
+        src: require('@/assets/casaRJ/casaRJ03.webp'),
         description: 'Proposta de fechamento do terreno com permeabilidade visual, que gera segurança e elegância com um projeto de iluminação que valoriza a arquitetura',
         descriptionEnglish: 'Proposal for enclosing the land with visual permeability, which generates security and elegance with a lighting project that values architecture',
         descriptionSpanish: 'Propuesta de cerramiento del terreno con permeabilidad visual, que genera seguridad y elegancia con un proyecto de iluminación que valora la arquitectura'
@@ -175,7 +175,7 @@ export const projects = [
         title: 'Visualmente conectados',
         titleEnglish: 'Visually Connected',
         titleSpanish: 'Conectado Visualmente',
-        src: require('@/assets/casaLVS/casaLVS02.png'),
+        src: require('@/assets/casaLVS/casaLVS02.webp'),
         description: 'Divisórias vasadas permitem a limitação do espaço sem criar bloqueios visuais significatovos entre os ambiente, mantendo a sensação de integração entre eles.',
         descriptionEnglish: 'Hollowed partitions allow limiting space without creating significant visual blocks between the environments, maintaining the sense of integration between them.',
         descriptionSpanish: 'Los tabiques huecos permiten acotar el espacio sin crear bloques visuales significativos entre los ambientes, manteniendo el sentido de integración entre ellos.',
@@ -185,7 +185,7 @@ export const projects = [
         title: 'Moderno por si só',
         titleEnglish: 'Modern by itself',
         titleSpanish: 'Moderno por sí mismo',
-        src: require('@/assets/casaLVS/casaLVS05.png'),
+        src: require('@/assets/casaLVS/casaLVS05.webp'),
         description: ' A aplicação de móveis sem muitos adornos e com cores neutras ou frias, premite dar modernidade ao ambiente por meio do minimalismo.',
         descriptionEnglish: 'The application of furniture without much adornment and with neutral or cold colors, allows to modernize the environment through minimalism.',
         descriptionSpanish: 'La aplicación de muebles sin mucho adorno y con colores neutros o fríos, permite modernizar el ambiente a través del minimalismo.',
@@ -195,7 +195,7 @@ export const projects = [
         title: 'Contraponto',
         titleEnglish: 'Counterpoint',
         titleSpanish: 'Contrapunto',
-        src: require('@/assets/casaLVS/casaLVS08.png'),
+        src: require('@/assets/casaLVS/casaLVS08.webp'),
         description: 'Com a dualidade entre o vermelho aplicado a parede a o azul empregado no revestimento cria-se um jogo se sensações entre o restante do projeto que abusa das cores neutras.',
         descriptionEnglish: 'With the duality between the red applied to the wall and the blue used in the coating, a game of sensations is created between the rest of the project that abuses neutral colors',
         descriptionSpanish: 'Con la dualidad entre el rojo aplicado a la pared y el azul utilizado en el revestimiento, se crea un juego de sensaciones entre el resto del proyecto que abusa de los colores neutros',
@@ -205,7 +205,7 @@ export const projects = [
         title: 'Atenção aos custos',
         titleEnglish: 'Attention to costs',
         titleSpanish: 'Atención a los costos',
-        src: require('@/assets/casaLVS/casaLVS07.png'),
+        src: require('@/assets/casaLVS/casaLVS07.webp'),
         description: 'Móveis com numeros menores de portas e puxadores tipo cava levam a economia de metais nas marcenarias, o que permite a redução dos valores de execução.',
         descriptionEnglish: 'Furniture with smaller numbers of doors and hollow-type handles lead to savings in metals in carpentry, which allows for a reduction in execution values.',
         descriptionSpanish: 'Los muebles con menor número de puertas y tiradores de tipo hueco suponen un ahorro de metales en carpintería, lo que permite reducir los valores de ejecución.',
@@ -309,7 +309,7 @@ export const projects = [
         title: 'O espaço da família',
         titleEnglish: 'The family space',
         titleSpanish: 'El espacio familiar',
-        src: require('@/assets/InterioresCasaMC/01.png'),
+        src: require('@/assets/InterioresCasaMC/01.webp'),
         description: 'Uma sala de estar aconchegante com cores que geram conforto e acolhimento a familia.',
         descriptionEnglish: 'A cozy living room with colors that generate comfort and welcome to the family.',
         descriptionSpanish: 'Un salón acogedor con colores que generan confort y bienvenida a la familia.'
@@ -319,7 +319,7 @@ export const projects = [
         title: 'Praticidade no dia-a-dia',
         titleEnglish: 'Practicality in everyday life',
         titleSpanish: 'Practicidad en la vida cotidiana',
-        src: require('@/assets/InterioresCasaMC/07.png'),
+        src: require('@/assets/InterioresCasaMC/07.webp'),
         description: 'Uma cozinha organizada em corredor, pensada para ser prática e ergonomica, dando prioridade ao uso inteligente do espaço.',
         descriptionEnglish: 'A kitchen organized in a corridor, designed to be practical and ergonomic, prioritizing the intelligent use of space.',
         descriptionSpanish: 'Una cocina organizada en pasillo, diseñada para ser práctica y ergonómica, priorizando el uso inteligente del espacio.'
@@ -329,7 +329,7 @@ export const projects = [
         title: 'O conforto do lar',
         titleEnglish: 'The comfort of home',
         titleSpanish: 'La comodidad del hogar',
-        src: require('@/assets/InterioresCasaMC/19.png'),
+        src: require('@/assets/InterioresCasaMC/19.webp'),
         description: 'Quarto casal elegante e intimista com closet integrado e iluminação que valoriza os móveis e acabamentos do ambiente.',
         descriptionEnglish: 'Elegant and intimate double bedroom with built-in closet and lighting that enhances the furniture and finishes in the room.',
         descriptionSpanish: 'Dormitorio de matrimonio elegante e íntimo con armario empotrado e iluminación que realza el mobiliario y los acabados de la estancia.'
@@ -339,7 +339,7 @@ export const projects = [
         title: 'Os usos se relacionam',
         titleEnglish: 'The uses are related',
         titleSpanish: 'Los usos están relacionados',
-        src: require('@/assets/InterioresCasaMC/26.png'),
+        src: require('@/assets/InterioresCasaMC/26.webp'),
         description: 'Quarto com soluções simples para criar um ambiente de descanso e estudos harmonicos entre si.',
         descriptionEnglish: 'Room with simple solutions to create an environment of rest and harmonious studies.',
         descriptionSpanish: 'Habitación con soluciones sencillas para crear un ambiente de descanso y estudios armoniosos.'
@@ -349,7 +349,7 @@ export const projects = [
         title: 'O uso molda o espaço',
         titleEnglish: 'Use shapes space',
         titleSpanish: 'Usa el espacio de formas',
-        src: require('@/assets/InterioresCasaMC/29.png'),
+        src: require('@/assets/InterioresCasaMC/29.webp'),
         description: 'Quarto aconchegante, com mesa ampla de estudos que funciona como penteadeira quando necessario.',
         descriptionEnglish: 'Cozy room with a large study table that doubles as a dressing table when needed.',
         descriptionSpanish: 'Acogedora habitación con una gran mesa de estudio que se dobla como tocador cuando es necesario.'
@@ -359,7 +359,7 @@ export const projects = [
         title: 'Receber é arte',
         titleEnglish: 'Receiving is art',
         titleSpanish: 'Recibir es arte',
-        src: require('@/assets/InterioresCasaMC/36.png'),
+        src: require('@/assets/InterioresCasaMC/36.webp'),
         description: 'Um gourmet perfeito precisa de espaço para receber os amigos e um bom gerenciamento dos equipamentos, sendo finalizado com acabamentos e iluminação que enchem os olhos.',
         descriptionEnglish: 'A perfect gourmet needs space to receive friends and good equipment management, complete with eye-catching finishes and lighting.',
         descriptionSpanish: 'Un gourmet perfecto necesita espacio para recibir amigos y una buena gestión del equipo, con acabados llamativos e iluminación.'
