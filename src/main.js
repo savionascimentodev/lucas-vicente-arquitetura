@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 
+// Meta
 import { createHead } from '@vueuse/head'
 const head = createHead()
 
@@ -28,11 +29,10 @@ import 'mdb-vue-ui-kit/css/mdb.min.css';
 import 'viewerjs/dist/viewer.css'
 import VueViewer from 'v-viewer'
 
-
+// PrimeVue
 import 'primevue/resources/themes/saga-blue/theme.css' //theme
 import 'primevue/resources/primevue.min.css' //core css
 import 'primeicons/primeicons.css' //icons
-
 import PrimeVue from 'primevue/config';
 import Dialog from 'primevue/dialog';
 import ScrollTop from 'primevue/scrolltop';
