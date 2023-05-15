@@ -533,7 +533,7 @@ export const project11 = {
     },
     {
       id: 28.1,
-      src: require('@/assets/InterioresCasaMC/28.1.webp')
+      src: require('@/assets/InterioresCasaMC/28-1.webp')
     },
     {
       id: 29,
