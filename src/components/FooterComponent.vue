@@ -24,7 +24,7 @@
               <MDBIcon icon="envelope" class="me-3" />lucasvicentenn@gmail.com
             </p>
             <p><MDBIcon icon="phone" class="me-3" />(65) 9933-1027</p>
-            <p>
+            <p class="instagram">
               <a
                 href="https://www.instagram.com/lucasvicente.arq/"
                 target="_blank"
@@ -81,6 +81,10 @@ export default {
   .logo {
     width: 60%;
   }
+
+  .instagram {
+    color: #f85e0eff;
+  }
   .footer-title {
     font-size: 1rem;
   }
@@ -104,6 +108,15 @@ export default {
 
   p {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .instagram {
+    color: #fff;
+  }
+  .logo {
+    width: 100%;
   }
 }
 

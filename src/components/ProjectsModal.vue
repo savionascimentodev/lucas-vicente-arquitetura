@@ -20,7 +20,7 @@
         <MDBCarousel
           class="carrocel-container shadow-4-strong"
           :items="currentProject.images"
-          :controls="false"
+          :controls="true"
           fade
         />
       </MDBCol>

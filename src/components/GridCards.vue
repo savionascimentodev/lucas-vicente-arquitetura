@@ -279,7 +279,7 @@
             </span>
           </div>
           <img
-            src="@/assets/casaVM/casaVM03.webp"
+            src="@/assets/09-Casa416/casa416-01.webp"
             class="rounded card-image"
             width="450"
             alt="Casa V.M"

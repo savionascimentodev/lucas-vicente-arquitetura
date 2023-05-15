@@ -76,9 +76,9 @@ export const project2 = {
 }
 export const project3 = {
   id: 3,
-  title: "Casa V.M",
-  titleEnglish: 'House V.M',
-  titleSpanish: 'Casa V.M',
+  title: "Casa Conceito",
+  titleEnglish: 'House Concept',
+  titleSpanish: 'Casa Concepto',
   type: "Arquitetura Residencial",
   typeEnglish: 'Residential Architecture',
   typeSpanish: 'Arquitectura Residencial',
@@ -199,18 +199,18 @@ export const project5 = {
 }
 export const project6 = {
   id: 6,
-  title: "Casa R.J",
-  titleEnglish: "House R.J",
-  titleSpanish: "Casa R.J",
+  title: "Casa Pequena",
+  titleEnglish: "Small House",
+  titleSpanish: "Casa Pequeña",
   type: "Arquitetura Residencial",
   typeEnglish: 'Residential Architecture',
   typeSpanish: 'Arquitectura Residencial',
   year: 2022,
   local: 'Nova Mutum - MT',
   area: '108,00m²',
-  status: 'Em Andamento',
-  statusEnglish: 'In progress',
-  statusSpanish: 'En proceso',
+  status: 'Projeto Piloto',
+  statusEnglish: 'Pilot Project',
+  statusSpanish: 'Proyecto Piloto',
   description: "Uma casa pequena e aconchegante, que ocupando apenas metade de um terreno de aproximadamente 310,00m², conta com dois quartos simples, um banheiro social, um escritório, sala de tv, jantar e cozinha integrados.",
   descriptionEnglish: 'A small and cozy house, occupying only half of a land of approximately 310.00m², it has two simple bedrooms, a guest bathroom, an office, TV room, dining room and integrated kitchen.',
   descriptionSpanish: 'Una casa pequeña y acogedora, que ocupa solo la mitad de un terreno de aproximadamente 310.00m², cuenta con dos sencillas recámaras, baño de visita, oficina, sala de TV, comedor y cocina integrada.',
@@ -310,36 +310,36 @@ export const project8 = {
   ]
 }
 
-// VER SOBRE ESSE PROJETO SE NÃO VAI MESCLAR COM O PROJETO 3 CASA V.M
+// CORRIGIR CAMINHO DAS IMAGES
 export const project9 = {
   id: 9,
-  title: "Casa V.M",
-  titleEnglish: "",
-  titleSpanish: "",
+  title: 'Casa 416',
+  titleEnglish: 'House 416',
+  titleSpanish: 'Casa 416',
   type: "Arquiteura Residencial",
-  typeEnglish: '',
-  typeSpanish: '',
+  typeEnglish: 'Residential Architecture',
+  typeSpanish: 'Arquitectura Residencial',
   year: 2022,
   local: 'Nova Mutum - MT',
   area: '127,00m²',
-  status: 'Em Andamento',
-  statusEnglish: '',
-  statusSpanish: '',
+  status: 'Projeto Piloto',
+  statusEnglish: 'Pilot Project',
+  statusSpanish: 'Proyecto Piloto',
   description: "Uma casa ampla e confortavel pra confraternizar em familia e receber os amigos em grande estilo. Com dois quartos simples, banheiro, uma suíte master com acesso ao jardim, sala de tv ampla, e sala de jantar e cozinha integrados ao gourmet, a casa prioriza os acessos inteligentes, criando fluxos dversos e interação no uso dos ambientes. Ademais o projeto pensa no furuto, deixando toda infraestrutura e preparações para implantação so sistema de energia solar.",
-  descriptionEnglish: '',
-  descriptionSpanish: '',
+  descriptionEnglish: 'A spacious and comfortable house to socialize with family and receive friends in style. With two simple bedrooms, a bathroom, a master suite with access to the garden, a large TV room, and a dining room and kitchen integrated into the gourmet space, the house prioritizes smart accesses, creating different flows and interaction in the use of environments. In addition, the project thinks about the future, leaving all the infrastructure and preparations for the implementation of the solar energy system.',
+  descriptionSpanish: 'Una casa espaciosa y cómoda para socializar en familia y recibir amigos con estilo. Con dos dormitorios sencillos, un baño, una master suite con acceso al jardín, una amplia sala de TV, y un comedor y cocina integrados al espacio gourmet, la casa prioriza los accesos inteligentes, generando diferentes flujos e interacción en el uso de los ambientes. . Además, el proyecto piensa en el futuro, dejando toda la infraestructura y los preparativos para la implementación del sistema de energía solar.',
   images: [
     {
       id: 1,
-      src: require('@/assets/casaVM/casaVM01.webp')
+      src: require('@/assets/09-Casa416/casa416-01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/casaVM/casaVM02.webp')
+      src: require('@/assets/09-Casa416/casa416-02.webp')
     },
     {
       id: 3,
-      src: require('@/assets/casaVM/casaVM03.webp')
+      src: require('@/assets/09-Casa416/casa416-03.webp')
     },
   ]
 }

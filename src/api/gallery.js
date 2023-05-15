@@ -78,9 +78,9 @@ export const project2 = {
 }
 export const project3 = {
   id: 3,
-  title: "Casa V.M",
-  titleEnglish: 'House V.M',
-  titleSpanish: 'Casa V.M',
+  title: "Casa Conceito",
+  titleEnglish: 'House Concept',
+  titleSpanish: 'Casa Concepto',
   type: "Arquitetura residencial",
   typeEnglish: 'Residential Architecture',
   typeSpanish: 'Arquitectura Residencial',
@@ -243,9 +243,9 @@ export const project5 = {
 }
 export const project6 = {
   id: 6,
-  title: "Casa R.J",
-  titleEnglish: "House R.J",
-  titleSpanish: "Casa R.J",
+  title: "Casa Pequena",
+  titleEnglish: "Small House",
+  titleSpanish: "Casa Pequeña",
   type: "Arquiteura Residencial",
   typeEnglish: 'Residential Architecture',
   typeSpanish: 'Arquitectura Residencial',
@@ -351,11 +351,15 @@ export const project8 = {
   ]
 }
 
-// VER SOBRE ESSE PROJETO SE NÃO VAI MESCLAR COM O PROJETO 3 CASA V.M
+// Ver qual projeto vai ser aqui
 export const project9 = {
   id: 9,
-  title: "Interiores Casa M.C",
-  type: "Interiores Residencial",
+  title: 'Casa 416',
+  titleEnglish: 'House 416',
+  titleSpanish: 'Casa 416',
+  type: "Arquitetura residencial",
+  typeEnglish: 'Residential Architecture',
+  typeSpanish: 'Arquitectura Residencial',
   images: [
     {
       id: 1,

@@ -1,4 +1,4 @@
-TITULO: CASA V.M
+TITULO: Casa 416 
 TIPO: ARQUITETURA RESIDENCIAL
 ANO: 2022
 LOCAL: NOVA MUTUM - MT
@@ -9,6 +9,6 @@ Descrição: Uma casa ampla e confortavel pra confraternizar em familia e recebe
 
 DESCRIÇÃO IMAGENS:
 
-Imagem 01: Uma fachada simples e elegante, com cores neutras e uma iluminação que valorizam os acabamentos escolhidos.
-Imagem 02: Proposta de muros que valoriza a fachada da casa e gera seguranaça para a casa e ao pedestre que transita pela calçada.
-Imagem 03: Finalizando a arquitetura desta casa temos na fachada posterior um deck que se torna extensão da área interna onde fica a churrasqueira.
+Imagem 01 (Pouco detalhes): Uma fachada simples e elegnte, com cores neutras e uma iluminação que valorizam os acabamentos escolhidos.
+Imagem 02 (Casa e cidade segura): Proposta de muros que valoriza a fachada da casa e gera seguranaça para a casa e ao pedestre que transita pela calçada.
+Imagem 03 (Confreternizar faz parte): Finalizando a arquitetura desta casa temos na fachada posterior um deck que se torna extensão da área interna onde fica a churrasqueira.

@@ -79,9 +79,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Casa V.M",
-    titleEnglish: 'House V.M',
-    titleSpanish: 'Casa V.M',
+    title: "Casa Conceito",
+    titleEnglish: 'House Concept',
+    titleSpanish: 'Casa Concepto',
     type: "Arquitetura residencial",
     description: "Uma casa contemporânea de alto padrão que aplica conceitos básicos de sustentabilidade, com uma fachada unica que se aproveita do angulo do telhado em conjunto com os revestimentos para dar personalidade a casa.",
     descriptionEnglish: 'A high standard contemporary house that applies basic concepts of sustainability, with a unique facade that takes advantage of the roof angle together with the coatings to give the house personality.',
@@ -90,7 +90,9 @@ export const projects = [
       {
         id: 1,
         src: require('@/assets/casaConceito/casaConceito01.webp'),
-        title: "",
+        title: "Fachada",
+        titleEnglish: 'Facade',
+        titleSpanish: 'Fachada',
         description: "Uma fachada imponente que concilia cores e formas para dar personalidade ao projeto.",
         descriptionEnglish: 'An imposing facade that combines colors and shapes to give personality to the project.',
         descriptionSpanish: 'Una fachada imponente que combina colores y formas para dar personalidad al proyecto.'
@@ -98,7 +100,9 @@ export const projects = [
       {
         id: 2,
         src: require('@/assets/casaConceito/casaConceito02.webp'),
-        title: "",
+        title: "Segurança e elegância",
+        titleEnglish: 'Safety and Elegance',
+        titleSpanish: 'Seguridad y Elegancia',
         description: "Proposta de muro frontal que complementa o design da casa pensando na valorização do imóvel e na melhoria do entorno por meio do impacto que a arquitetura gera ao urbano.",
         descriptionEnglish: 'Proposal for a front wall that complements the design of the house, thinking about valuing the property and improving the surroundings through the impact that architecture generates on the urban environment.',
         descriptionSpanish: 'Propuesta de un muro frontal que complemente el diseño de la casa, pensando en poner en valor el inmueble y mejorar el entorno a través del impacto que genera la arquitectura en el entorno urbano.'
@@ -106,7 +110,9 @@ export const projects = [
       {
         id: 4,
         src: require('@/assets/casaConceito/casaConceito04.webp'),
-        title: "",
+        title: "O esplendor da noite",
+        titleEnglish: 'The splendor of the night',
+        titleSpanish: 'El esplendor de la noche',
         description: "A fachada do projeto é finalizada pelo pensar da iluminação que valoriza os angulos e retas da forma e os acabamentos empregados.",
         descriptionEnglish: "The project's façade is finalized by thinking about the lighting that values the angles and straight lines of the shape and the finishes used.",
         descriptionSpanish: 'La fachada del proyecto se finaliza pensando en la iluminación que valora los ángulos y las líneas rectas de la forma y los acabados utilizados.'
@@ -138,15 +144,18 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Casa R.J",
-    titleEnglish: "House R.J",
-    titleSpanish: "Casa R.J",
+    title: "Casa Pequena",
+    titleEnglish: "Small House",
+    titleSpanish: "Casa Pequeña",
     description: "Uma casa pequena e aconchegante, que ocupando apenas metade de um terreno de aproximadamente 310,00m², conta com dois quartos simples, um banheiro social, um escritório, sala de tv, jantar e cozinha integrados.",
     descriptionEnglish: 'A small and cozy house, occupying only half of a land of approximately 310.00m², it has two simple bedrooms, a guest bathroom, an office, TV room, dining room and integrated kitchen.',
     descriptionSpanish: 'Una casa pequeña y acogedora, que ocupa solo la mitad de un terreno de aproximadamente 310.00m², cuenta con dos sencillas recámaras, baño de visita, oficina, sala de TV, comedor y cocina integrada.',
     images: [
       {
         id: 2,
+        title: "A leveza da forma",
+        titleEnglish: 'The lightness of form',
+        titleSpanish: 'La ligereza de la forma',
         src: require('@/assets/casaRJ/casaRJ02.webp'),
         description: 'Uma casa com formas orgânicas, acabamentos simples e elegantes, cores marcantes e paisagismo que complementam os detalhes.',
         descriptionEnglish: 'A house with organic shapes, simple and elegant finishes, striking colors and landscaping that complement the details.',
@@ -154,6 +163,9 @@ export const projects = [
       },
       {
         id: 3,
+        title: "Luz, visibilidade e segurança",
+        titleEnglish: 'Light, visibility and safety',
+        titleSpanish: 'Luz, visibilidad y seguridad',
         src: require('@/assets/casaRJ/casaRJ03.webp'),
         description: 'Proposta de fechamento do terreno com permeabilidade visual, que gera segurança e elegância com um projeto de iluminação que valoriza a arquitetura',
         descriptionEnglish: 'Proposal for enclosing the land with visual permeability, which generates security and elegance with a lighting project that values architecture',
@@ -243,16 +255,46 @@ export const projects = [
       },
     ]
   },
-  // Esperar atualizações sobre esse projeto 9
   {
     id: 9,
-    title: '',
-    titleEnglish: '',
-    titleSpanish: '',
-    description: '',
-    descriptionEnglish: '',
-    descriptionSpanish: '',
-    images: []
+    title: 'Casa 416',
+    titleEnglish: 'House 416',
+    titleSpanish: 'Casa 416',
+    description: "Uma casa ampla e confortavel pra confraternizar em familia e receber os amigos em grande estilo. Com dois quartos simples, banheiro, uma suíte master com acesso ao jardim, sala de tv ampla, e sala de jantar e cozinha integrados ao gourmet, a casa prioriza os acessos inteligentes, criando fluxos dversos e interação no uso dos ambientes. Ademais o projeto pensa no furuto, deixando toda infraestrutura e preparações para implantação so sistema de energia solar.",
+    descriptionEnglish: 'A spacious and comfortable house to socialize with family and receive friends in style. With two simple bedrooms, a bathroom, a master suite with access to the garden, a large TV room, and a dining room and kitchen integrated into the gourmet space, the house prioritizes smart accesses, creating different flows and interaction in the use of environments. In addition, the project thinks about the future, leaving all the infrastructure and preparations for the implementation of the solar energy system.',
+    descriptionSpanish: 'Una casa espaciosa y cómoda para socializar en familia y recibir amigos con estilo. Con dos dormitorios sencillos, un baño, una master suite con acceso al jardín, una amplia sala de TV, y un comedor y cocina integrados al espacio gourmet, la casa prioriza los accesos inteligentes, generando diferentes flujos e interacción en el uso de los ambientes. . Además, el proyecto piensa en el futuro, dejando toda la infraestructura y los preparativos para la implementación del sistema de energía solar.',
+    images: [
+      {
+        id: 1,
+        title: 'Poucos detalhes',
+        titleEnglish: 'Few details',
+        titleSpanish: 'Pocos detalles',
+        src: require('@/assets/09-Casa416/casa416-01.webp'),
+        description: 'Uma fachada simples e elegante, com cores neutras e uma iluminação que valorizam os acabamentos escolhidos.',
+        descriptionEnglish: 'A simple and elegant facade, with neutral colors and lighting that enhance the chosen finishes.',
+        descriptionSpanish: 'Una fachada sencilla y elegante, con colores neutros e iluminación que realzan los acabados elegidos.',
+      },
+      {
+        id: 2,
+        title: 'Casa e cidade segura',
+        titleEnglish: 'Home and safe city',
+        titleSpanish: 'Hogar y ciudad segura',
+        src: require('@/assets/09-Casa416/casa416-02.webp'),
+        description: 'Proposta de muros que valoriza a fachada da casa e gera seguranaça para a casa e ao pedestre que transita pela calçada.',
+        descriptionEnglish: 'Proposal for walls that enhances the facade of the house and generates safety for the house and for pedestrians walking along the sidewalk.',
+        descriptionSpanish: 'Propuesta de muros que realza la fachada de la casa y genera seguridad para la casa y para los peatones que transitan por la acera.',
+      },
+      {
+        id: 2,
+        title: 'Confraternizar faz parte',
+        titleEnglish: 'Fraternize is part',
+        titleSpanish: 'Fraternizar es parte',
+        src: require('@/assets/09-Casa416/casa416-03.webp'),
+        description: 'Finalizando a arquitetura desta casa temos na fachada posterior um deck que se torna extensão da área interna onde fica a churrasqueira.',
+        descriptionEnglish: 'Completing the architecture of this house, we have a deck on the back facade that becomes an extension of the internal area where the barbecue is located.',
+        descriptionSpanish: 'Completando la arquitectura de esta casa, tenemos un deck en la fachada posterior que se convierte en una extensión del área interna donde se ubica el quincho.',
+      },
+    ]
   },
   {
     id: 10,
