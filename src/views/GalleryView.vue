@@ -124,14 +124,14 @@
       <div class="item-galeria w-2">
         <GalleryComponent
           class="gallery-component"
-          :images="project10.images"
-          :thumbnail="project10.images[1]"
-          :project-title="project10.title"
-          :project-title-english="project10.titleEnglish"
-          :project-title-spanish="project10.titleSpanish"
-          :project-type="project10.type"
-          :project-type-english="project10.typeEnglish"
-          :project-type-spanish="project10.typeSpanish"
+          :images="project12.images"
+          :thumbnail="project12.images[1]"
+          :project-title="project12.title"
+          :project-title-english="project12.titleEnglish"
+          :project-title-spanish="project12.titleSpanish"
+          :project-type="project12.type"
+          :project-type-english="project12.typeEnglish"
+          :project-type-spanish="project12.typeSpanish"
         />
       </div>
     </div>
@@ -154,6 +154,7 @@ import { project8 } from '@/api/gallery'
 // import { project9 } from '@/api/gallery'
 import { project10 } from '@/api/gallery'
 import { project11 } from '@/api/gallery'
+import { project12 } from '@/api/gallery'
 
 import GalleryComponent from '@/components/GalleryComponent.vue'
 import NavbarComponent from '@/components/NavbarComponent.vue'
@@ -177,7 +178,8 @@ export default {
       project8: project8,
       // project9: project9
       project10: project10,
-      project11: project11
+      project11: project11,
+      project12: project12
     }
   }
 }

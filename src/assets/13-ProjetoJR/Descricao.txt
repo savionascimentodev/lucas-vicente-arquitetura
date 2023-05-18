@@ -1,0 +1,13 @@
+TITULO: Casa J.R
+TIPO: Arquitetura residencial
+ANO: 2023
+LOCAL: Nova Mutum - MT
+STATUS: Em aprovação
+
+Descrição: Um projeto 140,00 m² com referencias classicas e linhas simples, com foco em propiciar o melhor espaço de escanço para a família;
+
+DESCRIÇÃO IMAGENS:
+
+Imagem 01 (Permeabilidade visual): A ideia nesta fachada frontal foi propiciar permeabilidade, afim de gerar segurança que tanto acreditamos em nossos projetos, por meio da visibilidade entre rua e terreno;
+Imagem 02 (Fachada classica): Uma casa delinhas retas e sobrias, com referencias nos projetos clássicos, onde a cobertura se projeta pra maior que a edificação e proteje parcialmente as esquadrias ao mesmo tempo que cria um jogo de volumes interessante a fachada;
+Imagem 05 (Aconchegante): Um espaço ao ar livre para receber os amigos e confraternizar com a família com cobertura e mobiliários mutaveis, permitindo versatilidade nos usos do espaço;

@@ -601,3 +601,47 @@ export const project11 = {
     },
   ]
 }
+export const project12 = {
+  id: 12,
+  title: "Casa V.S",
+  titleEnglish: "House V.S",
+  titleSpanish: "Casa V.S",
+  type: "Arquitetura residencial multifamiliar",
+  typeEnglish: 'Multi-family residential architecture',
+  typeSpanish: 'Arquitectura residencial plurifamiliar',
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/12-ProjetoVS/01.webp')
+    },
+    {
+      id: 2,
+      src: require('@/assets/12-ProjetoVS/02.webp')
+    },
+    {
+      id: 3,
+      src: require('@/assets/12-ProjetoVS/03.webp')
+    },
+    {
+      id: 4,
+      src: require('@/assets/12-ProjetoVS/04.webp')
+    },
+  ]
+}
+
+// ------------------------------------ MODELO PRONTO --------------------------------------------
+// export const project12 = {
+//   id: 12,
+//   title: "",
+//   titleEnglish: "",
+//   titleSpanish: "",
+//   type: "",
+//   typeEnglish: "",
+//   typeSpanish: "",
+//   images: [
+//     {
+//       id: 1,
+//       src: require('@/assets/InterioresCasaMC/01.webp')
+//     },
+//   ]
+// }

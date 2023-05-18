@@ -420,3 +420,117 @@ export const project11 = {
 
   ]
 }
+
+export const project12 = {
+  id: 12,
+  title: "Casa V.S",
+  titleEnglish: "House V.S",
+  titleSpanish: "Casa V.S",
+  type: "Arquitetura residencial multifamiliar",
+  typeEnglish: 'Multi-family residential architecture',
+  typeSpanish: 'Arquitectura residencial plurifamiliar',
+  year: '2023',
+  local: 'Nova Mutum - MT',
+  area: '--',
+  status: 'Em execução',
+  statusEnglish: 'Running',
+  statusSpanish: 'En ejecución',
+  description: 'Um projeto de duas casas de 115,00 m² em um terreno de 250,00 m², aqui a ideia foi utilizar o terreno ao maximo pra comportar as duas unidades habitacionais;',
+  descriptionEnglish: 'A project for two houses of 115.00 m² on a plot of 250.00 m², here the idea was to use the land as much as possible to accommodate the two housing units;',
+  descriptionSpanish: 'Proyecto de dos casas de 115,00 m² en un terreno de 250,00 m², aquí la idea era aprovechar al máximo el terreno para albergar las dos viviendas;',
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/12-ProjetoVS/01.webp')
+    },
+    {
+      id: 2,
+      src: require('@/assets/12-ProjetoVS/02.webp')
+    },
+    {
+      id: 3,
+      src: require('@/assets/12-ProjetoVS/03.webp')
+    },
+    {
+      id: 4,
+      src: require('@/assets/12-ProjetoVS/04.webp')
+    },
+  ]
+}
+
+export const project13 = {
+  id: 13,
+  title: "",
+  titleEnglish: "",
+  titleSpanish: "",
+  type: "",
+  typeEnglish: '',
+  typeSpanish: '',
+  year: '',
+  local: 'Nova Mutum - MT',
+  area: '',
+  status: '',
+  statusEnglish: '',
+  statusSpanish: '',
+  description: '',
+  descriptionEnglish: '',
+  descriptionSpanish: '',
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/InterioresCasaMC/01.webp')
+    },
+  ]
+}
+
+// export const project12 = {
+//   id: 12,
+//   title: "",
+//   titleEnglish: "",
+//   titleSpanish: "",
+//   type: "",
+//   typeEnglish: '',
+//   typeSpanish: '',
+//   year: '',
+//   local: 'Nova Mutum - MT',
+//   area: '',
+//   status: '',
+//   statusEnglish: '',
+//   statusSpanish: '',
+//   description: '',
+//   descriptionEnglish: '',
+//   descriptionSpanish: '',
+//   images: [
+//     {
+//       id: 1,
+//       src: require('@/assets/InterioresCasaMC/01.webp')
+//     },
+//   ]
+// }
+
+
+// ------------------------------------ MODELO PRONTO -----------------------------------
+// export const project12 = {
+//   id: 12,
+//   title: "",
+//   titleEnglish: "",
+//   titleSpanish: "",
+//   type: "",
+//   typeEnglish: '',
+//   typeSpanish: '',
+//   year: '',
+//   local: 'Nova Mutum - MT',
+//   area: '',
+//   status: '',
+//   statusEnglish: '',
+//   statusSpanish: '',
+//   description: '',
+//   descriptionEnglish: '',
+//   descriptionSpanish: '',
+//   images: [
+//     {
+//       id: 1,
+//       src: require('@/assets/InterioresCasaMC/01.webp')
+//     },
+//   ]
+// }

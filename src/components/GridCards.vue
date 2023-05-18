@@ -368,12 +368,36 @@
         </div>
       </MDBCol>
       <MDBCol class="mb-3 px-2">
-        <img
-          src="@/assets/logoEscuro.png"
-          class="hover-shadow img-fluid rounded"
-          alt="Em Breve"
-          width="450"
-        />
+        <div style="position: relative; overflow: hidden">
+          <div :class="{ hovering: isHovering12 }">
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering12 ? project12.title + ' - ' + project12.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering12
+                  ? project12.titleEnglish + ' - ' + project12.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering12
+                  ? project12.titleSpanish + ' - ' + project12.typeSpanish
+                  : ''
+              }}
+            </span>
+          </div>
+          <img
+            src="@/assets/12-ProjetoVS/01.webp"
+            class="rounded card-image"
+            width="450"
+            alt="Casa V.S"
+            @mouseout="isHovering12 = false"
+            @mouseover="isHovering12 = true"
+            @click="showDescriptionModal12"
+          />
+        </div>
       </MDBCol>
     </div>
     <MDBRow v-if="activeSeeMore" class="pt-4">
@@ -403,6 +427,7 @@
       </MDBCol>
     </MDBRow>
   </MDBContainer>
+
   <!-- Modais -->
   <ProjectsModal v-model:visible="exampleModal1" :current-project="project1" />
   <ProjectsModal v-model:visible="exampleModal2" :current-project="project2" />
@@ -421,6 +446,10 @@
     v-model:visible="exampleModal11"
     :current-project="project11"
   />
+  <ProjectsModal
+    v-model:visible="exampleModal12"
+    :current-project="project12"
+  />
 </template>
 
 <script>
@@ -435,6 +464,7 @@ import { project8 } from '@/api/projects.js'
 import { project9 } from '@/api/projects.js'
 import { project10 } from '@/api/projects.js'
 import { project11 } from '@/api/projects.js'
+import { project12 } from '@/api/projects.js'
 import ProjectsModal from '@/components/ProjectsModal.vue'
 
 import { MDBCol, MDBRow, MDBContainer, MDBBtn } from 'mdb-vue-ui-kit'
@@ -460,6 +490,7 @@ export default {
       isHovering9: false,
       isHovering10: false,
       isHovering11: false,
+      isHovering12: false,
       exampleModal1: false,
       exampleModal2: false,
       exampleModal3: false,
@@ -471,6 +502,7 @@ export default {
       exampleModal9: false,
       exampleModal10: false,
       exampleModal11: false,
+      exampleModal12: false,
       project1: project1,
       project2: project2,
       project3: project3,
@@ -481,7 +513,8 @@ export default {
       project8: project8,
       project9: project9,
       project10: project10,
-      project11: project11
+      project11: project11,
+      project12: project12
     }
   },
   methods: {
@@ -520,6 +553,9 @@ export default {
     },
     showDescriptionModal11() {
       this.exampleModal11 = true
+    },
+    showDescriptionModal12() {
+      this.exampleModal12 = true
     }
   }
 }

@@ -1,0 +1,14 @@
+TITULO: Casa O.S
+TIPO: Arquitetura residencial
+ANO: 2023
+LOCAL: Nova Mutum - MT
+STATUS: Em execução
+
+Descrição: Uma casa contemporânea que abusa das linhas retas e organiza bem os ambientes para criar em 138,00 m² uma casa perfeita para um jovem que investe no seu primeiro imóvel;
+
+DESCRIÇÃO IMAGENS:
+
+Imagem 01 (Fachada): Uma fachada cheia de volumes e com cores e texturas marcantes pra impressionar o olhar;
+Imagem 02 (A vista da rua): Um muro pensado para permitir permeabilidade visual, que garante mais segurança pra casa e vizinhança em geral;
+Imagem 03 (Luz e forma): Os volumes e jogos de luzes permitem a esta fachada ser unica a cada angulo que se analisa a casa, de modo que em cada canto se ve uma casa diferente;
+Imagem 04 (Vivência ao ar livre): A ideia neste projeto foi integrar uma das áreas de convivio ao jardim, de modo que quintal se torne espaço de integração e convivio pra chamar os amigos e família;

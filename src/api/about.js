@@ -408,4 +408,77 @@ export const projects = [
       },
     ]
   },
+  {
+    id: 12,
+    title: "Casa V.S",
+    titleEnglish: "House V.S",
+    titleSpanish: "Casa V.S",
+    description: 'Um projeto de duas casas de 115,00 m² em um terreno de 250,00 m², aqui a ideia foi utilizar o terreno ao maximo pra comportar as duas unidades habitacionais;',
+    descriptionEnglish: 'A project for two houses of 115.00 m² on a plot of 250.00 m², here the idea was to use the land as much as possible to accommodate the two housing units;',
+    descriptionSpanish: 'Proyecto de dos casas de 115,00 m² en un terreno de 250,00 m², aquí la idea era aprovechar al máximo el terreno para albergar las dos viviendas;',
+    images: [
+      {
+        id: 1,
+        title: 'A rua importa',
+        titleEnglish: 'The street matters',
+        titleSpanish: 'La calle importa',
+        src: require('@/assets/12-ProjetoVS/01.webp'),
+        description: 'Na busca de gerar serugrança, ao terreno e ao entorno, o projeto dos muros de fechamento inclui aberturas para gerar permeabilidade visual para a rua;',
+        descriptionEnglish: 'In the quest to generate security, on the ground and in the surroundings, the design of the closing walls includes openings to generate visual permeability to the street;',
+        descriptionSpanish: 'En la búsqueda de generar seguridad, en el suelo y en los alrededores, el diseño de los muros de cerramiento incluye aberturas para generar permeabilidad visual hacia la calle;'
+      },
+      {
+        id: 2,
+        title: 'Fachada viva',
+        titleEnglish: 'Living facade',
+        titleSpanish: 'Fachada viva',
+        src: require('@/assets/12-ProjetoVS/02.webp'),
+        description: 'Sendo um projeto de investimento, o projeto buscou uma fachada visualmente interessante sem dispor de muitos recusros para sua execução, com volumes interessantes e cores e texturas marcantes;',
+        descriptionEnglish: 'Being an investment project, the project sought a visually interesting façade without having too many resources for its execution, with interesting volumes and striking colors and textures;',
+        descriptionSpanish: 'Al ser un proyecto de inversión, el proyecto buscaba una fachada visualmente interesante sin tener demasiados recursos para su ejecución, con volúmenes interesantes y colores y texturas llamativos;'
+      },
+      {
+        id: 3,
+        title: 'Espaços inteligentes',
+        titleEnglish: 'Smart spaces',
+        titleSpanish: 'Espacios inteligentes',
+        src: require('@/assets/12-ProjetoVS/03.webp'),
+        description: 'Quando tratamos de espaços pequenos, unir usos em um mesmo ambiente ajuda-nos a economizar área, aqui temos área gourmet e lavanderia em um espaço compartilhado;',
+        descriptionEnglish: 'When dealing with small spaces, uniting uses in the same environment helps us to save space, here we have a gourmet area and a laundry room in a shared space;',
+        descriptionSpanish: 'Al tratarse de espacios pequeños, unir usos en un mismo ambiente nos ayuda a ahorrar espacio, aquí tenemos un área gourmet y un lavadero en un espacio compartido;'
+      },
+      {
+        id: 4,
+        title: 'Área de lazer',
+        titleEnglish: 'Recreation Area',
+        titleSpanish: 'Zona de recreo',
+        src: require('@/assets/12-ProjetoVS/04.webp'),
+        description: 'O uso inteligente do terreno ao longo de todo o projeto permitiu que restasse espaço para a implantação de um piscina, que era desejo da família;',
+        descriptionEnglish: "The intelligent use of the land throughout the entire project left space for the installation of a swimming pool, which was the family's wish;",
+        descriptionSpanish: 'El uso inteligente del terreno a lo largo de todo el proyecto dejó espacio para la instalación de una piscina, que era el deseo de la familia;'
+      },
+    ]
+  },
+  // ------------------------------------ MODELO PRONTO --------------------------------------------
+  // {
+  //   id: 12,
+  //   title: "",
+  //   titleEnglish: "",
+  //   titleSpanish: "",
+  //   description: '',
+  //   descriptionEnglish: '',
+  //   descriptionSpanish: '',
+  //   images: [
+  //     {
+  //       id: 1,
+  //       title: '',
+  //       titleEnglish: '',
+  //       titleSpanish: '',
+  //       src: require('@/assets/InterioresCasaMC/01.webp'),
+  //       description: '',
+  //       descriptionEnglish: '',
+  //       descriptionSpanish: ''
+  //     },
+  //   ]
+  // },
 ]
