@@ -400,29 +400,77 @@
         </div>
       </MDBCol>
     </div>
-    <MDBRow v-if="activeSeeMore" class="pt-4">
-      <MDBCol>
-        <img
-          src="@/assets/logoEscuro.png"
-          class="hover-shadow img-fluid rounded"
-          alt="Em Breve"
-          width="450"
-        />
+    <MDBRow v-if="activeSeeMore" class="gallery-row">
+      <MDBCol class="mb-3 px-2">
+        <div style="position: relative; overflow: hidden">
+          <div :class="{ hovering: isHovering13 }">
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering13 ? project13.title + ' - ' + project13.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering13
+                  ? project13.titleEnglish + ' - ' + project13.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering13
+                  ? project13.titleSpanish + ' - ' + project13.typeSpanish
+                  : ''
+              }}
+            </span>
+          </div>
+          <img
+            src="@/assets/13-ProjetoJR/01.webp"
+            class="rounded card-image"
+            width="450"
+            alt="Interiores - Quarto/Escritório"
+            @mouseout="isHovering13 = false"
+            @mouseover="isHovering13 = true"
+            @click="showDescriptionModal13"
+          />
+        </div>
+      </MDBCol>
+      <MDBCol class="mb-3 px-2">
+        <div style="position: relative; overflow: hidden">
+          <div :class="{ hovering: isHovering14 }">
+            <span v-if="$i18n.locale === 'pt_BR'">
+              {{ isHovering14 ? project14.title + ' - ' + project14.type : '' }}
+            </span>
+            <span v-if="$i18n.locale === 'en'">
+              {{
+                isHovering14
+                  ? project14.titleEnglish + ' - ' + project14.typeEnglish
+                  : ''
+              }}
+            </span>
+            <span v-if="$i18n.locale === 'es'">
+              {{
+                isHovering14
+                  ? project14.titleSpanish + ' - ' + project14.typeSpanish
+                  : ''
+              }}
+            </span>
+          </div>
+          <img
+            src="@/assets/14-CasaOS/01.webp"
+            class="rounded card-image"
+            width="450"
+            alt="Interiores - Quarto/Escritório"
+            @mouseout="isHovering14 = false"
+            @mouseover="isHovering14 = true"
+            @click="showDescriptionModal14"
+          />
+        </div>
       </MDBCol>
       <MDBCol>
         <img
           src="@/assets/logoEscuro.png"
           class="hover-shadow img-fluid rounded mr-5"
           alt="Em Breve"
-          width="450"
-        />
-      </MDBCol>
-      <MDBCol>
-        <img
-          src="@/assets/logoEscuro.png"
-          class="hover-shadow img-fluid rounded mr-5"
-          alt="Em Breve"
-          width="450"
+          style="width: 100%"
         />
       </MDBCol>
     </MDBRow>
@@ -450,6 +498,14 @@
     v-model:visible="exampleModal12"
     :current-project="project12"
   />
+  <ProjectsModal
+    v-model:visible="exampleModal13"
+    :current-project="project13"
+  />
+  <ProjectsModal
+    v-model:visible="exampleModal14"
+    :current-project="project14"
+  />
 </template>
 
 <script>
@@ -465,6 +521,8 @@ import { project9 } from '@/api/projects.js'
 import { project10 } from '@/api/projects.js'
 import { project11 } from '@/api/projects.js'
 import { project12 } from '@/api/projects.js'
+import { project13 } from '@/api/projects.js'
+import { project14 } from '@/api/projects.js'
 import ProjectsModal from '@/components/ProjectsModal.vue'
 
 import { MDBCol, MDBRow, MDBContainer, MDBBtn } from 'mdb-vue-ui-kit'
@@ -491,6 +549,8 @@ export default {
       isHovering10: false,
       isHovering11: false,
       isHovering12: false,
+      isHovering13: false,
+      isHovering14: false,
       exampleModal1: false,
       exampleModal2: false,
       exampleModal3: false,
@@ -503,6 +563,8 @@ export default {
       exampleModal10: false,
       exampleModal11: false,
       exampleModal12: false,
+      exampleModal13: false,
+      exampleModal14: false,
       project1: project1,
       project2: project2,
       project3: project3,
@@ -514,7 +576,9 @@ export default {
       project9: project9,
       project10: project10,
       project11: project11,
-      project12: project12
+      project12: project12,
+      project13: project13,
+      project14: project14
     }
   },
   methods: {
@@ -556,6 +620,12 @@ export default {
     },
     showDescriptionModal12() {
       this.exampleModal12 = true
+    },
+    showDescriptionModal13() {
+      this.exampleModal13 = true
+    },
+    showDescriptionModal14() {
+      this.exampleModal14 = true
     }
   }
 }

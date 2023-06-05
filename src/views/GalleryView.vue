@@ -121,7 +121,7 @@
           :project-type-spanish="project11.typeSpanish"
         />
       </div>
-      <div class="item-galeria w-2">
+      <div class="item-galeria w-2 h-1">
         <GalleryComponent
           class="gallery-component"
           :images="project12.images"
@@ -132,6 +132,32 @@
           :project-type="project12.type"
           :project-type-english="project12.typeEnglish"
           :project-type-spanish="project12.typeSpanish"
+        />
+      </div>
+      <div class="item-galeria h-1 w-2">
+        <GalleryComponent
+          class="gallery-component"
+          :images="project13.images"
+          :thumbnail="project13.images[0]"
+          :project-title="project13.title"
+          :project-title-english="project13.titleEnglish"
+          :project-title-spanish="project13.titleSpanish"
+          :project-type="project13.type"
+          :project-type-english="project13.typeEnglish"
+          :project-type-spanish="project13.typeSpanish"
+        />
+      </div>
+      <div class="item-galeria w-2">
+        <GalleryComponent
+          class="gallery-component"
+          :images="project14.images"
+          :thumbnail="project14.images[0]"
+          :project-title="project14.title"
+          :project-title-english="project14.titleEnglish"
+          :project-title-spanish="project14.titleSpanish"
+          :project-type="project14.type"
+          :project-type-english="project14.typeEnglish"
+          :project-type-spanish="project14.typeSpanish"
         />
       </div>
     </div>
@@ -155,6 +181,8 @@ import { project8 } from '@/api/gallery'
 import { project10 } from '@/api/gallery'
 import { project11 } from '@/api/gallery'
 import { project12 } from '@/api/gallery'
+import { project13 } from '@/api/gallery'
+import { project14 } from '@/api/gallery'
 
 import GalleryComponent from '@/components/GalleryComponent.vue'
 import NavbarComponent from '@/components/NavbarComponent.vue'
@@ -179,7 +207,9 @@ export default {
       // project9: project9
       project10: project10,
       project11: project11,
-      project12: project12
+      project12: project12,
+      project13: project13,
+      project14: project14
     }
   }
 }
