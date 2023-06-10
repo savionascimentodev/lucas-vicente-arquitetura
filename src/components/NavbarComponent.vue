@@ -114,6 +114,7 @@ i.fas.fa-bars.fa-1x {
 }
 .navigation {
   background: #333;
+  border-top: #f85e0eff 1px solid;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);

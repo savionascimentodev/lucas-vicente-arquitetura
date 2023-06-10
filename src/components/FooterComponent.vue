@@ -1,6 +1,6 @@
 <template>
-  <MDBFooter>
-    <div class="footer-container" style="background-color: #333">
+  <MDBFooter style="border-bottom: #f85e0eff 1px solid">
+    <div class="footer-container">
       <MDBContainer class="text-center text-md-start pt-4">
         <MDBRow>
           <MDBCol md="4" class="footer-description mx-auto mb-md-0 mb-4 pb-3">
@@ -47,10 +47,24 @@
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div class="text-center p-3 text-white">
-        © 2021 Copyright:
-        <span class="text-reset fw-bold">Lucas Vicente Arquitetura</span>
-      </div>
+      <div class="text-center p-3 text-white"></div>
+    </div>
+    <div class="devby text-white">
+      <MDBContainer style="display: flex; justify-content: space-between">
+        <div style="display: flex">
+          <span> © 2023 Copyright </span>
+          <span class="site-name fw-bold">: Lucas Vicente Arquitetura</span>
+        </div>
+        <div>
+          <span>Desenvolvido por: </span>
+          <a
+            href="https://www.linkedin.com/in/savio-nascimento/"
+            target="_blank"
+          >
+            <b> Sávio Nascimento </b>
+          </a>
+        </div>
+      </MDBContainer>
     </div>
   </MDBFooter>
 </template>
@@ -76,6 +90,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.footer-container {
+  background-color: #333 !important;
+}
+.devby {
+  background-color: #292929;
+
+  a {
+    text-decoration: none !important;
+    color: #fff;
+  }
+}
+
 /* Medias */
 @media screen and (min-width: 320px) {
   .logo {
@@ -93,8 +119,16 @@ export default {
     font-size: 1rem;
   }
 
+  .devby {
+    font-size: 14px;
+
+    .site-name {
+      display: none;
+    }
+  }
+
   .footer-description {
-    border-bottom: 1px solid #f85e0eff;
+    border-bottom: 1px solid rgb(170, 64, 7);
   }
 }
 
@@ -117,6 +151,13 @@ export default {
   }
   .logo {
     width: 100%;
+  }
+  .devby {
+    font-size: 15px;
+
+    .site-name {
+      display: flex;
+    }
   }
 }
 
