@@ -108,6 +108,19 @@
           :project-type-spanish="project8.typeSpanish"
         />
       </div>
+      <div class="item-galeria h-1 w-2">
+        <GalleryComponent
+          class="gallery-component"
+          :images="project9.images"
+          :thumbnail="project9.images[0]"
+          :project-title="project9.title"
+          :project-title-english="project9.titleEnglish"
+          :project-title-spanish="project9.titleSpanish"
+          :project-type="project9.type"
+          :project-type-english="project9.typeEnglish"
+          :project-type-spanish="project9.typeSpanish"
+        />
+      </div>
       <div class="item-galeria h-2 w-2">
         <GalleryComponent
           class="gallery-component"
@@ -177,7 +190,7 @@ import { project5 } from '@/api/gallery'
 import { project6 } from '@/api/gallery'
 import { project7 } from '@/api/gallery'
 import { project8 } from '@/api/gallery'
-// import { project9 } from '@/api/gallery'
+import { project9 } from '@/api/gallery'
 import { project10 } from '@/api/gallery'
 import { project11 } from '@/api/gallery'
 import { project12 } from '@/api/gallery'
@@ -204,7 +217,7 @@ export default {
       project6: project6,
       project7: project7,
       project8: project8,
-      // project9: project9
+      project9: project9,
       project10: project10,
       project11: project11,
       project12: project12,

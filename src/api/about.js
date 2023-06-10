@@ -413,9 +413,9 @@ export const projects = [
     title: "Casa V.S",
     titleEnglish: "House V.S",
     titleSpanish: "Casa V.S",
-    description: 'Um projeto de duas casas de 115,00 m² em um terreno de 250,00 m², aqui a ideia foi utilizar o terreno ao maximo pra comportar as duas unidades habitacionais;',
-    descriptionEnglish: 'A project for two houses of 115.00 m² on a plot of 250.00 m², here the idea was to use the land as much as possible to accommodate the two housing units;',
-    descriptionSpanish: 'Proyecto de dos casas de 115,00 m² en un terreno de 250,00 m², aquí la idea era aprovechar al máximo el terreno para albergar las dos viviendas;',
+    description: 'Um projeto de duas casas de 115,00 m² em um terreno de 250,00 m², aqui a ideia foi utilizar o terreno ao maximo pra comportar as duas unidades habitacionais',
+    descriptionEnglish: 'A project for two houses of 115.00 m² on a plot of 250.00 m², here the idea was to use the land as much as possible to accommodate the two housing units',
+    descriptionSpanish: 'Proyecto de dos casas de 115,00 m² en un terreno de 250,00 m², aquí la idea era aprovechar al máximo el terreno para albergar las dos viviendas',
     images: [
       {
         id: 1,
@@ -423,9 +423,9 @@ export const projects = [
         titleEnglish: 'The street matters',
         titleSpanish: 'La calle importa',
         src: require('@/assets/12-ProjetoVS/01.webp'),
-        description: 'Na busca de gerar serugrança, ao terreno e ao entorno, o projeto dos muros de fechamento inclui aberturas para gerar permeabilidade visual para a rua;',
-        descriptionEnglish: 'In the quest to generate security, on the ground and in the surroundings, the design of the closing walls includes openings to generate visual permeability to the street;',
-        descriptionSpanish: 'En la búsqueda de generar seguridad, en el suelo y en los alrededores, el diseño de los muros de cerramiento incluye aberturas para generar permeabilidad visual hacia la calle;'
+        description: 'Na busca de gerar segurança, ao terreno e ao entorno, o projeto dos muros de fechamento inclui aberturas para gerar permeabilidade visual para a rua',
+        descriptionEnglish: 'In the quest to generate security, on the ground and in the surroundings, the design of the closing walls includes openings to generate visual permeability to the street',
+        descriptionSpanish: 'En la búsqueda de generar seguridad, en el suelo y en los alrededores, el diseño de los muros de cerramiento incluye aberturas para generar permeabilidad visual hacia la calle'
       },
       {
         id: 2,
@@ -433,9 +433,9 @@ export const projects = [
         titleEnglish: 'Living facade',
         titleSpanish: 'Fachada viva',
         src: require('@/assets/12-ProjetoVS/02.webp'),
-        description: 'Sendo um projeto de investimento, o projeto buscou uma fachada visualmente interessante sem dispor de muitos recusros para sua execução, com volumes interessantes e cores e texturas marcantes;',
-        descriptionEnglish: 'Being an investment project, the project sought a visually interesting façade without having too many resources for its execution, with interesting volumes and striking colors and textures;',
-        descriptionSpanish: 'Al ser un proyecto de inversión, el proyecto buscaba una fachada visualmente interesante sin tener demasiados recursos para su ejecución, con volúmenes interesantes y colores y texturas llamativos;'
+        description: 'Sendo um projeto de investimento, o projeto buscou uma fachada visualmente interessante sem dispor de muitos recusros para sua execução, com volumes interessantes e cores e texturas marcantes',
+        descriptionEnglish: 'Being an investment project, the project sought a visually interesting façade without having too many resources for its execution, with interesting volumes and striking colors and textures',
+        descriptionSpanish: 'Al ser un proyecto de inversión, el proyecto buscaba una fachada visualmente interesante sin tener demasiados recursos para su ejecución, con volúmenes interesantes y colores y texturas llamativos'
       },
       {
         id: 3,
@@ -443,9 +443,9 @@ export const projects = [
         titleEnglish: 'Smart spaces',
         titleSpanish: 'Espacios inteligentes',
         src: require('@/assets/12-ProjetoVS/03.webp'),
-        description: 'Quando tratamos de espaços pequenos, unir usos em um mesmo ambiente ajuda-nos a economizar área, aqui temos área gourmet e lavanderia em um espaço compartilhado;',
-        descriptionEnglish: 'When dealing with small spaces, uniting uses in the same environment helps us to save space, here we have a gourmet area and a laundry room in a shared space;',
-        descriptionSpanish: 'Al tratarse de espacios pequeños, unir usos en un mismo ambiente nos ayuda a ahorrar espacio, aquí tenemos un área gourmet y un lavadero en un espacio compartido;'
+        description: 'Quando tratamos de espaços pequenos, unir usos em um mesmo ambiente ajuda-nos a economizar área, aqui temos área gourmet e lavanderia em um espaço compartilhado',
+        descriptionEnglish: 'When dealing with small spaces, uniting uses in the same environment helps us to save space, here we have a gourmet area and a laundry room in a shared space',
+        descriptionSpanish: 'Al tratarse de espacios pequeños, unir usos en un mismo ambiente nos ayuda a ahorrar espacio, aquí tenemos un área gourmet y un lavadero en un espacio compartido'
       },
       {
         id: 4,
@@ -453,9 +453,101 @@ export const projects = [
         titleEnglish: 'Recreation Area',
         titleSpanish: 'Zona de recreo',
         src: require('@/assets/12-ProjetoVS/04.webp'),
-        description: 'O uso inteligente do terreno ao longo de todo o projeto permitiu que restasse espaço para a implantação de um piscina, que era desejo da família;',
-        descriptionEnglish: "The intelligent use of the land throughout the entire project left space for the installation of a swimming pool, which was the family's wish;",
-        descriptionSpanish: 'El uso inteligente del terreno a lo largo de todo el proyecto dejó espacio para la instalación de una piscina, que era el deseo de la familia;'
+        description: 'O uso inteligente do terreno ao longo de todo o projeto permitiu que restasse espaço para a implantação de um piscina, que era desejo da família',
+        descriptionEnglish: "The intelligent use of the land throughout the entire project left space for the installation of a swimming pool, which was the family's wish",
+        descriptionSpanish: 'El uso inteligente del terreno a lo largo de todo el proyecto dejó espacio para la instalación de una piscina, que era el deseo de la familia'
+      },
+    ]
+  },
+  {
+    id: 13,
+    title: "Casa J.R",
+    titleEnglish: "House J.R",
+    titleSpanish: "Casa J.R",
+    description: 'Um projeto 140,00 m² com referencias classicas e linhas simples, com foco em propiciar o melhor espaço de escanço para a família',
+    descriptionEnglish: 'A 140.00 m² project with classic references and simple lines, focused on providing the best restroom space for the family',
+    descriptionSpanish: 'Un proyecto de 140,00 m² con referencias clásicas y líneas sencillas, enfocado a brindar el mejor espacio de baño para la familia',
+    images: [
+      {
+        id: 1,
+        title: 'Permeabilidade visual',
+        titleEnglish: 'Visual permeability',
+        titleSpanish: 'Permeabilidad visual',
+        src: require('@/assets/13-ProjetoJR/01.webp'),
+        description: 'A ideia nesta fachada frontal foi propiciar permeabilidade, afim de gerar segurança que tanto acreditamos em nossos projetos, por meio da visibilidade entre rua e terreno',
+        descriptionEnglish: 'A 140.00 m² project with classic references and simple lines, focused on providing the best restroom space for the family',
+        descriptionSpanish: 'Un proyecto de 140,00 m² con referencias clásicas y líneas sencillas, enfocado a brindar el mejor espacio de baño para la familia'
+      },
+      {
+        id: 2,
+        title: 'Fachada classica',
+        titleEnglish: 'Classic facade',
+        titleSpanish: 'Fachada clasica',
+        src: require('@/assets/13-ProjetoJR/01.webp'),
+        description: 'Uma casa delinhas retas e sobrias, com referencias nos projetos clássicos, onde a cobertura se projeta pra maior que a edificação e proteje parcialmente as esquadrias ao mesmo tempo que cria um jogo de volumes interessante a fachada',
+        descriptionEnglish: 'A house with straight and sober lines, with references to classic projects, where the roof is projected to be larger than the building and partially protects the frames while creating an interesting game of volumes for the facade.',
+        descriptionSpanish: 'Una casa de líneas rectas y sobrias, con referencias a proyectos clásicos, donde la cubierta se proyecta de mayor tamaño que el edificio y protege parcialmente los marcos a la vez que crea un interesante juego de volúmenes para la fachada.'
+      },
+      {
+        id: 5,
+        title: 'Aconchegante',
+        titleEnglish: 'Cozy',
+        titleSpanish: 'Acogedor',
+        src: require('@/assets/13-ProjetoJR/01.webp'),
+        description: 'Um espaço ao ar livre para receber os amigos e confraternizar com a família com cobertura e mobiliários mutáveis, permitindo versatilidade nos usos do espaço',
+        descriptionEnglish: 'An outdoor space to welcome friends and celebrate with family, featuring a roof and adjustable furniture, allowing versatility in the use of the space',
+        descriptionSpanish: 'Un espacio al aire libre para recibir amigos y celebrar con la familia, con techo y muebles ajustables, lo que permite versatilidad en el uso del espacio'
+      }
+    ]
+  },
+  {
+    id: 14,
+    title: "Casa O.S",
+    titleEnglish: "Home O.S",
+    titleSpanish: "Casa O.S",
+    description: 'Uma casa contemporânea que abusa das linhas retas e organiza bem os ambientes para criar em 138,00 m² uma casa perfeita para um jovem que investe no seu primeiro imóvel',
+    descriptionEnglish: 'A contemporary house that makes use of straight lines and organizes the spaces well to create a perfect home for a young person investing in their first property',
+    descriptionSpanish: 'Una casa contemporánea que hace uso de líneas rectas y organiza los espacios de manera eficiente para crear un hogar perfecto para una persona joven que invierte en su primera propiedad',
+    images: [
+      {
+        id: 1,
+        title: 'Fachada',
+        titleEnglish: 'Facade',
+        titleSpanish: 'Fachada',
+        src: require('@/assets/14-CasaOS/01.webp'),
+        description: 'Uma fachada cheia de volumes e com cores e texturas marcantes pra impressionar o olhar',
+        descriptionEnglish: 'A facade full of volumes and with striking colors and textures to impress the eye',
+        descriptionSpanish: 'Una fachada llena de volúmenes y con llamativos colores y texturas para impresionar a la vista'
+      },
+      {
+        id: 2,
+        title: 'A vista da rua',
+        titleEnglish: 'The view from the street',
+        titleSpanish: 'La vista desde la calle',
+        src: require('@/assets/14-CasaOS/02.webp'),
+        description: 'Um muro pensado para permitir permeabilidade visual, que garante mais segurança pra casa e vizinhança em geral',
+        descriptionEnglish: 'A wall designed to allow visual permeability, which ensures more security for the home and neighborhood in general',
+        descriptionSpanish: 'Un muro diseñado para permitir la permeabilidad visual, lo que garantiza más seguridad para el hogar y el vecindario en general'
+      },
+      {
+        id: 3,
+        title: 'Luz e forma',
+        titleEnglish: 'light and form',
+        titleSpanish: 'luz y forma',
+        src: require('@/assets/14-CasaOS/03.webp'),
+        description: 'Os volumes e jogos de luzes permitem a esta fachada ser unica a cada angulo que se analisa a casa, de modo que em cada canto se ve uma casa diferente',
+        descriptionEnglish: 'The volumes and play of light allow this facade to be unique at every angle the house is analyzed, so that in every corner you see a different house',
+        descriptionSpanish: 'Los volúmenes y el juego de luces permiten que esta fachada sea única en cada ángulo se analiza la casa, de manera que en cada rincón se ve una casa diferente'
+      },
+      {
+        id: 4,
+        title: 'Vivência ao ar livre',
+        titleEnglish: 'Outdoor living',
+        titleSpanish: 'Vida al aire libre',
+        src: require('@/assets/14-CasaOS/04.webp'),
+        description: 'A ideia neste projeto foi integrar uma das áreas de convivio ao jardim, de modo que quintal se torne espaço de integração e convivio pra chamar os amigos e família',
+        descriptionEnglish: 'The idea in this project was to integrate one of the living areas to the garden, so that the backyard becomes a space for integration and socializing to invite friends and family',
+        descriptionSpanish: 'La idea en este proyecto fue integrar una de las áreas de estar al jardín, de manera que el patio trasero se convierta en un espacio de integración y socialización para invitar a amigos y familiares.'
       },
     ]
   },

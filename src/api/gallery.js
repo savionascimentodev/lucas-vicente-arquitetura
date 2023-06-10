@@ -350,39 +350,29 @@ export const project8 = {
     },
   ]
 }
-
-// Ver qual projeto vai ser aqui
 export const project9 = {
   id: 9,
   title: 'Casa 416',
   titleEnglish: 'House 416',
   titleSpanish: 'Casa 416',
-  type: "Arquitetura residencial",
+  type: "Arquitetura Residencial",
   typeEnglish: 'Residential Architecture',
   typeSpanish: 'Arquitectura Residencial',
   images: [
     {
       id: 1,
-      src: require('@/assets/InterioresCasaMC/01.webp')
+      src: require('@/assets/09-Casa416/casa416-01.webp')
     },
     {
       id: 2,
-      src: require('@/assets/InterioresCasaMC/02.webp')
-
+      src: require('@/assets/09-Casa416/casa416-02.webp')
     },
     {
       id: 3,
-      src: require('@/assets/InterioresCasaMC/03.webp')
-
-    },
-    {
-      id: 4,
-      src: require('@/assets/InterioresCasaMC/04.webp')
-
+      src: require('@/assets/09-Casa416/casa416-03.webp')
     },
   ]
 }
-
 export const project10 = {
   id: 10,
   title: "Quarto Casa/Escritório",
@@ -625,6 +615,64 @@ export const project12 = {
     {
       id: 4,
       src: require('@/assets/12-ProjetoVS/04.webp')
+    },
+  ]
+}
+export const project13 = {
+  id: 13,
+  title: "Casa J.R",
+  titleEnglish: "House J.R",
+  titleSpanish: "Casa J.R",
+  type: "Arquitetura Residencial",
+  typeEnglish: 'Residential Architecture',
+  typeSpanish: 'Arquitectura Residencial',
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/13-ProjetoJR/01.webp')
+    },
+    {
+      id: 2,
+      src: require('@/assets/13-ProjetoJR/02.webp')
+    },
+    {
+      id: 3,
+      src: require('@/assets/13-ProjetoJR/03.webp')
+    },
+    {
+      id: 4,
+      src: require('@/assets/13-ProjetoJR/04.webp')
+    },
+    {
+      id: 5,
+      src: require('@/assets/13-ProjetoJR/05.webp')
+    },
+  ]
+}
+export const project14 = {
+  id: 14,
+  title: "Casa O.S",
+  titleEnglish: "Home O.S",
+  titleSpanish: "Casa O.S",
+  type: "Arquitetura Residencial",
+  typeEnglish: 'Residential Architecture',
+  typeSpanish: 'Arquitectura Residencial',
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/14-CasaOS/01.webp')
+    },
+    {
+      id: 2,
+      src: require('@/assets/14-CasaOS/02.webp')
+    },
+    {
+      id: 3,
+      src: require('@/assets/14-CasaOS/03.webp')
+    },
+    {
+      id: 4,
+      src: require('@/assets/14-CasaOS/04.webp')
     },
   ]
 }

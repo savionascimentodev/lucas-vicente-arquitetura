@@ -309,8 +309,6 @@ export const project8 = {
     },
   ]
 }
-
-// CORRIGIR CAMINHO DAS IMAGES
 export const project9 = {
   id: 9,
   title: 'Casa 416',
@@ -420,7 +418,6 @@ export const project11 = {
 
   ]
 }
-
 export const project12 = {
   id: 12,
   title: "Casa V.S",
@@ -431,13 +428,13 @@ export const project12 = {
   typeSpanish: 'Arquitectura residencial plurifamiliar',
   year: '2023',
   local: 'Nova Mutum - MT',
-  area: '--',
+  area: '250,00 m²',
   status: 'Em execução',
   statusEnglish: 'Running',
   statusSpanish: 'En ejecución',
-  description: 'Um projeto de duas casas de 115,00 m² em um terreno de 250,00 m², aqui a ideia foi utilizar o terreno ao maximo pra comportar as duas unidades habitacionais;',
-  descriptionEnglish: 'A project for two houses of 115.00 m² on a plot of 250.00 m², here the idea was to use the land as much as possible to accommodate the two housing units;',
-  descriptionSpanish: 'Proyecto de dos casas de 115,00 m² en un terreno de 250,00 m², aquí la idea era aprovechar al máximo el terreno para albergar las dos viviendas;',
+  description: 'Um projeto de duas casas de 115,00 m² em um terreno de 250,00 m², aqui a ideia foi utilizar o terreno ao maximo pra comportar as duas unidades habitacionais',
+  descriptionEnglish: 'A project for two houses of 115.00 m² on a plot of 250.00 m², here the idea was to use the land as much as possible to accommodate the two housing units',
+  descriptionSpanish: 'Proyecto de dos casas de 115,00 m² en un terreno de 250,00 m², aquí la idea era aprovechar al máximo el terreno para albergar las dos viviendas',
   images: [
     {
       id: 1,
@@ -457,57 +454,82 @@ export const project12 = {
     },
   ]
 }
-
 export const project13 = {
   id: 13,
-  title: "",
-  titleEnglish: "",
-  titleSpanish: "",
-  type: "",
-  typeEnglish: '',
-  typeSpanish: '',
-  year: '',
+  title: "Casa J.R",
+  titleEnglish: "House J.R",
+  titleSpanish: "Casa J.R",
+  type: "Arquitetura Residencial",
+  typeEnglish: 'Residential Architecture',
+  typeSpanish: 'Arquitectura Residencial',
+  year: '2023',
   local: 'Nova Mutum - MT',
-  area: '',
-  status: '',
-  statusEnglish: '',
-  statusSpanish: '',
-  description: '',
-  descriptionEnglish: '',
-  descriptionSpanish: '',
+  area: '140,00 m²',
+  status: 'Em aprovação',
+  statusEnglish: 'On approval',
+  statusSpanish: 'En aprovacion',
+  description: 'Um projeto 140,00 m² com referencias classicas e linhas simples, com foco em propiciar o melhor espaço de escanço para a família',
+  descriptionEnglish: 'A 140.00 m² project with classic references and simple lines, focused on providing the best restroom space for the family',
+  descriptionSpanish: 'Un proyecto de 140,00 m² con referencias clásicas y líneas sencillas, enfocado a brindar el mejor espacio de baño para la familia',
   images: [
     {
       id: 1,
-      src: require('@/assets/InterioresCasaMC/01.webp')
+      src: require('@/assets/13-ProjetoJR/01.webp')
+    },
+    {
+      id: 2,
+      src: require('@/assets/13-ProjetoJR/02.webp')
+    },
+    {
+      id: 3,
+      src: require('@/assets/13-ProjetoJR/03.webp')
+    },
+    {
+      id: 4,
+      src: require('@/assets/13-ProjetoJR/04.webp')
+    },
+    {
+      id: 5,
+      src: require('@/assets/13-ProjetoJR/05.webp')
     },
   ]
 }
-
-// export const project12 = {
-//   id: 12,
-//   title: "",
-//   titleEnglish: "",
-//   titleSpanish: "",
-//   type: "",
-//   typeEnglish: '',
-//   typeSpanish: '',
-//   year: '',
-//   local: 'Nova Mutum - MT',
-//   area: '',
-//   status: '',
-//   statusEnglish: '',
-//   statusSpanish: '',
-//   description: '',
-//   descriptionEnglish: '',
-//   descriptionSpanish: '',
-//   images: [
-//     {
-//       id: 1,
-//       src: require('@/assets/InterioresCasaMC/01.webp')
-//     },
-//   ]
-// }
-
+export const project14 = {
+  id: 14,
+  title: "Casa O.S",
+  titleEnglish: "Home O.S",
+  titleSpanish: "Casa O.S",
+  type: "Arquitetura Residencial",
+  typeEnglish: 'Residential Architecture',
+  typeSpanish: 'Arquitectura Residencial',
+  year: '2023',
+  local: 'Nova Mutum - MT',
+  area: '138,00m²',
+  status: 'Em execução',
+  statusEnglish: 'Running',
+  statusSpanish: 'En ejecución',
+  description: 'Uma casa contemporânea que abusa das linhas retas e organiza bem os ambientes para criar em 138,00 m² uma casa perfeita para um jovem que investe no seu primeiro imóvel',
+  descriptionEnglish: 'A contemporary house that abuses straight lines and organizes the environments well to create, in 138.00 m², a perfect home for a young person who invests in his first property',
+  descriptionSpanish: 'Una casa contemporánea que abusa de las líneas rectas y ordena bien los ambientes para crear, en 138,00 m², un hogar perfecto para un joven que invierte en su primera propiedad',
+  images: [
+    {
+      id: 1,
+      src: require('@/assets/14-CasaOS/01.webp')
+    },
+    {
+      id: 2,
+      src: require('@/assets/14-CasaOS/02.webp')
+    },
+    {
+      id: 3,
+      src: require('@/assets/14-CasaOS/03.webp')
+    },
+    {
+      id: 4,
+      src: require('@/assets/14-CasaOS/04.webp')
+    },
+  ]
+}
 
 // ------------------------------------ MODELO PRONTO -----------------------------------
 // export const project12 = {
